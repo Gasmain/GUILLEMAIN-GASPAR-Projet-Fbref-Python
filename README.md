@@ -6,18 +6,22 @@ Python Projet Data Visualization ESIEE 2022
 
 ## How to Install and Run the Project :
 
-Run main.py to start the app
+- **First install the dependencies :**
 
-The data is already scrapped and can be find in [data/player.csv](https://github.com/Gasmain/Projet-Open-Source-Fbref/blob/master/data/player.csv) but it can be rescraped by uncommenting `fb.scrap()` method : 
-```Python
-if __name__ == '__main__':
-    # Config logging output file
-    logging.basicConfig(filename='logs/main.log', level=logging.DEBUG, format='%(asctime)s %(levelname)-8s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+  `$ pip install -r requirements.txt`
 
-    logging.debug('----------- Starting -----------')
+- **Then run main.py to start the app**
 
-    fb.scrap() # <- this line should not be commented if you want to rescrap the data
-```
+  The data is already scrapped and can be find in [data/player.csv](https://github.com/Gasmain/Projet-Open-Source-Fbref/blob/master/data/player.csv) but it    can be rescraped by uncommenting `fb.scrap()` method : 
+  ```Python
+  if __name__ == '__main__':
+      # Config logging output file
+      logging.basicConfig(filename='logs/main.log', level=logging.DEBUG, format='%(asctime)s %(levelname)-8s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+
+      logging.debug('----------- Starting -----------')
+
+      fb.scrap() # <- this line should not be commented if you want to rescrap the data
+  ```
 
 
 
