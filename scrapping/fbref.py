@@ -109,16 +109,16 @@ def get_player_data(player_url):
             # Check if player has a scouting report
             if soup.find(id="all_scout") is not None:
 
-                # Player id
+                # ---- Player id ----
                 result = re.search(r"\/en\/players\/(.*?)\/", player_url)  # Search in the url for the player id
                 player_id = result.group(1)
                 player["id"] = player_id
 
-                # Player name
+                # ---- Player name ----
                 player_name = soup.find("h1").text
                 player["name"] = player_name
 
-                # Player img
+                # ---- Player img ----
                 try:
                     player_img_src = soup.find(class_="media-item").find("img")["src"]
                     urllib.request.urlretrieve(player_img_src,
@@ -126,28 +126,50 @@ def get_player_data(player_url):
                 except:
                     pass
 
-                # Player strong foot
-                p_contain_foot = str(soup.select('p:-soup-contains("Footed:")'))  # Find <p> containing Footed:
-                result = re.search(r".*Footed:<\/strong>(.*?)%(.*?)<.*", p_contain_foot)  # Search in the <p> the strong foot, and it's percentage
-                try:
-                    # If regex search fails, it means player has no strong foot percentage
-                    strong_foot_percentage = result.group(1).strip()
-                    strong_foot = result.group(2).strip()
-                except:
-                    # So we search for his strong foot only
-                    result = re.search(r".*Footed:<\/strong>(.*?)<.*", p_contain_foot)  # Search in the <p> the strong foot only
-                    strong_foot_percentage = None
-                    strong_foot = result.group(1).strip()
-                finally:
-                    # The player's page has no info concerning his strong foot
-                    strong_foot_percentage = None
-                    strong_foot = None
+                # ---- Player strong foot ----
+                p_contain_foot = str(soup.select('p:-soup-contains("Footed:")'))  # Find <p> containing "Footed:"
+                result = re.findall(r".*Footed:<\/strong>(.*?)%(.*?)<.*", p_contain_foot)  # Search in the <p> the strong foot, and it's percentage
+
+                if len(result) > 0:  # If regex found matches it means player has strong foot and percentage
+                    strong_foot_percentage = result[0][0]
+                    strong_foot = result[0][1]
+                else :
+                    result = re.findall(r".*Footed:<\/strong>(.*?)<.*", p_contain_foot)  # Search in the <p> the strong foot only
+                    if len(result) > 0:  # If regex found matches it means player has only strong foot
+                        strong_foot_percentage = None
+                        strong_foot = result[0][0]
+                    else: # If regex didn't find anything it means player has no strong foot data
+                        strong_foot_percentage = None
+                        strong_foot = None
+
                 player["strong_foot"] = {"foot": strong_foot, "percentage": strong_foot_percentage}
 
-                # Player height
+                # ---- Player height ----
+                player["height"] = None
+                p_contain_height = soup.find(id="meta").select('p:-soup-contains("cm")')  # Search for a <p> containing "cm" in the div of the biography
+                if len(p_contain_height) > 0 :
+                    for p in p_contain_height:
+                        result = re.findall(r"(\d*)cm", p.text)  # Search for the height in <p>
+                        if len(result) > 0 :
+                            player["height"] = result[0]
+                            break
 
-                # Player weight
-                # Player age
+                # ---- Player weight ----
+                player["weight"] = None
+                p_contain_weight = soup.find(id="meta").select('p:-soup-contains("kg")')  # Search for a <p> containing "kg" in the div of the biography
+                if len(p_contain_weight) > 0:
+                    for p in p_contain_weight:
+                        result = re.findall(r"(\d*)kg", p.text)  # Search for the weight in <p>
+                        if len(result) > 0:
+                            player["weight"] = result[0]
+                            break
+                print(player["weight"])
+                
+                # ---- Player age ----
+                p_contain_born = soup.select('p:-soup-contains("Born:")')  # Find <p> containing "Born:"
+                #if len(p_contain_height) > 0 :
+
+
                 # Player nationality
                 # Player club
                 # Similar players
