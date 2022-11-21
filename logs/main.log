@@ -3545,3 +3545,95 @@
 2022-11-20 23:48:26 DEBUG    Starting new HTTPS connection (1): fbref.com:443
 2022-11-20 23:48:27 DEBUG    https://fbref.com:443 "GET /en/players/3aa4a3be/scout/365_m1/ HTTP/1.1" 200 None
 2022-11-20 23:48:27 WARNING  Player has not scouting report : https://fbref.com/en/players/3aa4a3be/scout/365_m1/
+2022-11-21 08:07:40 DEBUG    ----------- Starting -----------
+2022-11-21 08:07:40 DEBUG    Starting fbref scrapping
+2022-11-21 08:07:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:07:40 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-21 08:07:43 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:07:44 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:07:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:07:50 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:08:13 DEBUG    ----------- Starting -----------
+2022-11-21 08:08:13 DEBUG    Starting fbref scrapping
+2022-11-21 08:08:13 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:08:13 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-21 08:08:16 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:08:16 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:08:20 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:08:20 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:08:28 DEBUG    ----------- Starting -----------
+2022-11-21 08:08:28 DEBUG    Starting fbref scrapping
+2022-11-21 08:08:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:08:29 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-21 08:08:32 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:08:32 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:08:38 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:08:38 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:14:50 DEBUG    ----------- Starting -----------
+2022-11-21 08:14:50 DEBUG    Starting fbref scrapping
+2022-11-21 08:14:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:14:50 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-21 08:14:53 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:14:53 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:14:57 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:14:58 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:15:05 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:15:05 DEBUG    https://fbref.com:443 "GET /en/players/7978cbf0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:15:05 WARNING  Player has not scouting report : https://fbref.com/en/players/7978cbf0/scout/365_m1/
+2022-11-21 08:15:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:15:10 DEBUG    https://fbref.com:443 "GET /en/players/82464ce3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:21:24 DEBUG    ----------- Starting -----------
+2022-11-21 08:21:24 DEBUG    Starting fbref scrapping
+2022-11-21 08:21:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:21:24 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-21 08:21:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:21:27 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:21:33 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:21:34 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:21:41 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:21:41 DEBUG    https://fbref.com:443 "GET /en/players/7978cbf0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:21:41 WARNING  Player has not scouting report : https://fbref.com/en/players/7978cbf0/scout/365_m1/
+2022-11-21 08:21:48 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:21:48 DEBUG    https://fbref.com:443 "GET /en/players/82464ce3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:21:53 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:21:53 DEBUG    https://fbref.com:443 "GET /en/players/31626657/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:21:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:21:59 DEBUG    https://fbref.com:443 "GET /en/players/0e46fa2f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:21:59 WARNING  Player has not scouting report : https://fbref.com/en/players/0e46fa2f/scout/365_m1/
+2022-11-21 08:22:04 DEBUG    ----------- Starting -----------
+2022-11-21 08:22:04 DEBUG    Starting fbref scrapping
+2022-11-21 08:22:04 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:22:04 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-21 08:22:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:22:07 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:22:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:22:13 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:22:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:22:18 DEBUG    https://fbref.com:443 "GET /en/players/7978cbf0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:22:18 WARNING  Player has not scouting report : https://fbref.com/en/players/7978cbf0/scout/365_m1/
+2022-11-21 08:22:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:22:25 DEBUG    https://fbref.com:443 "GET /en/players/82464ce3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:22:31 DEBUG    ----------- Starting -----------
+2022-11-21 08:22:31 DEBUG    Starting fbref scrapping
+2022-11-21 08:22:31 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:22:31 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-21 08:22:53 DEBUG    ----------- Starting -----------
+2022-11-21 08:22:53 DEBUG    Starting fbref scrapping
+2022-11-21 08:22:53 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:22:53 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-21 08:22:56 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:22:56 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:23:02 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:23:02 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:23:08 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:23:08 DEBUG    https://fbref.com:443 "GET /en/players/7978cbf0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:23:08 WARNING  Player has not scouting report : https://fbref.com/en/players/7978cbf0/scout/365_m1/
+2022-11-21 08:23:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:23:12 DEBUG    https://fbref.com:443 "GET /en/players/82464ce3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:23:17 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:23:18 DEBUG    https://fbref.com:443 "GET /en/players/31626657/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:23:23 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:23:23 DEBUG    https://fbref.com:443 "GET /en/players/0e46fa2f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 08:23:23 WARNING  Player has not scouting report : https://fbref.com/en/players/0e46fa2f/scout/365_m1/
+2022-11-21 08:23:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 08:23:28 DEBUG    https://fbref.com:443 "GET /en/players/c2a6033c/scout/365_m1/ HTTP/1.1" 200 None

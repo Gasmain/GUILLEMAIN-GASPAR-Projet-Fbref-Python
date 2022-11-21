@@ -33,7 +33,7 @@ def scrap():
 
     if len(player_url_list) == 0:
         logging.error('player_url_list is empty')
-        print("error")
+        print("error : player_url_list is empty")
         return
     else:
         player_list = build_player_list(player_url_list)
@@ -60,7 +60,7 @@ def get_player_url():
                 "tr:not(.thead)")  # Get all the rows of the table that are not of class thead
         except:
             logging.error('Could not find the table of players correctly')
-            print("error")
+            print("error : Could not find the table of players correctly")
             exit()  # We stop the run because if the table can't be read we can't go any further
 
         for row in player_table_rows:
@@ -76,7 +76,7 @@ def get_player_url():
         player_url_list = list(dict.fromkeys(player_url_list))  # Drop duplicate urls
 
     else:  # Si code = error
-        print("error")
+        print("error : Got code " + str(r.status_code) + " for url : " + FBREF_URL + TOP_5_LEAGUE_PLAYER_LIST)
         logging.error('Got code ' + str(r.status_code) + " for url : " + FBREF_URL + TOP_5_LEAGUE_PLAYER_LIST)
 
     return player_url_list
@@ -90,12 +90,14 @@ def build_player_list(player_url_list):
     player_list = []
 
     for player_url in player_url_list:
+        print("scrapping : " + player_url)
         player = get_player_data(player_url)
         if len(player)>0:
-            player_list.append(player)
-            data.append(player)
-            with open(PLAYER_FILE_JSON, "w") as file:
-                json.dump(data, file)
+            if "stats" in player and "similar_players" in player: #Checks if the stats and sim player key exist in player dict before adding to list
+                player_list.append(player)
+                data.append(player)
+                with open(PLAYER_FILE_JSON, "w") as file:
+                    json.dump(data, file)
 
 
     return player_list
@@ -147,21 +149,12 @@ def get_player_data(player_url):
 
                 # ---- Player strong foot ----
                 p_contain_foot = str(soup.select('p:-soup-contains("Footed:")'))  # Find <p> containing "Footed:"
-                result = re.findall(r".*Footed:<\/strong>(.*?)%(.*?)<.*", p_contain_foot)  # Search in the <p> the strong foot, and it's percentage
+                result = re.search(r".*strong> (.*)<", p_contain_foot)  # Search in the <p> the strong foot
 
-                if len(result) > 0:  # If regex found matches it means player has strong foot and percentage
-                    strong_foot_percentage = result[0][0]
-                    strong_foot = result[0][1]
+                if result:  # If regex found matches it means player has strong foot
+                    player["strong_foot"] = result.group(1)
                 else :
-                    result = re.findall(r".*Footed:<\/strong>(.*?)<.*", p_contain_foot)  # Search in the <p> the strong foot only
-                    if len(result) > 0:  # If regex found matches it means player has only strong foot
-                        strong_foot_percentage = None
-                        strong_foot = result[0][0]
-                    else: # If regex didn't find anything it means player has no strong foot data
-                        strong_foot_percentage = None
-                        strong_foot = None
-
-                player["strong_foot"] = {"foot": strong_foot, "percentage": strong_foot_percentage}
+                    player["strong_foot"] = None
 
                 # ---- Player height ----
                 player["height"] = None
@@ -227,7 +220,6 @@ def get_player_data(player_url):
                     stat["percentile"] = row.find("td",{"data-stat": "percentile"})["csk"]
                     players_stats.append(stat)
                 player["stats"] = players_stats
-                print(player["stats"])
 
 
             else:  # If player has no scouting report
@@ -235,12 +227,12 @@ def get_player_data(player_url):
 
         except Exception as e:
             logging.error("Error with player : " + FBREF_URL + player_url + "\n" + str(e))
-            print("error")
+            print("error : Error with player : " + FBREF_URL + player_url + "\n" + str(e))
 
 
     else:  # If code = error
         logging.error('Got code ' + str(r.status_code) + " for url : " + FBREF_URL + player_url)
-        print("error")
+        print("error : Got code " + str(r.status_code) + " for url : " + FBREF_URL + player_url)
 
     sleep(randint(4, 7))
 
