@@ -5,15 +5,29 @@ from bs4 import BeautifulSoup
 import requests
 import logging
 import urllib.request
+from random import randint
+from time import sleep
 
 PLAYER_FILE_CSV = "data/player.csv"
 PLAYER_FILE_JSON = "data/player.json"
 PLAYER_IMG_FOLDER = "data/playerimg"
 FBREF_URL = "https://fbref.com"
-TOP_5_LEAGUE_PLAYER_LIST = "/en/comps/Big5/stats/joueurs/Statistiques-Les-5-grands-championnats-europeens"
+TOP_5_LEAGUE_PLAYER_LIST = "/en/comps/Big5/stats/players/Big-5-European-Leagues-Stats"
+headers={
+    "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Host":"fbref.com",
+    "Referer":"https://fbref.com/en/players/",
+    "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0"
+}
+data = []
 
 
 def scrap():
+    global data
+    f = open(PLAYER_FILE_JSON)
+    data = json.load(f)
+
+
     logging.debug('Starting fbref scrapping')
     player_url_list = get_player_url()
 
@@ -23,8 +37,7 @@ def scrap():
         return
     else:
         player_list = build_player_list(player_url_list)
-        with open("PLAYER_FILE_JSON", "w") as file:
-            json.dump(player_list, file)
+
 
 
     return
@@ -37,7 +50,7 @@ def get_player_url():
 
     player_url_list = []
 
-    r = requests.get(FBREF_URL + TOP_5_LEAGUE_PLAYER_LIST)  # Requests the page with the players table
+    r = requests.get(FBREF_URL + TOP_5_LEAGUE_PLAYER_LIST, headers=headers)  # Requests the page with the players table
     if r.status_code == 200:  # Si code = success
         try:
             soup = BeautifulSoup(r.content, 'html.parser')
@@ -55,7 +68,7 @@ def get_player_url():
                 player_url = row.find_all("td")[0].find("a")['href']  # Get link of the player
                 # Rebuilding the url to get the player scouting report
                 result = re.search(r"(.*)\/", player_url)  # Search in the url for the part without the player name
-                player_url = result.group(1) + "/scout/365_euro/"
+                player_url = result.group(1) + "/scout/365_m1/"
                 player_url_list.append(player_url)
             except:
                 pass
@@ -64,7 +77,7 @@ def get_player_url():
 
     else:  # Si code = error
         print("error")
-        logging.error('Got code ' + r.status_code + " for url : " + FBREF_URL + TOP_5_LEAGUE_PLAYER_LIST)
+        logging.error('Got code ' + str(r.status_code) + " for url : " + FBREF_URL + TOP_5_LEAGUE_PLAYER_LIST)
 
     return player_url_list
 
@@ -73,12 +86,17 @@ def build_player_list(player_url_list):
     """
     Builds a list of players, each one being a json object
     """
-
+    global data
     player_list = []
 
     for player_url in player_url_list:
         player = get_player_data(player_url)
-        player_list.append(player)
+        if len(player)>0:
+            player_list.append(player)
+            data.append(player)
+            with open(PLAYER_FILE_JSON, "w") as file:
+                json.dump(data, file)
+
 
     return player_list
 
@@ -99,7 +117,7 @@ def get_player_data(player_url):
 
     player = {}
 
-    r = requests.get(FBREF_URL + player_url)  # Requests the player's web page'
+    r = requests.get(FBREF_URL + player_url, headers=headers)  # Requests the player's web page'
     if r.status_code == 200:  # If code = success
 
 
@@ -110,20 +128,21 @@ def get_player_data(player_url):
             if soup.find(id="all_scout") is not None:
 
                 # ---- Player id ----
-                result = re.search(r"\/en\/players\/(.*?)\/", player_url)  # Search in the url for the player id
-                player_id = result.group(1)
+
+                player_id = extractId(player_url)
                 player["id"] = player_id
 
                 # ---- Player name ----
                 player_name = soup.find("h1").text
-                player["name"] = player_name
+                player["name"] = player_name.replace("\n", "")
 
                 # ---- Player img ----
                 try:
                     player_img_src = soup.find(class_="media-item").find("img")["src"]
                     urllib.request.urlretrieve(player_img_src,
                                                PLAYER_IMG_FOLDER + "/" + player_id + ".jpg")  # Download and save the image in the playerimg folder
-                except:
+                except Exception as e:
+                    print("no image found : " + str(e))
                     pass
 
                 # ---- Player strong foot ----
@@ -163,17 +182,53 @@ def get_player_data(player_url):
                         if len(result) > 0:
                             player["weight"] = result[0]
                             break
-                print(player["weight"])
-                
-                # ---- Player age ----
-                p_contain_born = soup.select('p:-soup-contains("Born:")')  # Find <p> containing "Born:"
-                #if len(p_contain_height) > 0 :
 
+                # ---- Player birthdate ----
+                birth_date = soup.find(id="necro-birth")
+                if birth_date == None :
+                    player["birth_date"] = None
+                else:
+                    player["birth_date"] = birth_date["data-birth"]
 
                 # Player nationality
+                p_contain_nationality = soup.find(id="meta").select('p:-soup-contains("National Team")')  # Search for a <p> containing "National Team" in the div of the biography
+                if len(p_contain_nationality) > 0:
+                    player["nationality"] = p_contain_nationality[0].find("a").text
+                else :
+                    player["nationality"] = None
+
                 # Player club
+                p_contain_club = soup.find(id="meta").select('p:-soup-contains("Club:")')  # Search for a <p> containing "National Team" in the div of the biography
+                if len(p_contain_club) > 0:
+                    player["club"] = p_contain_club[0].find("a").text
+                else :
+                    player["club"] = None
+
                 # Similar players
+                similar_table = soup.find(id="all_similar")
+                similar_table_row = similar_table.find_all("td", {"class": "left", "data-stat": "player"})
+                similar_players = []
+                for row in similar_table_row:
+                    similar_players.append(extractId(row.find("a")["href"]))
+                player["similar_players"] = similar_players
                 # Player stats
+                all_scout = soup.find_all(id="all_scout")[1]
+                all_scout_table_body = all_scout.find("tbody")
+                all_scout_rows = all_scout_table_body.find_all("tr")
+
+                players_stats = []
+                for row in all_scout_rows:
+                    stat = {}
+                    if row.has_attr("class"):
+                        if("spacer" in row["class"] or "thead" in row["class"]):
+                            continue
+                    stat["name"] = row.find("th",{"data-stat": "statistic"}).text
+                    stat["per90"] = row.find("td",{"data-stat": "per90"}).text
+                    stat["percentile"] = row.find("td",{"data-stat": "percentile"})["csk"]
+                    players_stats.append(stat)
+                player["stats"] = players_stats
+                print(player["stats"])
+
 
             else:  # If player has no scouting report
                 logging.warning("Player has not scouting report : " + FBREF_URL + player_url)
@@ -184,7 +239,14 @@ def get_player_data(player_url):
 
 
     else:  # If code = error
-        logging.error('Got code ' + r.status_code + " for url : " + FBREF_URL + player_url)
+        logging.error('Got code ' + str(r.status_code) + " for url : " + FBREF_URL + player_url)
         print("error")
 
+    sleep(randint(4, 7))
+
     return player
+
+
+def extractId(url):
+    result = re.search(r"\/en\/players\/(.*?)\/", url)  # Search in the url for the player id
+    return result.group(1)
