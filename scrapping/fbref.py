@@ -1,5 +1,4 @@
 import re
-from typing import List, Any
 import json
 from bs4 import BeautifulSoup
 import requests
@@ -7,6 +6,10 @@ import logging
 import urllib.request
 from random import randint
 from time import sleep
+from tkinter import *
+from tkinter.ttk import *
+import asyncio
+from threading import Thread
 
 PLAYER_FILE_CSV = "data/player.csv"
 PLAYER_FILE_JSON = "data/player.json"
@@ -20,13 +23,18 @@ headers={
     "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0"
 }
 data = []
+progress = 0
+stop_threads = False;
+
+
 
 
 def scrap():
     global data
+    t = Thread(target=progress_bar)
+    t.start()
     f = open(PLAYER_FILE_JSON)
     data = json.load(f)
-
 
     logging.debug('Starting fbref scrapping')
     player_url_list = get_player_url()
@@ -37,10 +45,27 @@ def scrap():
         return
     else:
         player_list = build_player_list(player_url_list)
-
-
-
+    stop_threads = True
+    t.join()
     return
+
+
+def progress_bar():
+    global progress, stop_threads
+    window = Tk()
+    window.wm_title("Scrapping progress")
+    window.geometry("400x200")
+    text = Label(window, text="0")
+    text.place(x=180,y=90)
+    bar = Progressbar(window, orient=HORIZONTAL, length=300)
+    bar.pack(pady=50)
+
+    while True:
+        bar["value"] = progress
+        text.config(text=str(round(progress, 2))+"%")
+        window.update()
+        if stop_threads:
+            break
 
 
 def get_player_url():
@@ -86,11 +111,9 @@ def build_player_list(player_url_list):
     """
     Builds a list of players, each one being a json object
     """
-    global data
+    global data, progress
     player_list = []
-
     for player_url in player_url_list:
-        print("scrapping : " + player_url)
         player = get_player_data(player_url)
         if len(player)>0:
             if "stats" in player and "similar_players" in player: #Checks if the stats and sim player key exist in player dict before adding to list
@@ -98,8 +121,7 @@ def build_player_list(player_url_list):
                 data.append(player)
                 with open(PLAYER_FILE_JSON, "w") as file:
                     json.dump(data, file)
-
-
+        progress += float(100.0/len(player_url_list))
     return player_list
 
 
