@@ -4398,3 +4398,1486 @@
 2022-11-21 10:13:12 DEBUG    https://fbref.com:443 "GET /en/players/f2bf1b0f/scout/365_m1/ HTTP/1.1" 200 None
 2022-11-21 10:13:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
 2022-11-21 10:13:18 DEBUG    https://fbref.com:443 "GET /en/players/2b09d998/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:20:34 DEBUG    ----------- Starting -----------
+2022-11-21 10:20:34 DEBUG    Starting fbref scrapping
+2022-11-21 10:20:34 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:20:34 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-21 10:20:41 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:20:41 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:20:45 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:20:45 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:20:53 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:20:53 DEBUG    https://fbref.com:443 "GET /en/players/7978cbf0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:20:53 WARNING  Player has not scouting report : https://fbref.com/en/players/7978cbf0/scout/365_m1/
+2022-11-21 10:21:00 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:21:01 DEBUG    https://fbref.com:443 "GET /en/players/82464ce3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:21:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:21:07 DEBUG    https://fbref.com:443 "GET /en/players/31626657/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:21:09 DEBUG    ----------- Starting -----------
+2022-11-21 10:21:09 DEBUG    Starting fbref scrapping
+2022-11-21 10:21:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:21:09 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-21 10:21:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:21:15 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:21:20 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:21:20 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:21:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:21:27 DEBUG    https://fbref.com:443 "GET /en/players/7978cbf0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:21:27 WARNING  Player has not scouting report : https://fbref.com/en/players/7978cbf0/scout/365_m1/
+2022-11-21 10:21:31 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:21:31 DEBUG    https://fbref.com:443 "GET /en/players/82464ce3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:21:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:21:39 DEBUG    https://fbref.com:443 "GET /en/players/31626657/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:21:44 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:21:44 DEBUG    https://fbref.com:443 "GET /en/players/0e46fa2f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:21:44 WARNING  Player has not scouting report : https://fbref.com/en/players/0e46fa2f/scout/365_m1/
+2022-11-21 10:21:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:21:51 DEBUG    https://fbref.com:443 "GET /en/players/c2a6033c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:21:56 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:21:56 DEBUG    https://fbref.com:443 "GET /en/players/f586779e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:22:04 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:22:04 DEBUG    https://fbref.com:443 "GET /en/players/b96b595c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:22:08 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:22:08 DEBUG    https://fbref.com:443 "GET /en/players/1e93fc5d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:22:08 WARNING  Player has not scouting report : https://fbref.com/en/players/1e93fc5d/scout/365_m1/
+2022-11-21 10:22:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:22:15 DEBUG    https://fbref.com:443 "GET /en/players/81442ecb/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:22:19 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:22:19 DEBUG    https://fbref.com:443 "GET /en/players/f2bf1b0f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:22:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:22:25 DEBUG    https://fbref.com:443 "GET /en/players/2b09d998/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:22:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:22:30 DEBUG    https://fbref.com:443 "GET /en/players/22919e97/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:22:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:22:35 DEBUG    https://fbref.com:443 "GET /en/players/c81d773d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:22:41 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:22:41 DEBUG    https://fbref.com:443 "GET /en/players/7587446d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:22:42 WARNING  Player has not scouting report : https://fbref.com/en/players/7587446d/scout/365_m1/
+2022-11-21 10:22:46 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:22:46 DEBUG    https://fbref.com:443 "GET /en/players/501055d8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:22:53 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:22:53 DEBUG    https://fbref.com:443 "GET /en/players/dcfb17f4/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:23:01 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:23:01 DEBUG    https://fbref.com:443 "GET /en/players/26777636/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:23:08 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:23:08 DEBUG    https://fbref.com:443 "GET /en/players/f9c927de/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:23:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:23:14 DEBUG    https://fbref.com:443 "GET /en/players/0154d290/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:23:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:23:21 DEBUG    https://fbref.com:443 "GET /en/players/75f1ed80/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:23:26 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:23:26 DEBUG    https://fbref.com:443 "GET /en/players/8bc8829a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:23:32 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:23:32 DEBUG    https://fbref.com:443 "GET /en/players/cb6d81b3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:23:32 WARNING  Player has not scouting report : https://fbref.com/en/players/cb6d81b3/scout/365_m1/
+2022-11-21 10:23:38 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:23:38 DEBUG    https://fbref.com:443 "GET /en/players/014aa7bd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:23:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:23:42 DEBUG    https://fbref.com:443 "GET /en/players/46fa7204/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:23:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:23:47 DEBUG    https://fbref.com:443 "GET /en/players/288e1e13/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:23:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:23:51 DEBUG    https://fbref.com:443 "GET /en/players/3dd738a1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:23:56 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:23:56 DEBUG    https://fbref.com:443 "GET /en/players/a6c58494/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:24:01 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:24:01 DEBUG    https://fbref.com:443 "GET /en/players/48b28bfd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:24:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:24:09 DEBUG    https://fbref.com:443 "GET /en/players/18abe173/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:24:16 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:24:16 DEBUG    https://fbref.com:443 "GET /en/players/246d153b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:24:16 ERROR    Error with player : https://fbref.com/en/players/246d153b/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 10:24:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:24:22 DEBUG    https://fbref.com:443 "GET /en/players/9b398aea/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:24:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:24:28 DEBUG    https://fbref.com:443 "GET /en/players/d810c13b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:24:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:24:36 DEBUG    https://fbref.com:443 "GET /en/players/a8c0acb7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:24:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:24:42 DEBUG    https://fbref.com:443 "GET /en/players/462475ed/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:24:46 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:24:47 DEBUG    https://fbref.com:443 "GET /en/players/89ac64a6/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:24:54 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:24:54 DEBUG    https://fbref.com:443 "GET /en/players/eaeca114/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:24:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:24:59 DEBUG    https://fbref.com:443 "GET /en/players/06efa9dc/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:25:05 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:25:05 DEBUG    https://fbref.com:443 "GET /en/players/b625b241/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:25:05 WARNING  Player has not scouting report : https://fbref.com/en/players/b625b241/scout/365_m1/
+2022-11-21 10:25:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:25:09 DEBUG    https://fbref.com:443 "GET /en/players/31f5b89b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:25:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:25:14 DEBUG    https://fbref.com:443 "GET /en/players/fdf4b948/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:25:14 WARNING  Player has not scouting report : https://fbref.com/en/players/fdf4b948/scout/365_m1/
+2022-11-21 10:25:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:25:18 DEBUG    https://fbref.com:443 "GET /en/players/6ec6fde0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:25:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:25:24 DEBUG    https://fbref.com:443 "GET /en/players/05439de2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:25:31 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:25:31 DEBUG    https://fbref.com:443 "GET /en/players/99ea2ddd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:25:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:25:36 DEBUG    https://fbref.com:443 "GET /en/players/834d0be5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:25:41 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:25:42 DEBUG    https://fbref.com:443 "GET /en/players/4601e194/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:25:48 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:25:48 DEBUG    https://fbref.com:443 "GET /en/players/5294a83f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:25:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:25:52 DEBUG    https://fbref.com:443 "GET /en/players/4bd414c1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:25:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:25:59 DEBUG    https://fbref.com:443 "GET /en/players/b827d5b3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:26:05 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:26:05 DEBUG    https://fbref.com:443 "GET /en/players/77e84962/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:26:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:26:10 DEBUG    https://fbref.com:443 "GET /en/players/036bba5f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:26:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:26:15 DEBUG    https://fbref.com:443 "GET /en/players/bb08bce9/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:26:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:26:22 DEBUG    https://fbref.com:443 "GET /en/players/3d7e48ce/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:26:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:26:28 DEBUG    https://fbref.com:443 "GET /en/players/9e17ccff/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:26:33 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:26:33 DEBUG    https://fbref.com:443 "GET /en/players/6c811eb7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:26:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:26:40 DEBUG    https://fbref.com:443 "GET /en/players/cd1acf9d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:26:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:26:48 DEBUG    https://fbref.com:443 "GET /en/players/b907d169/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:26:48 WARNING  Player has not scouting report : https://fbref.com/en/players/b907d169/scout/365_m1/
+2022-11-21 10:26:55 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:26:55 DEBUG    https://fbref.com:443 "GET /en/players/acc1aefa/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:26:55 WARNING  Player has not scouting report : https://fbref.com/en/players/acc1aefa/scout/365_m1/
+2022-11-21 10:27:02 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:27:02 DEBUG    https://fbref.com:443 "GET /en/players/f8405304/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:27:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:27:07 DEBUG    https://fbref.com:443 "GET /en/players/00f518d8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:27:07 WARNING  Player has not scouting report : https://fbref.com/en/players/00f518d8/scout/365_m1/
+2022-11-21 10:27:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:27:14 DEBUG    https://fbref.com:443 "GET /en/players/7a2e46a8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:27:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:27:18 DEBUG    https://fbref.com:443 "GET /en/players/1956b948/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:27:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:27:23 DEBUG    https://fbref.com:443 "GET /en/players/cea4ee8f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:27:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:27:30 DEBUG    https://fbref.com:443 "GET /en/players/e6697917/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:27:37 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:27:37 DEBUG    https://fbref.com:443 "GET /en/players/862a1c15/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:27:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:27:43 DEBUG    https://fbref.com:443 "GET /en/players/f4290206/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:27:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:27:49 DEBUG    https://fbref.com:443 "GET /en/players/0a63446f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:27:54 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:27:54 DEBUG    https://fbref.com:443 "GET /en/players/852ddfb8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:27:55 WARNING  Player has not scouting report : https://fbref.com/en/players/852ddfb8/scout/365_m1/
+2022-11-21 10:27:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:27:59 DEBUG    https://fbref.com:443 "GET /en/players/15ab5a2b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:28:04 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:28:04 DEBUG    https://fbref.com:443 "GET /en/players/ab472696/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:28:04 WARNING  Player has not scouting report : https://fbref.com/en/players/ab472696/scout/365_m1/
+2022-11-21 10:28:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:28:10 DEBUG    https://fbref.com:443 "GET /en/players/3ecc11d8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:28:16 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:28:16 DEBUG    https://fbref.com:443 "GET /en/players/9260926b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:28:23 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:28:23 DEBUG    https://fbref.com:443 "GET /en/players/1a4ef233/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:28:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:28:28 DEBUG    https://fbref.com:443 "GET /en/players/f3b1d9a2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:28:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:28:36 DEBUG    https://fbref.com:443 "GET /en/players/22721b88/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:28:41 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:28:41 DEBUG    https://fbref.com:443 "GET /en/players/bcc81786/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:28:48 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:28:48 DEBUG    https://fbref.com:443 "GET /en/players/2df7cc43/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:28:48 WARNING  Player has not scouting report : https://fbref.com/en/players/2df7cc43/scout/365_m1/
+2022-11-21 10:28:53 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:28:53 DEBUG    https://fbref.com:443 "GET /en/players/555d5edd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:28:57 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:28:58 DEBUG    https://fbref.com:443 "GET /en/players/10b9fa99/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:29:04 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:29:04 DEBUG    https://fbref.com:443 "GET /en/players/5a2cb25d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:29:11 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:29:11 DEBUG    https://fbref.com:443 "GET /en/players/e34fc66d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:29:17 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:29:17 DEBUG    https://fbref.com:443 "GET /en/players/de31038e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:29:17 WARNING  Player has not scouting report : https://fbref.com/en/players/de31038e/scout/365_m1/
+2022-11-21 10:29:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:29:22 DEBUG    https://fbref.com:443 "GET /en/players/9f1893b9/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:29:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:29:30 DEBUG    https://fbref.com:443 "GET /en/players/ef9c1c95/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:29:37 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:29:37 DEBUG    https://fbref.com:443 "GET /en/players/af3ddb2e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:29:43 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:29:43 DEBUG    https://fbref.com:443 "GET /en/players/e0b113a7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:29:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:29:50 DEBUG    https://fbref.com:443 "GET /en/players/30941e96/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:29:50 ERROR    Error with player : https://fbref.com/en/players/30941e96/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 10:29:57 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:29:57 DEBUG    https://fbref.com:443 "GET /en/players/fdd26d71/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:30:04 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:30:04 DEBUG    https://fbref.com:443 "GET /en/players/e4238fb1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:30:04 WARNING  Player has not scouting report : https://fbref.com/en/players/e4238fb1/scout/365_m1/
+2022-11-21 10:30:11 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:30:11 DEBUG    https://fbref.com:443 "GET /en/players/38d9ce53/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:30:11 WARNING  Player has not scouting report : https://fbref.com/en/players/38d9ce53/scout/365_m1/
+2022-11-21 10:30:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:30:18 DEBUG    https://fbref.com:443 "GET /en/players/5e66fa06/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:30:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:30:24 DEBUG    https://fbref.com:443 "GET /en/players/108fe016/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:30:31 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:30:32 DEBUG    https://fbref.com:443 "GET /en/players/ac05f970/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:30:38 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:30:38 DEBUG    https://fbref.com:443 "GET /en/players/99127249/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:30:43 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:30:43 DEBUG    https://fbref.com:443 "GET /en/players/8f68aa41/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:30:43 WARNING  Player has not scouting report : https://fbref.com/en/players/8f68aa41/scout/365_m1/
+2022-11-21 10:30:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:30:50 DEBUG    https://fbref.com:443 "GET /en/players/0a3f6cde/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:30:57 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:30:57 DEBUG    https://fbref.com:443 "GET /en/players/c93231dc/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:30:57 WARNING  Player has not scouting report : https://fbref.com/en/players/c93231dc/scout/365_m1/
+2022-11-21 10:31:03 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:31:03 DEBUG    https://fbref.com:443 "GET /en/players/a5db0bec/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:31:11 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:31:11 DEBUG    https://fbref.com:443 "GET /en/players/b94b8be1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:31:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:31:15 DEBUG    https://fbref.com:443 "GET /en/players/feb5d3ab/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:31:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:31:22 DEBUG    https://fbref.com:443 "GET /en/players/58afe001/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:31:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:31:29 DEBUG    https://fbref.com:443 "GET /en/players/56413b1f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:31:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:31:35 DEBUG    https://fbref.com:443 "GET /en/players/2bef2bca/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:31:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:31:39 DEBUG    https://fbref.com:443 "GET /en/players/05e8ca6d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:31:40 WARNING  Player has not scouting report : https://fbref.com/en/players/05e8ca6d/scout/365_m1/
+2022-11-21 10:31:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:31:47 DEBUG    https://fbref.com:443 "GET /en/players/c5e6c017/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:31:47 WARNING  Player has not scouting report : https://fbref.com/en/players/c5e6c017/scout/365_m1/
+2022-11-21 10:31:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:31:52 DEBUG    https://fbref.com:443 "GET /en/players/2f965a72/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:31:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:31:58 DEBUG    https://fbref.com:443 "GET /en/players/328f7d51/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:32:06 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:32:06 DEBUG    https://fbref.com:443 "GET /en/players/68c720b5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:32:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:32:14 DEBUG    https://fbref.com:443 "GET /en/players/97333cf5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:32:19 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:32:19 DEBUG    https://fbref.com:443 "GET /en/players/00459419/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:32:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:32:27 DEBUG    https://fbref.com:443 "GET /en/players/86e119e0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:32:34 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:32:34 DEBUG    https://fbref.com:443 "GET /en/players/28d596a0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:32:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:32:39 DEBUG    https://fbref.com:443 "GET /en/players/6091cf45/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:32:39 WARNING  Player has not scouting report : https://fbref.com/en/players/6091cf45/scout/365_m1/
+2022-11-21 10:32:44 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:32:44 DEBUG    https://fbref.com:443 "GET /en/players/963a328b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:32:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:32:50 DEBUG    https://fbref.com:443 "GET /en/players/a820e429/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:32:57 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:32:57 DEBUG    https://fbref.com:443 "GET /en/players/759d8dd7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:33:03 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:33:03 DEBUG    https://fbref.com:443 "GET /en/players/13ddc856/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:33:08 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:33:08 DEBUG    https://fbref.com:443 "GET /en/players/e26fcca3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:33:13 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:33:13 DEBUG    https://fbref.com:443 "GET /en/players/9f0ea33f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:33:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:33:21 DEBUG    https://fbref.com:443 "GET /en/players/45af8a54/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:33:26 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:33:26 DEBUG    https://fbref.com:443 "GET /en/players/a69cc629/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:33:32 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:33:32 DEBUG    https://fbref.com:443 "GET /en/players/35f67a30/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:33:32 WARNING  Player has not scouting report : https://fbref.com/en/players/35f67a30/scout/365_m1/
+2022-11-21 10:33:38 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:33:38 DEBUG    https://fbref.com:443 "GET /en/players/0fdcef0e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:33:43 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:33:43 DEBUG    https://fbref.com:443 "GET /en/players/7dcf86f6/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:33:48 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:33:48 DEBUG    https://fbref.com:443 "GET /en/players/b026bbf6/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:33:53 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:33:53 DEBUG    https://fbref.com:443 "GET /en/players/6a827d8e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:34:00 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:34:01 DEBUG    https://fbref.com:443 "GET /en/players/d5dd5f1f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:34:08 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:34:08 DEBUG    https://fbref.com:443 "GET /en/players/649b01d8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:34:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:34:15 DEBUG    https://fbref.com:443 "GET /en/players/3cd3b384/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:34:20 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:34:20 DEBUG    https://fbref.com:443 "GET /en/players/9fec8860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:34:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:34:25 DEBUG    https://fbref.com:443 "GET /en/players/5c2b4f07/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:34:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:34:30 DEBUG    https://fbref.com:443 "GET /en/players/7dfbba27/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:34:38 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:34:38 DEBUG    https://fbref.com:443 "GET /en/players/253a06b9/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:34:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:34:42 DEBUG    https://fbref.com:443 "GET /en/players/a94d93be/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:34:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:34:47 DEBUG    https://fbref.com:443 "GET /en/players/e5478b87/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:34:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:34:51 DEBUG    https://fbref.com:443 "GET /en/players/fe46e261/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:34:51 WARNING  Player has not scouting report : https://fbref.com/en/players/fe46e261/scout/365_m1/
+2022-11-21 10:34:56 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:34:56 DEBUG    https://fbref.com:443 "GET /en/players/da052c14/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:35:03 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:35:03 DEBUG    https://fbref.com:443 "GET /en/players/2200181e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:35:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:35:11 DEBUG    https://fbref.com:443 "GET /en/players/420d7c7d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:35:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:35:18 DEBUG    https://fbref.com:443 "GET /en/players/ce81d82d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:35:18 WARNING  Player has not scouting report : https://fbref.com/en/players/ce81d82d/scout/365_m1/
+2022-11-21 10:35:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:35:22 DEBUG    https://fbref.com:443 "GET /en/players/10549b49/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:35:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:35:30 DEBUG    https://fbref.com:443 "GET /en/players/53cad200/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:35:34 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:35:34 DEBUG    https://fbref.com:443 "GET /en/players/f582d5c1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:35:34 WARNING  Player has not scouting report : https://fbref.com/en/players/f582d5c1/scout/365_m1/
+2022-11-21 10:35:41 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:35:42 DEBUG    https://fbref.com:443 "GET /en/players/bfd381b3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:35:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:35:47 DEBUG    https://fbref.com:443 "GET /en/players/075fe5a3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:35:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:35:53 DEBUG    https://fbref.com:443 "GET /en/players/114bbdee/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:35:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:35:58 DEBUG    https://fbref.com:443 "GET /en/players/e4346678/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:36:04 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:36:04 DEBUG    https://fbref.com:443 "GET /en/players/06df8256/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:36:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:36:09 DEBUG    https://fbref.com:443 "GET /en/players/518f2234/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:36:16 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:36:16 DEBUG    https://fbref.com:443 "GET /en/players/dfd24c07/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:36:16 WARNING  Player has not scouting report : https://fbref.com/en/players/dfd24c07/scout/365_m1/
+2022-11-21 10:36:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:36:22 DEBUG    https://fbref.com:443 "GET /en/players/3a233281/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:36:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:36:28 DEBUG    https://fbref.com:443 "GET /en/players/a1232f4e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:36:32 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:36:32 DEBUG    https://fbref.com:443 "GET /en/players/5065d67d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:36:32 WARNING  Player has not scouting report : https://fbref.com/en/players/5065d67d/scout/365_m1/
+2022-11-21 10:36:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:36:39 DEBUG    https://fbref.com:443 "GET /en/players/7e3e825e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:36:39 WARNING  Player has not scouting report : https://fbref.com/en/players/7e3e825e/scout/365_m1/
+2022-11-21 10:36:46 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:36:46 DEBUG    https://fbref.com:443 "GET /en/players/32e8417f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:36:46 WARNING  Player has not scouting report : https://fbref.com/en/players/32e8417f/scout/365_m1/
+2022-11-21 10:36:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:36:51 DEBUG    https://fbref.com:443 "GET /en/players/f42d6c13/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:36:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:36:58 DEBUG    https://fbref.com:443 "GET /en/players/0af4dcf0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:36:58 WARNING  Player has not scouting report : https://fbref.com/en/players/0af4dcf0/scout/365_m1/
+2022-11-21 10:37:04 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:37:04 DEBUG    https://fbref.com:443 "GET /en/players/a8567629/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:37:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:37:09 DEBUG    https://fbref.com:443 "GET /en/players/442b56fa/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:37:13 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:37:13 DEBUG    https://fbref.com:443 "GET /en/players/102e2599/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:37:13 WARNING  Player has not scouting report : https://fbref.com/en/players/102e2599/scout/365_m1/
+2022-11-21 10:37:20 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:37:20 DEBUG    https://fbref.com:443 "GET /en/players/5ccc9672/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:37:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:37:25 DEBUG    https://fbref.com:443 "GET /en/players/3975195f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:37:32 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:37:32 DEBUG    https://fbref.com:443 "GET /en/players/a1390d2f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:37:32 WARNING  Player has not scouting report : https://fbref.com/en/players/a1390d2f/scout/365_m1/
+2022-11-21 10:37:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:37:36 DEBUG    https://fbref.com:443 "GET /en/players/1fe67e86/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:37:43 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:37:43 DEBUG    https://fbref.com:443 "GET /en/players/7c3ed041/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:37:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:37:50 DEBUG    https://fbref.com:443 "GET /en/players/cee88597/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:37:57 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:37:57 DEBUG    https://fbref.com:443 "GET /en/players/f449640d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:38:03 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:38:03 DEBUG    https://fbref.com:443 "GET /en/players/31822f8c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:38:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:38:10 DEBUG    https://fbref.com:443 "GET /en/players/7fecbcdb/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:38:17 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:38:17 DEBUG    https://fbref.com:443 "GET /en/players/b2bd0f6c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:38:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:38:24 DEBUG    https://fbref.com:443 "GET /en/players/93feac6e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:38:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:38:28 DEBUG    https://fbref.com:443 "GET /en/players/8a6de8c7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:38:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:38:35 DEBUG    https://fbref.com:443 "GET /en/players/d44360be/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:38:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:38:39 DEBUG    https://fbref.com:443 "GET /en/players/35f6db55/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:38:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:38:47 DEBUG    https://fbref.com:443 "GET /en/players/2886c9b5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:38:54 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:38:54 DEBUG    https://fbref.com:443 "GET /en/players/01efac19/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:38:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:38:59 DEBUG    https://fbref.com:443 "GET /en/players/32ebfe1e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:38:59 WARNING  Player has not scouting report : https://fbref.com/en/players/32ebfe1e/scout/365_m1/
+2022-11-21 10:39:06 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:39:06 DEBUG    https://fbref.com:443 "GET /en/players/a0d55a09/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:39:06 WARNING  Player has not scouting report : https://fbref.com/en/players/a0d55a09/scout/365_m1/
+2022-11-21 10:39:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:39:12 DEBUG    https://fbref.com:443 "GET /en/players/1ddbc7ca/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:39:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:39:18 DEBUG    https://fbref.com:443 "GET /en/players/03049c8c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:39:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:39:25 DEBUG    https://fbref.com:443 "GET /en/players/6928979a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:39:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:39:30 DEBUG    https://fbref.com:443 "GET /en/players/aad53e64/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:39:38 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:39:38 DEBUG    https://fbref.com:443 "GET /en/players/3a24769f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:39:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:39:42 DEBUG    https://fbref.com:443 "GET /en/players/a2a85828/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:39:42 WARNING  Player has not scouting report : https://fbref.com/en/players/a2a85828/scout/365_m1/
+2022-11-21 10:39:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:39:50 DEBUG    https://fbref.com:443 "GET /en/players/3ea50f67/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:39:54 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:39:54 DEBUG    https://fbref.com:443 "GET /en/players/00242b75/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:39:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:39:59 DEBUG    https://fbref.com:443 "GET /en/players/200e89e1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:39:59 WARNING  Player has not scouting report : https://fbref.com/en/players/200e89e1/scout/365_m1/
+2022-11-21 10:40:06 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:40:06 DEBUG    https://fbref.com:443 "GET /en/players/e3844ecb/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:40:06 WARNING  Player has not scouting report : https://fbref.com/en/players/e3844ecb/scout/365_m1/
+2022-11-21 10:40:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:40:12 DEBUG    https://fbref.com:443 "GET /en/players/45736cec/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:40:12 WARNING  Player has not scouting report : https://fbref.com/en/players/45736cec/scout/365_m1/
+2022-11-21 10:40:16 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:40:16 DEBUG    https://fbref.com:443 "GET /en/players/e5bf73f3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:40:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:40:24 DEBUG    https://fbref.com:443 "GET /en/players/5a08ee41/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:40:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:40:31 DEBUG    https://fbref.com:443 "GET /en/players/80556f08/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:40:38 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:40:38 DEBUG    https://fbref.com:443 "GET /en/players/75b86fb3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:40:46 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:40:46 DEBUG    https://fbref.com:443 "GET /en/players/1ac232b8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:40:53 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:40:53 DEBUG    https://fbref.com:443 "GET /en/players/d637fc22/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:40:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:40:59 DEBUG    https://fbref.com:443 "GET /en/players/44a20f0c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:41:03 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:41:03 DEBUG    https://fbref.com:443 "GET /en/players/47064058/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:41:08 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:41:08 DEBUG    https://fbref.com:443 "GET /en/players/bd7d2e6d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:41:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:41:14 DEBUG    https://fbref.com:443 "GET /en/players/69374ff5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:41:14 WARNING  Player has not scouting report : https://fbref.com/en/players/69374ff5/scout/365_m1/
+2022-11-21 10:41:19 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:41:20 DEBUG    https://fbref.com:443 "GET /en/players/437f2b00/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:41:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:41:27 DEBUG    https://fbref.com:443 "GET /en/players/20e0dd86/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:41:32 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:41:33 DEBUG    https://fbref.com:443 "GET /en/players/c91441dc/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:41:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:41:39 DEBUG    https://fbref.com:443 "GET /en/players/d8712bf9/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:41:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:41:47 DEBUG    https://fbref.com:443 "GET /en/players/19e4eab9/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:41:53 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:41:53 DEBUG    https://fbref.com:443 "GET /en/players/30db8574/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:42:00 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:42:00 DEBUG    https://fbref.com:443 "GET /en/players/e892c325/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:42:00 WARNING  Player has not scouting report : https://fbref.com/en/players/e892c325/scout/365_m1/
+2022-11-21 10:42:05 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:42:05 DEBUG    https://fbref.com:443 "GET /en/players/8eb55dbb/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:42:13 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:42:13 DEBUG    https://fbref.com:443 "GET /en/players/4115ce4e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:42:19 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:42:19 DEBUG    https://fbref.com:443 "GET /en/players/50dc94ce/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:42:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:42:24 DEBUG    https://fbref.com:443 "GET /en/players/7b4de647/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:42:24 WARNING  Player has not scouting report : https://fbref.com/en/players/7b4de647/scout/365_m1/
+2022-11-21 10:42:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:42:28 DEBUG    https://fbref.com:443 "GET /en/players/5e6355f8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:42:28 WARNING  Player has not scouting report : https://fbref.com/en/players/5e6355f8/scout/365_m1/
+2022-11-21 10:42:34 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:42:34 DEBUG    https://fbref.com:443 "GET /en/players/30ae134d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:42:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:42:39 DEBUG    https://fbref.com:443 "GET /en/players/4a5e83ad/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:42:44 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:42:44 DEBUG    https://fbref.com:443 "GET /en/players/5680bf3f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:42:44 ERROR    Error with player : https://fbref.com/en/players/5680bf3f/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 10:42:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:42:50 DEBUG    https://fbref.com:443 "GET /en/players/1a248246/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:42:54 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:42:54 DEBUG    https://fbref.com:443 "GET /en/players/2b1bed19/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:43:01 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:43:01 DEBUG    https://fbref.com:443 "GET /en/players/857a5abe/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:43:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:43:09 DEBUG    https://fbref.com:443 "GET /en/players/a39d11bc/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:43:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:43:15 DEBUG    https://fbref.com:443 "GET /en/players/e3756e72/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:43:16 ERROR    Error with player : https://fbref.com/en/players/e3756e72/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 10:43:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:43:21 DEBUG    https://fbref.com:443 "GET /en/players/bee0bab1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:43:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:43:28 DEBUG    https://fbref.com:443 "GET /en/players/10f0fdd3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:43:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:43:36 DEBUG    https://fbref.com:443 "GET /en/players/f874dd44/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:43:43 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:43:44 DEBUG    https://fbref.com:443 "GET /en/players/57d88cf9/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:43:48 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:43:48 DEBUG    https://fbref.com:443 "GET /en/players/d705ba44/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:43:54 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:43:54 DEBUG    https://fbref.com:443 "GET /en/players/ed5c5fa3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:44:02 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:44:02 DEBUG    https://fbref.com:443 "GET /en/players/942b4f90/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:44:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:44:07 DEBUG    https://fbref.com:443 "GET /en/players/0000acda/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:44:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:44:13 DEBUG    https://fbref.com:443 "GET /en/players/db092d3b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:44:17 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:44:17 DEBUG    https://fbref.com:443 "GET /en/players/5a04fd92/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:44:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:44:26 DEBUG    https://fbref.com:443 "GET /en/players/378825c7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:44:33 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:44:33 DEBUG    https://fbref.com:443 "GET /en/players/3189f61a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:44:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:44:40 DEBUG    https://fbref.com:443 "GET /en/players/3b8674e6/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:44:45 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:44:46 DEBUG    https://fbref.com:443 "GET /en/players/70d74ece/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:44:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:44:50 DEBUG    https://fbref.com:443 "GET /en/players/53a0e358/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:44:55 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:44:55 DEBUG    https://fbref.com:443 "GET /en/players/b6e50615/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:00 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:45:00 DEBUG    https://fbref.com:443 "GET /en/players/dc1c2fce/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:06 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:45:06 DEBUG    https://fbref.com:443 "GET /en/players/61b3978f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:45:14 DEBUG    https://fbref.com:443 "GET /en/players/e4114f5d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:45:18 DEBUG    https://fbref.com:443 "GET /en/players/0b2c9aec/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:45:24 DEBUG    https://fbref.com:443 "GET /en/players/eb6e14be/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:45:29 DEBUG    https://fbref.com:443 "GET /en/players/3916b09c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:33 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:45:33 DEBUG    https://fbref.com:443 "GET /en/players/28dabd43/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:45:40 DEBUG    https://fbref.com:443 "GET /en/players/433dc9a2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:45 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:45:45 DEBUG    https://fbref.com:443 "GET /en/players/03e91055/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:45:52 DEBUG    https://fbref.com:443 "GET /en/players/ed5c0319/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:56 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:45:56 DEBUG    https://fbref.com:443 "GET /en/players/87966294/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:45:56 WARNING  Player has not scouting report : https://fbref.com/en/players/87966294/scout/365_m1/
+2022-11-21 10:46:02 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:46:03 DEBUG    https://fbref.com:443 "GET /en/players/b3a20f18/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:46:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:46:10 DEBUG    https://fbref.com:443 "GET /en/players/de40e38c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:46:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:46:15 DEBUG    https://fbref.com:443 "GET /en/players/697295b1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:46:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:46:21 DEBUG    https://fbref.com:443 "GET /en/players/6fdac234/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:46:26 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:46:26 DEBUG    https://fbref.com:443 "GET /en/players/47c609d5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:46:32 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:46:33 DEBUG    https://fbref.com:443 "GET /en/players/d328a254/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:46:38 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:46:38 DEBUG    https://fbref.com:443 "GET /en/players/a3e1d20d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:46:45 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:46:45 DEBUG    https://fbref.com:443 "GET /en/players/9e1577aa/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:46:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:46:51 DEBUG    https://fbref.com:443 "GET /en/players/204ac005/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:46:51 ERROR    Error with player : https://fbref.com/en/players/204ac005/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 10:46:55 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:46:55 DEBUG    https://fbref.com:443 "GET /en/players/636247ca/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:46:55 WARNING  Player has not scouting report : https://fbref.com/en/players/636247ca/scout/365_m1/
+2022-11-21 10:47:02 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:47:02 DEBUG    https://fbref.com:443 "GET /en/players/07d3bfec/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:47:02 WARNING  Player has not scouting report : https://fbref.com/en/players/07d3bfec/scout/365_m1/
+2022-11-21 10:47:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:47:09 DEBUG    https://fbref.com:443 "GET /en/players/6c203af0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:47:17 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:47:17 DEBUG    https://fbref.com:443 "GET /en/players/79370f8c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:47:17 WARNING  Player has not scouting report : https://fbref.com/en/players/79370f8c/scout/365_m1/
+2022-11-21 10:47:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:47:22 DEBUG    https://fbref.com:443 "GET /en/players/dc62fbee/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:47:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:47:30 DEBUG    https://fbref.com:443 "GET /en/players/3d214e5f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:47:37 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:47:37 DEBUG    https://fbref.com:443 "GET /en/players/506daeac/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:47:37 WARNING  Player has not scouting report : https://fbref.com/en/players/506daeac/scout/365_m1/
+2022-11-21 10:47:43 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:47:44 DEBUG    https://fbref.com:443 "GET /en/players/967f34d3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:47:44 WARNING  Player has not scouting report : https://fbref.com/en/players/967f34d3/scout/365_m1/
+2022-11-21 10:47:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:47:50 DEBUG    https://fbref.com:443 "GET /en/players/6191093d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:47:55 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:47:56 DEBUG    https://fbref.com:443 "GET /en/players/663e080e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:48:02 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:48:02 DEBUG    https://fbref.com:443 "GET /en/players/3cdfc63e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:48:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:48:10 DEBUG    https://fbref.com:443 "GET /en/players/6a9e4913/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:48:10 WARNING  Player has not scouting report : https://fbref.com/en/players/6a9e4913/scout/365_m1/
+2022-11-21 10:48:17 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:48:17 DEBUG    https://fbref.com:443 "GET /en/players/c69ef855/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:48:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:48:22 DEBUG    https://fbref.com:443 "GET /en/players/5b479568/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:48:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:48:28 DEBUG    https://fbref.com:443 "GET /en/players/2db2fd7b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:48:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:48:36 DEBUG    https://fbref.com:443 "GET /en/players/f4ec4fd0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:48:43 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:48:43 DEBUG    https://fbref.com:443 "GET /en/players/7d937aa1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:48:43 WARNING  Player has not scouting report : https://fbref.com/en/players/7d937aa1/scout/365_m1/
+2022-11-21 10:48:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:48:49 DEBUG    https://fbref.com:443 "GET /en/players/635f2732/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:48:54 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:48:54 DEBUG    https://fbref.com:443 "GET /en/players/fe012aca/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:48:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:48:59 DEBUG    https://fbref.com:443 "GET /en/players/c83c203f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:49:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:49:07 DEBUG    https://fbref.com:443 "GET /en/players/f6496133/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:49:11 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:49:11 DEBUG    https://fbref.com:443 "GET /en/players/a4ac4b8f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:49:19 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:49:19 DEBUG    https://fbref.com:443 "GET /en/players/d995ed27/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:49:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:49:26 DEBUG    https://fbref.com:443 "GET /en/players/bf57eaab/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:49:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:49:30 DEBUG    https://fbref.com:443 "GET /en/players/0def2376/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:49:30 WARNING  Player has not scouting report : https://fbref.com/en/players/0def2376/scout/365_m1/
+2022-11-21 10:49:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:49:36 DEBUG    https://fbref.com:443 "GET /en/players/0da6a13e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:49:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:49:42 DEBUG    https://fbref.com:443 "GET /en/players/fb77bfef/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:49:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:49:50 DEBUG    https://fbref.com:443 "GET /en/players/52ec54d0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:49:54 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:49:54 DEBUG    https://fbref.com:443 "GET /en/players/9f936061/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:49:54 ERROR    Error with player : https://fbref.com/en/players/9f936061/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 10:49:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:50:00 DEBUG    https://fbref.com:443 "GET /en/players/36578017/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:50:00 WARNING  Player has not scouting report : https://fbref.com/en/players/36578017/scout/365_m1/
+2022-11-21 10:50:05 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:50:05 DEBUG    https://fbref.com:443 "GET /en/players/01834aa0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:50:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:50:10 DEBUG    https://fbref.com:443 "GET /en/players/c68da769/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:50:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:50:18 DEBUG    https://fbref.com:443 "GET /en/players/3d13d9e4/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:50:18 WARNING  Player has not scouting report : https://fbref.com/en/players/3d13d9e4/scout/365_m1/
+2022-11-21 10:50:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:50:24 DEBUG    https://fbref.com:443 "GET /en/players/ccce7025/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:50:32 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:50:32 DEBUG    https://fbref.com:443 "GET /en/players/c03b7266/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:50:32 WARNING  Player has not scouting report : https://fbref.com/en/players/c03b7266/scout/365_m1/
+2022-11-21 10:50:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:50:36 DEBUG    https://fbref.com:443 "GET /en/players/65fcf987/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:50:36 WARNING  Player has not scouting report : https://fbref.com/en/players/65fcf987/scout/365_m1/
+2022-11-21 10:50:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:50:42 DEBUG    https://fbref.com:443 "GET /en/players/f9d5908e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:50:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:50:47 DEBUG    https://fbref.com:443 "GET /en/players/b0c71810/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:50:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:50:53 DEBUG    https://fbref.com:443 "GET /en/players/7f271d74/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:50:53 WARNING  Player has not scouting report : https://fbref.com/en/players/7f271d74/scout/365_m1/
+2022-11-21 10:51:00 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:51:00 DEBUG    https://fbref.com:443 "GET /en/players/f6798fc3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:51:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:51:07 DEBUG    https://fbref.com:443 "GET /en/players/62e02107/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:51:08 WARNING  Player has not scouting report : https://fbref.com/en/players/62e02107/scout/365_m1/
+2022-11-21 10:51:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:51:15 DEBUG    https://fbref.com:443 "GET /en/players/0d077b88/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:51:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:51:21 DEBUG    https://fbref.com:443 "GET /en/players/20e73fac/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:51:26 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:51:26 DEBUG    https://fbref.com:443 "GET /en/players/ae94a6c5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:51:26 WARNING  Player has not scouting report : https://fbref.com/en/players/ae94a6c5/scout/365_m1/
+2022-11-21 10:51:31 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:51:31 DEBUG    https://fbref.com:443 "GET /en/players/79c84d1c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:51:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:51:36 DEBUG    https://fbref.com:443 "GET /en/players/d49f3e6b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:51:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:51:43 DEBUG    https://fbref.com:443 "GET /en/players/8bbe2df5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:51:43 ERROR    Error with player : https://fbref.com/en/players/8bbe2df5/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 10:51:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:51:47 DEBUG    https://fbref.com:443 "GET /en/players/02bcaf8e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:51:53 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:51:53 DEBUG    https://fbref.com:443 "GET /en/players/fd771f95/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:51:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:51:58 DEBUG    https://fbref.com:443 "GET /en/players/2475cf9b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:51:58 WARNING  Player has not scouting report : https://fbref.com/en/players/2475cf9b/scout/365_m1/
+2022-11-21 10:52:04 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:52:04 DEBUG    https://fbref.com:443 "GET /en/players/a167537f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:52:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:52:09 DEBUG    https://fbref.com:443 "GET /en/players/4accb7e0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:52:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:52:16 DEBUG    https://fbref.com:443 "GET /en/players/5b146df3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:52:20 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:52:20 DEBUG    https://fbref.com:443 "GET /en/players/10072610/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:52:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:52:28 DEBUG    https://fbref.com:443 "GET /en/players/d4a2533d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:52:33 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:52:33 DEBUG    https://fbref.com:443 "GET /en/players/5fd5ed86/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:52:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:52:39 DEBUG    https://fbref.com:443 "GET /en/players/97220da2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:52:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:52:47 DEBUG    https://fbref.com:443 "GET /en/players/edd81e2a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:52:54 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:52:54 DEBUG    https://fbref.com:443 "GET /en/players/33b8d077/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:53:02 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:53:03 DEBUG    https://fbref.com:443 "GET /en/players/f0a37d36/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:53:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:53:12 DEBUG    https://fbref.com:443 "GET /en/players/4e204552/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:53:16 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:53:16 DEBUG    https://fbref.com:443 "GET /en/players/b088d5d3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:53:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:53:21 DEBUG    https://fbref.com:443 "GET /en/players/7b5ab7f2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:53:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:53:28 DEBUG    https://fbref.com:443 "GET /en/players/af69e7f0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:53:28 WARNING  Player has not scouting report : https://fbref.com/en/players/af69e7f0/scout/365_m1/
+2022-11-21 10:53:34 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:53:34 DEBUG    https://fbref.com:443 "GET /en/players/45e95f21/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:53:34 WARNING  Player has not scouting report : https://fbref.com/en/players/45e95f21/scout/365_m1/
+2022-11-21 10:53:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:53:39 DEBUG    https://fbref.com:443 "GET /en/players/8f3565b3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:53:45 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:53:46 DEBUG    https://fbref.com:443 "GET /en/players/66b76d44/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:53:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:53:51 DEBUG    https://fbref.com:443 "GET /en/players/bfc3b3a0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:53:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:53:58 DEBUG    https://fbref.com:443 "GET /en/players/edc98fac/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:54:05 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:54:05 DEBUG    https://fbref.com:443 "GET /en/players/3b676989/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:54:05 WARNING  Player has not scouting report : https://fbref.com/en/players/3b676989/scout/365_m1/
+2022-11-21 10:54:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:54:10 DEBUG    https://fbref.com:443 "GET /en/players/ab5b7dc1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:54:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:54:14 DEBUG    https://fbref.com:443 "GET /en/players/f3a9fa26/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:54:14 WARNING  Player has not scouting report : https://fbref.com/en/players/f3a9fa26/scout/365_m1/
+2022-11-21 10:54:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:54:19 DEBUG    https://fbref.com:443 "GET /en/players/4ae67f27/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:54:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:54:25 DEBUG    https://fbref.com:443 "GET /en/players/05e2d5ea/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:54:25 WARNING  Player has not scouting report : https://fbref.com/en/players/05e2d5ea/scout/365_m1/
+2022-11-21 10:54:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:54:31 DEBUG    https://fbref.com:443 "GET /en/players/05f99a4a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:54:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:54:36 DEBUG    https://fbref.com:443 "GET /en/players/f631c17f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:54:36 WARNING  Player has not scouting report : https://fbref.com/en/players/f631c17f/scout/365_m1/
+2022-11-21 10:54:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:54:42 DEBUG    https://fbref.com:443 "GET /en/players/b2d31e83/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:54:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:54:50 DEBUG    https://fbref.com:443 "GET /en/players/7b082ec2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:54:57 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:54:57 DEBUG    https://fbref.com:443 "GET /en/players/5ab0ea87/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:01 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:55:02 DEBUG    https://fbref.com:443 "GET /en/players/db87a2c4/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:02 WARNING  Player has not scouting report : https://fbref.com/en/players/db87a2c4/scout/365_m1/
+2022-11-21 10:55:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:55:07 DEBUG    https://fbref.com:443 "GET /en/players/10745192/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:07 WARNING  Player has not scouting report : https://fbref.com/en/players/10745192/scout/365_m1/
+2022-11-21 10:55:13 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:55:13 DEBUG    https://fbref.com:443 "GET /en/players/ef6eef89/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:13 WARNING  Player has not scouting report : https://fbref.com/en/players/ef6eef89/scout/365_m1/
+2022-11-21 10:55:19 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:55:19 DEBUG    https://fbref.com:443 "GET /en/players/148e136f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:55:25 DEBUG    https://fbref.com:443 "GET /en/players/46359159/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:25 ERROR    Error with player : https://fbref.com/en/players/46359159/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 10:55:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:55:30 DEBUG    https://fbref.com:443 "GET /en/players/69cbc8b6/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:55:35 DEBUG    https://fbref.com:443 "GET /en/players/dd86e8e4/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:55:40 DEBUG    https://fbref.com:443 "GET /en/players/0118c54c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:45 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:55:45 DEBUG    https://fbref.com:443 "GET /en/players/85322440/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:45 WARNING  Player has not scouting report : https://fbref.com/en/players/85322440/scout/365_m1/
+2022-11-21 10:55:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:55:49 DEBUG    https://fbref.com:443 "GET /en/players/16264a81/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:55 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:55:55 DEBUG    https://fbref.com:443 "GET /en/players/a8748947/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:55:55 WARNING  Player has not scouting report : https://fbref.com/en/players/a8748947/scout/365_m1/
+2022-11-21 10:56:02 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:56:02 DEBUG    https://fbref.com:443 "GET /en/players/928a4a61/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:56:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:56:07 DEBUG    https://fbref.com:443 "GET /en/players/fe05804b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:56:13 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:56:13 DEBUG    https://fbref.com:443 "GET /en/players/2146785a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:56:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:56:21 DEBUG    https://fbref.com:443 "GET /en/players/ac7e640b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:56:26 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:56:26 DEBUG    https://fbref.com:443 "GET /en/players/226008f1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:56:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:56:30 DEBUG    https://fbref.com:443 "GET /en/players/41b3069f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:56:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:56:35 DEBUG    https://fbref.com:443 "GET /en/players/94f8d10c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:56:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:56:40 DEBUG    https://fbref.com:443 "GET /en/players/cd0fa27b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:56:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:56:47 DEBUG    https://fbref.com:443 "GET /en/players/d1db4b83/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:56:47 WARNING  Player has not scouting report : https://fbref.com/en/players/d1db4b83/scout/365_m1/
+2022-11-21 10:56:54 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:56:54 DEBUG    https://fbref.com:443 "GET /en/players/d1273f09/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:56:54 ERROR    Error with player : https://fbref.com/en/players/d1273f09/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 10:56:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:56:59 DEBUG    https://fbref.com:443 "GET /en/players/59e6e5bf/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:57:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:57:07 DEBUG    https://fbref.com:443 "GET /en/players/8577e60a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:57:11 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:57:11 DEBUG    https://fbref.com:443 "GET /en/players/13ea2544/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:57:17 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:57:17 DEBUG    https://fbref.com:443 "GET /en/players/489e80e3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:57:23 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:57:23 DEBUG    https://fbref.com:443 "GET /en/players/7d3dfdfd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:57:23 WARNING  Player has not scouting report : https://fbref.com/en/players/7d3dfdfd/scout/365_m1/
+2022-11-21 10:57:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:57:27 DEBUG    https://fbref.com:443 "GET /en/players/7b9c2d84/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:57:34 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:57:35 DEBUG    https://fbref.com:443 "GET /en/players/91ff775f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:57:35 WARNING  Player has not scouting report : https://fbref.com/en/players/91ff775f/scout/365_m1/
+2022-11-21 10:57:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:57:39 DEBUG    https://fbref.com:443 "GET /en/players/247ed022/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:57:46 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:57:46 DEBUG    https://fbref.com:443 "GET /en/players/9f4a940f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:57:46 WARNING  Player has not scouting report : https://fbref.com/en/players/9f4a940f/scout/365_m1/
+2022-11-21 10:57:53 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:57:54 DEBUG    https://fbref.com:443 "GET /en/players/873619c6/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:58:01 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:58:01 DEBUG    https://fbref.com:443 "GET /en/players/6f711f67/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:58:01 WARNING  Player has not scouting report : https://fbref.com/en/players/6f711f67/scout/365_m1/
+2022-11-21 10:58:05 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:58:05 DEBUG    https://fbref.com:443 "GET /en/players/a65ce836/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:58:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:58:10 DEBUG    https://fbref.com:443 "GET /en/players/a6de370d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:58:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:58:15 DEBUG    https://fbref.com:443 "GET /en/players/b6a1cdf9/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:58:20 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:58:21 DEBUG    https://fbref.com:443 "GET /en/players/bd6351cd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:58:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:58:28 DEBUG    https://fbref.com:443 "GET /en/players/356c9002/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:58:33 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:58:33 DEBUG    https://fbref.com:443 "GET /en/players/4506aec5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:58:33 WARNING  Player has not scouting report : https://fbref.com/en/players/4506aec5/scout/365_m1/
+2022-11-21 10:58:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:58:40 DEBUG    https://fbref.com:443 "GET /en/players/1137759d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:58:40 ERROR    Error with player : https://fbref.com/en/players/1137759d/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 10:58:46 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:58:46 DEBUG    https://fbref.com:443 "GET /en/players/37f1cf47/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:58:47 WARNING  Player has not scouting report : https://fbref.com/en/players/37f1cf47/scout/365_m1/
+2022-11-21 10:58:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:58:51 DEBUG    https://fbref.com:443 "GET /en/players/79b2399c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:58:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:58:58 DEBUG    https://fbref.com:443 "GET /en/players/5acc4a10/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:59:03 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:59:03 DEBUG    https://fbref.com:443 "GET /en/players/54e53b7e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:59:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:59:09 DEBUG    https://fbref.com:443 "GET /en/players/5bd72174/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:59:16 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:59:16 DEBUG    https://fbref.com:443 "GET /en/players/f81ef10d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:59:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:59:22 DEBUG    https://fbref.com:443 "GET /en/players/f7e2af2c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:59:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:59:27 DEBUG    https://fbref.com:443 "GET /en/players/707b98f1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:59:27 WARNING  Player has not scouting report : https://fbref.com/en/players/707b98f1/scout/365_m1/
+2022-11-21 10:59:32 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:59:32 DEBUG    https://fbref.com:443 "GET /en/players/c4b888df/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:59:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:59:39 DEBUG    https://fbref.com:443 "GET /en/players/5e080f73/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:59:43 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:59:44 DEBUG    https://fbref.com:443 "GET /en/players/8d3cd59d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:59:44 ERROR    Error with player : https://fbref.com/en/players/8d3cd59d/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 10:59:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:59:49 DEBUG    https://fbref.com:443 "GET /en/players/b4a014b1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 10:59:55 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 10:59:55 DEBUG    https://fbref.com:443 "GET /en/players/688b96e3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:00:01 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:00:01 DEBUG    https://fbref.com:443 "GET /en/players/5b93209a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:00:01 WARNING  Player has not scouting report : https://fbref.com/en/players/5b93209a/scout/365_m1/
+2022-11-21 11:00:06 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:00:06 DEBUG    https://fbref.com:443 "GET /en/players/2dce876a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:00:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:00:12 DEBUG    https://fbref.com:443 "GET /en/players/8ec56e62/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:00:16 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:00:17 DEBUG    https://fbref.com:443 "GET /en/players/de39485a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:00:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:00:21 DEBUG    https://fbref.com:443 "GET /en/players/4958bfb2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:00:26 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:00:26 DEBUG    https://fbref.com:443 "GET /en/players/966e28d0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:00:33 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:00:33 DEBUG    https://fbref.com:443 "GET /en/players/8608f269/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:00:33 WARNING  Player has not scouting report : https://fbref.com/en/players/8608f269/scout/365_m1/
+2022-11-21 11:00:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:00:40 DEBUG    https://fbref.com:443 "GET /en/players/dee86451/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:00:44 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:00:44 DEBUG    https://fbref.com:443 "GET /en/players/3f5f38fb/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:00:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:00:50 DEBUG    https://fbref.com:443 "GET /en/players/ebeb2c4a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:00:50 WARNING  Player has not scouting report : https://fbref.com/en/players/ebeb2c4a/scout/365_m1/
+2022-11-21 11:00:57 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:00:57 DEBUG    https://fbref.com:443 "GET /en/players/4d224fe8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:01:03 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:01:03 DEBUG    https://fbref.com:443 "GET /en/players/2389cdc2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:01:08 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:01:09 DEBUG    https://fbref.com:443 "GET /en/players/197640fd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:01:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:01:15 DEBUG    https://fbref.com:443 "GET /en/players/ad92526f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:01:15 WARNING  Player has not scouting report : https://fbref.com/en/players/ad92526f/scout/365_m1/
+2022-11-21 11:01:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:01:23 DEBUG    https://fbref.com:443 "GET /en/players/db401046/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:01:29 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:01:29 DEBUG    https://fbref.com:443 "GET /en/players/da76bab4/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:01:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:01:35 DEBUG    https://fbref.com:443 "GET /en/players/e0f3a1f6/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:01:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:01:40 DEBUG    https://fbref.com:443 "GET /en/players/130a7a3f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:01:46 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:01:46 DEBUG    https://fbref.com:443 "GET /en/players/e28868f3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:01:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:01:51 DEBUG    https://fbref.com:443 "GET /en/players/ba3d3bea/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:01:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:01:58 DEBUG    https://fbref.com:443 "GET /en/players/274ab13c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:02:04 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:02:05 DEBUG    https://fbref.com:443 "GET /en/players/4db5915d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:02:05 WARNING  Player has not scouting report : https://fbref.com/en/players/4db5915d/scout/365_m1/
+2022-11-21 11:02:11 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:02:11 DEBUG    https://fbref.com:443 "GET /en/players/c92c24f0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:02:17 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:02:18 DEBUG    https://fbref.com:443 "GET /en/players/527f063d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:02:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:02:24 DEBUG    https://fbref.com:443 "GET /en/players/c0617e2b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:02:29 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:02:29 DEBUG    https://fbref.com:443 "GET /en/players/d9624b51/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:02:33 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:02:34 DEBUG    https://fbref.com:443 "GET /en/players/07f8bcc8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:02:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:02:40 DEBUG    https://fbref.com:443 "GET /en/players/98a84572/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:02:40 WARNING  Player has not scouting report : https://fbref.com/en/players/98a84572/scout/365_m1/
+2022-11-21 11:02:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:02:48 DEBUG    https://fbref.com:443 "GET /en/players/31a62dc7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:02:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:02:52 DEBUG    https://fbref.com:443 "GET /en/players/3c6bbbab/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:02:53 ERROR    Error with player : https://fbref.com/en/players/3c6bbbab/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 11:02:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:02:59 DEBUG    https://fbref.com:443 "GET /en/players/5e1028e5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:03:03 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:03:04 DEBUG    https://fbref.com:443 "GET /en/players/9cfbad36/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:03:04 WARNING  Player has not scouting report : https://fbref.com/en/players/9cfbad36/scout/365_m1/
+2022-11-21 11:03:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:03:09 DEBUG    https://fbref.com:443 "GET /en/players/f5dfc256/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:03:09 WARNING  Player has not scouting report : https://fbref.com/en/players/f5dfc256/scout/365_m1/
+2022-11-21 11:03:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:03:14 DEBUG    https://fbref.com:443 "GET /en/players/ae7058f9/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:03:19 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:03:19 DEBUG    https://fbref.com:443 "GET /en/players/2180c761/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:03:19 WARNING  Player has not scouting report : https://fbref.com/en/players/2180c761/scout/365_m1/
+2022-11-21 11:03:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:03:24 DEBUG    https://fbref.com:443 "GET /en/players/357103bd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:03:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:03:31 DEBUG    https://fbref.com:443 "GET /en/players/422862ea/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:03:31 WARNING  Player has not scouting report : https://fbref.com/en/players/422862ea/scout/365_m1/
+2022-11-21 11:03:38 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:03:38 DEBUG    https://fbref.com:443 "GET /en/players/5515376c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:03:43 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:03:44 DEBUG    https://fbref.com:443 "GET /en/players/dc6f5bdd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:03:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:03:49 DEBUG    https://fbref.com:443 "GET /en/players/b3b7f5a6/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:03:50 ERROR    Error with player : https://fbref.com/en/players/b3b7f5a6/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 11:03:56 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:03:56 DEBUG    https://fbref.com:443 "GET /en/players/18ebca4b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:03:56 WARNING  Player has not scouting report : https://fbref.com/en/players/18ebca4b/scout/365_m1/
+2022-11-21 11:04:00 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:04:00 DEBUG    https://fbref.com:443 "GET /en/players/16aa7d4c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:04:08 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:04:08 DEBUG    https://fbref.com:443 "GET /en/players/279ddf6a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:04:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:04:15 DEBUG    https://fbref.com:443 "GET /en/players/63c5e56b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:04:15 WARNING  Player has not scouting report : https://fbref.com/en/players/63c5e56b/scout/365_m1/
+2022-11-21 11:04:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:04:21 DEBUG    https://fbref.com:443 "GET /en/players/b34c63a5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:04:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:04:29 DEBUG    https://fbref.com:443 "GET /en/players/9d498560/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:04:29 WARNING  Player has not scouting report : https://fbref.com/en/players/9d498560/scout/365_m1/
+2022-11-21 11:04:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:04:35 DEBUG    https://fbref.com:443 "GET /en/players/b3d76d84/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:04:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:04:40 DEBUG    https://fbref.com:443 "GET /en/players/48780156/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:04:41 WARNING  Player has not scouting report : https://fbref.com/en/players/48780156/scout/365_m1/
+2022-11-21 11:04:46 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:04:46 DEBUG    https://fbref.com:443 "GET /en/players/b0f7e36c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:04:46 WARNING  Player has not scouting report : https://fbref.com/en/players/b0f7e36c/scout/365_m1/
+2022-11-21 11:04:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:04:51 DEBUG    https://fbref.com:443 "GET /en/players/d2424d1b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:04:51 ERROR    Error with player : https://fbref.com/en/players/d2424d1b/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 11:04:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:04:58 DEBUG    https://fbref.com:443 "GET /en/players/c316607a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:05:05 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:05:05 DEBUG    https://fbref.com:443 "GET /en/players/68a26d51/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:05:11 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:05:12 DEBUG    https://fbref.com:443 "GET /en/players/7909ffa4/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:05:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:05:19 DEBUG    https://fbref.com:443 "GET /en/players/1cb49278/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:05:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:05:24 DEBUG    https://fbref.com:443 "GET /en/players/af104654/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:05:31 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:05:32 DEBUG    https://fbref.com:443 "GET /en/players/26ce2263/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:05:38 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:05:38 DEBUG    https://fbref.com:443 "GET /en/players/b2f9c73e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:05:38 WARNING  Player has not scouting report : https://fbref.com/en/players/b2f9c73e/scout/365_m1/
+2022-11-21 11:05:44 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:05:45 DEBUG    https://fbref.com:443 "GET /en/players/b8a642fc/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:05:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:05:52 DEBUG    https://fbref.com:443 "GET /en/players/c6608135/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:05:52 WARNING  Player has not scouting report : https://fbref.com/en/players/c6608135/scout/365_m1/
+2022-11-21 11:05:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:05:59 DEBUG    https://fbref.com:443 "GET /en/players/ec1a731e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:06:05 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:06:06 DEBUG    https://fbref.com:443 "GET /en/players/7495aba7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:06:06 WARNING  Player has not scouting report : https://fbref.com/en/players/7495aba7/scout/365_m1/
+2022-11-21 11:06:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:06:12 DEBUG    https://fbref.com:443 "GET /en/players/b09a3ecc/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:06:12 WARNING  Player has not scouting report : https://fbref.com/en/players/b09a3ecc/scout/365_m1/
+2022-11-21 11:06:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:06:18 DEBUG    https://fbref.com:443 "GET /en/players/9a0408b6/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:06:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:06:22 DEBUG    https://fbref.com:443 "GET /en/players/ff4d0258/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:06:23 WARNING  Player has not scouting report : https://fbref.com/en/players/ff4d0258/scout/365_m1/
+2022-11-21 11:06:29 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:06:29 DEBUG    https://fbref.com:443 "GET /en/players/5de3866c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:06:29 ERROR    Error with player : https://fbref.com/en/players/5de3866c/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 11:06:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:06:36 DEBUG    https://fbref.com:443 "GET /en/players/73341ace/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:06:36 WARNING  Player has not scouting report : https://fbref.com/en/players/73341ace/scout/365_m1/
+2022-11-21 11:06:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:06:40 DEBUG    https://fbref.com:443 "GET /en/players/741418c3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:06:40 WARNING  Player has not scouting report : https://fbref.com/en/players/741418c3/scout/365_m1/
+2022-11-21 11:06:46 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:06:46 DEBUG    https://fbref.com:443 "GET /en/players/5219ab4a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:06:46 ERROR    Error with player : https://fbref.com/en/players/5219ab4a/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 11:06:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:06:51 DEBUG    https://fbref.com:443 "GET /en/players/33a61a52/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:06:55 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:06:55 DEBUG    https://fbref.com:443 "GET /en/players/0442183b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:07:00 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:07:00 DEBUG    https://fbref.com:443 "GET /en/players/2928dca2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:07:08 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:07:08 DEBUG    https://fbref.com:443 "GET /en/players/3010aefb/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:07:08 ERROR    Error with player : https://fbref.com/en/players/3010aefb/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 11:07:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:07:12 DEBUG    https://fbref.com:443 "GET /en/players/c4065f40/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:07:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:07:18 DEBUG    https://fbref.com:443 "GET /en/players/963a9201/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:07:18 WARNING  Player has not scouting report : https://fbref.com/en/players/963a9201/scout/365_m1/
+2022-11-21 11:07:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:07:25 DEBUG    https://fbref.com:443 "GET /en/players/0420d84f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:07:33 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:07:33 DEBUG    https://fbref.com:443 "GET /en/players/85dace26/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:07:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:07:39 DEBUG    https://fbref.com:443 "GET /en/players/8b95acda/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:07:44 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:07:44 DEBUG    https://fbref.com:443 "GET /en/players/a8c19eb8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:07:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:07:50 DEBUG    https://fbref.com:443 "GET /en/players/04df29a5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:07:56 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:07:56 DEBUG    https://fbref.com:443 "GET /en/players/6499048c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:07:57 WARNING  Player has not scouting report : https://fbref.com/en/players/6499048c/scout/365_m1/
+2022-11-21 11:08:01 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:08:01 DEBUG    https://fbref.com:443 "GET /en/players/700783e7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:08:01 WARNING  Player has not scouting report : https://fbref.com/en/players/700783e7/scout/365_m1/
+2022-11-21 11:08:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:08:07 DEBUG    https://fbref.com:443 "GET /en/players/042e8a49/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:08:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:08:12 DEBUG    https://fbref.com:443 "GET /en/players/15937e17/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:08:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:08:19 DEBUG    https://fbref.com:443 "GET /en/players/5ae499d0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:08:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:08:25 DEBUG    https://fbref.com:443 "GET /en/players/8cabdc1e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:08:31 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:08:31 DEBUG    https://fbref.com:443 "GET /en/players/cfa49cc1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:08:38 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:08:38 DEBUG    https://fbref.com:443 "GET /en/players/8fef5412/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:08:38 WARNING  Player has not scouting report : https://fbref.com/en/players/8fef5412/scout/365_m1/
+2022-11-21 11:08:45 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:08:45 DEBUG    https://fbref.com:443 "GET /en/players/2afc7272/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:08:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:08:52 DEBUG    https://fbref.com:443 "GET /en/players/3e5e4e63/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:08:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:09:00 DEBUG    https://fbref.com:443 "GET /en/players/dc64b8b3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:09:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:09:07 DEBUG    https://fbref.com:443 "GET /en/players/0f26ffd7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:09:13 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:09:13 DEBUG    https://fbref.com:443 "GET /en/players/22ae86f9/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:09:19 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:09:20 DEBUG    https://fbref.com:443 "GET /en/players/a6951bf8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:09:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:09:28 DEBUG    https://fbref.com:443 "GET /en/players/0e7ccfc4/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:09:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:09:37 DEBUG    https://fbref.com:443 "GET /en/players/beb391dd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:09:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:09:43 DEBUG    https://fbref.com:443 "GET /en/players/fb938d24/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:09:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:09:50 DEBUG    https://fbref.com:443 "GET /en/players/01eb744d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:09:55 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:09:56 DEBUG    https://fbref.com:443 "GET /en/players/45b9b619/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:10:03 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:10:04 DEBUG    https://fbref.com:443 "GET /en/players/c78b352d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:10:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:10:12 DEBUG    https://fbref.com:443 "GET /en/players/bfc359ed/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:10:12 WARNING  Player has not scouting report : https://fbref.com/en/players/bfc359ed/scout/365_m1/
+2022-11-21 11:10:17 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:10:17 DEBUG    https://fbref.com:443 "GET /en/players/5ddb8f9f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:10:18 ERROR    Error with player : https://fbref.com/en/players/5ddb8f9f/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 11:10:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:10:23 DEBUG    https://fbref.com:443 "GET /en/players/59948ef7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:10:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:10:31 DEBUG    https://fbref.com:443 "GET /en/players/a190d597/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:10:31 WARNING  Player has not scouting report : https://fbref.com/en/players/a190d597/scout/365_m1/
+2022-11-21 11:10:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:10:35 DEBUG    https://fbref.com:443 "GET /en/players/808d48f3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:10:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:10:41 DEBUG    https://fbref.com:443 "GET /en/players/bfb2056e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:10:41 WARNING  Player has not scouting report : https://fbref.com/en/players/bfb2056e/scout/365_m1/
+2022-11-21 11:10:46 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:10:47 DEBUG    https://fbref.com:443 "GET /en/players/909222de/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:10:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:10:52 DEBUG    https://fbref.com:443 "GET /en/players/76c2a023/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:10:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:11:00 DEBUG    https://fbref.com:443 "GET /en/players/2434f24a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:11:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:11:08 DEBUG    https://fbref.com:443 "GET /en/players/fdf3cb77/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:11:13 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:11:14 DEBUG    https://fbref.com:443 "GET /en/players/85a44ecc/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:11:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:11:21 DEBUG    https://fbref.com:443 "GET /en/players/05ba9d7c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:11:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:11:28 DEBUG    https://fbref.com:443 "GET /en/players/1840e36d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:11:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:11:35 DEBUG    https://fbref.com:443 "GET /en/players/ef8ae23b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:11:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:11:41 DEBUG    https://fbref.com:443 "GET /en/players/0ef89a37/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:11:48 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:11:49 DEBUG    https://fbref.com:443 "GET /en/players/1944818c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:11:55 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:11:55 DEBUG    https://fbref.com:443 "GET /en/players/a5ca9127/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:11:55 WARNING  Player has not scouting report : https://fbref.com/en/players/a5ca9127/scout/365_m1/
+2022-11-21 11:11:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:12:00 DEBUG    https://fbref.com:443 "GET /en/players/8f325097/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:12:08 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:12:09 DEBUG    https://fbref.com:443 "GET /en/players/4f974391/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:12:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:12:16 DEBUG    https://fbref.com:443 "GET /en/players/16657b95/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:12:23 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:12:24 DEBUG    https://fbref.com:443 "GET /en/players/a56da3ba/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:12:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:12:31 DEBUG    https://fbref.com:443 "GET /en/players/cc2dd8a5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:12:31 WARNING  Player has not scouting report : https://fbref.com/en/players/cc2dd8a5/scout/365_m1/
+2022-11-21 11:12:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:12:36 DEBUG    https://fbref.com:443 "GET /en/players/0ab1f153/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:12:44 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:12:44 DEBUG    https://fbref.com:443 "GET /en/players/1daec722/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:12:49 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:12:50 DEBUG    https://fbref.com:443 "GET /en/players/0abc51f2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:12:56 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:12:57 DEBUG    https://fbref.com:443 "GET /en/players/192c89a6/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:12:57 WARNING  Player has not scouting report : https://fbref.com/en/players/192c89a6/scout/365_m1/
+2022-11-21 11:13:02 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:13:03 DEBUG    https://fbref.com:443 "GET /en/players/dc62b55d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:13:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:13:11 DEBUG    https://fbref.com:443 "GET /en/players/f9a225f5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:13:11 WARNING  Player has not scouting report : https://fbref.com/en/players/f9a225f5/scout/365_m1/
+2022-11-21 11:13:17 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:13:18 DEBUG    https://fbref.com:443 "GET /en/players/060606ec/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:13:18 WARNING  Player has not scouting report : https://fbref.com/en/players/060606ec/scout/365_m1/
+2022-11-21 11:13:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:13:24 DEBUG    https://fbref.com:443 "GET /en/players/44eb9093/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:13:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:13:31 DEBUG    https://fbref.com:443 "GET /en/players/f778fe3f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:13:31 WARNING  Player has not scouting report : https://fbref.com/en/players/f778fe3f/scout/365_m1/
+2022-11-21 11:13:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:13:38 DEBUG    https://fbref.com:443 "GET /en/players/1ec7e1c5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:13:44 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:13:45 DEBUG    https://fbref.com:443 "GET /en/players/eac044ad/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:13:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:13:50 DEBUG    https://fbref.com:443 "GET /en/players/29c02c9f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:13:51 ERROR    Error with player : https://fbref.com/en/players/29c02c9f/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-21 11:13:57 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:13:57 DEBUG    https://fbref.com:443 "GET /en/players/db4ed67b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:14:06 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:14:07 DEBUG    https://fbref.com:443 "GET /en/players/ca45605e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:14:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:14:12 DEBUG    https://fbref.com:443 "GET /en/players/b70afb45/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 11:14:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 11:14:19 DEBUG    https://fbref.com:443 "GET /en/players/d9565625/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:34:01 DEBUG    ----------- Starting -----------
+2022-11-21 14:34:02 DEBUG    Starting fbref scrapping
+2022-11-21 14:34:02 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:34:23 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-21 14:34:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:34:29 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:34:37 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:34:37 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:34:44 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:34:45 DEBUG    https://fbref.com:443 "GET /en/players/7978cbf0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:34:45 WARNING  Player has not scouting report : https://fbref.com/en/players/7978cbf0/scout/365_m1/
+2022-11-21 14:34:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:34:52 DEBUG    https://fbref.com:443 "GET /en/players/82464ce3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:34:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:34:59 DEBUG    https://fbref.com:443 "GET /en/players/31626657/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:35:04 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:35:05 DEBUG    https://fbref.com:443 "GET /en/players/0e46fa2f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:35:05 WARNING  Player has not scouting report : https://fbref.com/en/players/0e46fa2f/scout/365_m1/
+2022-11-21 14:35:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:35:11 DEBUG    https://fbref.com:443 "GET /en/players/c2a6033c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:35:19 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:35:21 DEBUG    https://fbref.com:443 "GET /en/players/f586779e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:35:27 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:35:28 DEBUG    https://fbref.com:443 "GET /en/players/b96b595c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:35:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:35:35 DEBUG    https://fbref.com:443 "GET /en/players/1e93fc5d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:35:35 WARNING  Player has not scouting report : https://fbref.com/en/players/1e93fc5d/scout/365_m1/
+2022-11-21 14:35:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:35:40 DEBUG    https://fbref.com:443 "GET /en/players/81442ecb/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-21 14:35:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-21 14:35:48 DEBUG    https://fbref.com:443 "GET /en/players/f2bf1b0f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 13:38:45 DEBUG    ----------- Starting -----------
+2022-11-23 13:40:58 DEBUG    ----------- Starting -----------
+2022-11-23 13:45:04 DEBUG    ----------- Starting -----------
+2022-11-23 13:45:06 DEBUG    ----------- Starting -----------
+2022-11-23 13:46:55 DEBUG    ----------- Starting -----------
+2022-11-23 13:57:32 DEBUG    ----------- Starting -----------
+2022-11-23 13:57:45 DEBUG    ----------- Starting -----------
+2022-11-23 13:58:41 DEBUG    ----------- Starting -----------
+2022-11-23 14:02:35 DEBUG    ----------- Starting -----------
+2022-11-23 14:02:52 DEBUG    ----------- Starting -----------
+2022-11-23 14:13:59 DEBUG    ----------- Starting -----------
+2022-11-23 14:15:18 DEBUG    ----------- Starting -----------
+2022-11-23 14:16:28 DEBUG    ----------- Starting -----------
+2022-11-23 14:17:28 DEBUG    ----------- Starting -----------
+2022-11-23 14:17:36 DEBUG    ----------- Starting -----------
+2022-11-23 14:18:01 DEBUG    ----------- Starting -----------
+2022-11-23 14:19:02 DEBUG    ----------- Starting -----------
+2022-11-23 14:19:17 DEBUG    ----------- Starting -----------
+2022-11-23 14:19:47 DEBUG    ----------- Starting -----------
+2022-11-23 14:20:07 DEBUG    ----------- Starting -----------
+2022-11-23 14:20:25 DEBUG    ----------- Starting -----------
+2022-11-23 14:21:16 DEBUG    ----------- Starting -----------
+2022-11-23 14:21:50 DEBUG    ----------- Starting -----------
+2022-11-23 14:22:05 DEBUG    ----------- Starting -----------
+2022-11-23 14:22:16 DEBUG    ----------- Starting -----------
+2022-11-23 14:23:04 DEBUG    ----------- Starting -----------
+2022-11-23 14:24:21 DEBUG    ----------- Starting -----------
+2022-11-23 14:24:35 DEBUG    ----------- Starting -----------
+2022-11-23 14:26:17 DEBUG    ----------- Starting -----------
+2022-11-23 14:27:04 DEBUG    ----------- Starting -----------
+2022-11-23 14:27:49 DEBUG    ----------- Starting -----------
+2022-11-23 14:30:55 DEBUG    ----------- Starting -----------
+2022-11-23 14:34:01 DEBUG    ----------- Starting -----------
+2022-11-23 15:03:35 DEBUG    ----------- Starting -----------
+2022-11-23 15:14:23 DEBUG    ----------- Starting -----------
+2022-11-23 15:19:10 DEBUG    ----------- Starting -----------
+2022-11-23 15:19:30 DEBUG    ----------- Starting -----------
+2022-11-23 15:24:04 DEBUG    ----------- Starting -----------
+2022-11-23 15:24:04 DEBUG    Starting fbref scrapping
+2022-11-23 15:24:04 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:24:30 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-23 15:24:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:24:37 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:24:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:24:44 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:24:48 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:24:49 DEBUG    https://fbref.com:443 "GET /en/players/7978cbf0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:24:49 WARNING  Player has not scouting report : https://fbref.com/en/players/7978cbf0/scout/365_m1/
+2022-11-23 15:24:55 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:24:56 DEBUG    https://fbref.com:443 "GET /en/players/82464ce3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:25:01 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:25:02 DEBUG    https://fbref.com:443 "GET /en/players/31626657/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:25:06 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:25:07 DEBUG    https://fbref.com:443 "GET /en/players/0e46fa2f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:25:07 WARNING  Player has not scouting report : https://fbref.com/en/players/0e46fa2f/scout/365_m1/
+2022-11-23 15:25:13 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:25:14 DEBUG    https://fbref.com:443 "GET /en/players/c2a6033c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:25:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:25:25 DEBUG    https://fbref.com:443 "GET /en/players/f586779e/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:25:31 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:25:33 DEBUG    https://fbref.com:443 "GET /en/players/b96b595c/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:25:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:25:40 DEBUG    https://fbref.com:443 "GET /en/players/1e93fc5d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:25:40 WARNING  Player has not scouting report : https://fbref.com/en/players/1e93fc5d/scout/365_m1/
+2022-11-23 15:25:46 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:25:47 DEBUG    https://fbref.com:443 "GET /en/players/81442ecb/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:25:54 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:25:54 DEBUG    https://fbref.com:443 "GET /en/players/f2bf1b0f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:25:59 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:26:00 DEBUG    https://fbref.com:443 "GET /en/players/2b09d998/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:26:06 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:26:08 DEBUG    https://fbref.com:443 "GET /en/players/22919e97/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:26:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:26:16 DEBUG    https://fbref.com:443 "GET /en/players/c81d773d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:26:24 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:26:25 DEBUG    https://fbref.com:443 "GET /en/players/7587446d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:26:25 WARNING  Player has not scouting report : https://fbref.com/en/players/7587446d/scout/365_m1/
+2022-11-23 15:26:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:26:31 DEBUG    https://fbref.com:443 "GET /en/players/501055d8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:26:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:26:36 DEBUG    https://fbref.com:443 "GET /en/players/dcfb17f4/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:26:42 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:26:43 DEBUG    https://fbref.com:443 "GET /en/players/26777636/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:26:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:26:52 DEBUG    https://fbref.com:443 "GET /en/players/f9c927de/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:26:57 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:26:58 DEBUG    https://fbref.com:443 "GET /en/players/0154d290/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:27:02 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:27:03 DEBUG    https://fbref.com:443 "GET /en/players/75f1ed80/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:27:10 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:27:11 DEBUG    https://fbref.com:443 "GET /en/players/8bc8829a/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:27:18 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:27:19 DEBUG    https://fbref.com:443 "GET /en/players/cb6d81b3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:27:19 WARNING  Player has not scouting report : https://fbref.com/en/players/cb6d81b3/scout/365_m1/
+2022-11-23 15:27:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:27:26 DEBUG    https://fbref.com:443 "GET /en/players/014aa7bd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:27:31 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:27:32 DEBUG    https://fbref.com:443 "GET /en/players/46fa7204/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:27:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:27:40 DEBUG    https://fbref.com:443 "GET /en/players/288e1e13/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:27:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:27:48 DEBUG    https://fbref.com:443 "GET /en/players/3dd738a1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:27:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:27:53 DEBUG    https://fbref.com:443 "GET /en/players/a6c58494/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:27:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:27:59 DEBUG    https://fbref.com:443 "GET /en/players/48b28bfd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:28:05 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:28:06 DEBUG    https://fbref.com:443 "GET /en/players/18abe173/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:28:12 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:28:12 DEBUG    https://fbref.com:443 "GET /en/players/246d153b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:28:13 ERROR    Error with player : https://fbref.com/en/players/246d153b/scout/365_m1/
+'NoneType' object has no attribute 'find_all'
+2022-11-23 15:28:19 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:28:20 DEBUG    https://fbref.com:443 "GET /en/players/9b398aea/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:28:25 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:28:25 DEBUG    https://fbref.com:443 "GET /en/players/d810c13b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:28:32 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:28:33 DEBUG    https://fbref.com:443 "GET /en/players/a8c0acb7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:28:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:28:41 DEBUG    https://fbref.com:443 "GET /en/players/462475ed/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:28:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:28:48 DEBUG    https://fbref.com:443 "GET /en/players/89ac64a6/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:28:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:28:53 DEBUG    https://fbref.com:443 "GET /en/players/eaeca114/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:29:01 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:29:03 DEBUG    https://fbref.com:443 "GET /en/players/06efa9dc/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:29:08 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:29:09 DEBUG    https://fbref.com:443 "GET /en/players/b625b241/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:29:09 WARNING  Player has not scouting report : https://fbref.com/en/players/b625b241/scout/365_m1/
+2022-11-23 15:29:16 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:29:17 DEBUG    https://fbref.com:443 "GET /en/players/31f5b89b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:29:23 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:29:24 DEBUG    https://fbref.com:443 "GET /en/players/fdf4b948/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:29:24 WARNING  Player has not scouting report : https://fbref.com/en/players/fdf4b948/scout/365_m1/
+2022-11-23 15:29:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:29:29 DEBUG    https://fbref.com:443 "GET /en/players/6ec6fde0/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:29:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:29:36 DEBUG    https://fbref.com:443 "GET /en/players/05439de2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:29:41 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:29:42 DEBUG    https://fbref.com:443 "GET /en/players/99ea2ddd/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:29:50 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:29:51 DEBUG    https://fbref.com:443 "GET /en/players/834d0be5/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:29:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:29:58 DEBUG    https://fbref.com:443 "GET /en/players/4601e194/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:30:03 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:30:04 DEBUG    https://fbref.com:443 "GET /en/players/5294a83f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:30:09 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:30:10 DEBUG    https://fbref.com:443 "GET /en/players/4bd414c1/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:30:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:30:15 DEBUG    https://fbref.com:443 "GET /en/players/b827d5b3/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:30:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:30:23 DEBUG    https://fbref.com:443 "GET /en/players/77e84962/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:30:31 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:30:31 DEBUG    https://fbref.com:443 "GET /en/players/036bba5f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:30:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:30:41 DEBUG    https://fbref.com:443 "GET /en/players/bb08bce9/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:30:45 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:30:46 DEBUG    https://fbref.com:443 "GET /en/players/3d7e48ce/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:30:52 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:30:54 DEBUG    https://fbref.com:443 "GET /en/players/9e17ccff/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:31:01 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:31:02 DEBUG    https://fbref.com:443 "GET /en/players/6c811eb7/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:31:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:31:08 DEBUG    https://fbref.com:443 "GET /en/players/cd1acf9d/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:31:15 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:31:16 DEBUG    https://fbref.com:443 "GET /en/players/b907d169/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:31:16 WARNING  Player has not scouting report : https://fbref.com/en/players/b907d169/scout/365_m1/
+2022-11-23 15:31:23 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:31:24 DEBUG    https://fbref.com:443 "GET /en/players/acc1aefa/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:31:24 WARNING  Player has not scouting report : https://fbref.com/en/players/acc1aefa/scout/365_m1/
+2022-11-23 15:31:30 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:31:31 DEBUG    https://fbref.com:443 "GET /en/players/f8405304/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:31:39 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:31:40 DEBUG    https://fbref.com:443 "GET /en/players/00f518d8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:31:40 WARNING  Player has not scouting report : https://fbref.com/en/players/00f518d8/scout/365_m1/
+2022-11-23 15:31:45 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:31:45 DEBUG    https://fbref.com:443 "GET /en/players/7a2e46a8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:31:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:31:52 DEBUG    https://fbref.com:443 "GET /en/players/1956b948/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:31:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:31:59 DEBUG    https://fbref.com:443 "GET /en/players/cea4ee8f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:32:07 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:32:08 DEBUG    https://fbref.com:443 "GET /en/players/e6697917/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:32:14 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:32:15 DEBUG    https://fbref.com:443 "GET /en/players/862a1c15/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:32:22 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:32:23 DEBUG    https://fbref.com:443 "GET /en/players/f4290206/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:32:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:32:29 DEBUG    https://fbref.com:443 "GET /en/players/0a63446f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:32:35 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:32:36 DEBUG    https://fbref.com:443 "GET /en/players/852ddfb8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:32:36 WARNING  Player has not scouting report : https://fbref.com/en/players/852ddfb8/scout/365_m1/
+2022-11-23 15:32:40 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:32:41 DEBUG    https://fbref.com:443 "GET /en/players/15ab5a2b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:32:45 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:32:46 DEBUG    https://fbref.com:443 "GET /en/players/ab472696/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:32:46 WARNING  Player has not scouting report : https://fbref.com/en/players/ab472696/scout/365_m1/
+2022-11-23 15:32:51 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:32:52 DEBUG    https://fbref.com:443 "GET /en/players/3ecc11d8/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:32:58 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:32:58 DEBUG    https://fbref.com:443 "GET /en/players/9260926b/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:33:06 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:33:07 DEBUG    https://fbref.com:443 "GET /en/players/1a4ef233/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:33:13 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:33:14 DEBUG    https://fbref.com:443 "GET /en/players/f3b1d9a2/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:33:21 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:33:22 DEBUG    https://fbref.com:443 "GET /en/players/22721b88/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:33:28 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:33:29 DEBUG    https://fbref.com:443 "GET /en/players/bcc81786/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:33:36 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:33:37 DEBUG    https://fbref.com:443 "GET /en/players/2df7cc43/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:33:37 WARNING  Player has not scouting report : https://fbref.com/en/players/2df7cc43/scout/365_m1/
+2022-11-23 15:34:34 DEBUG    ----------- Starting -----------
+2022-11-23 15:34:34 DEBUG    Starting fbref scrapping
+2022-11-23 15:34:34 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:34:34 DEBUG    https://fbref.com:443 "GET /en/comps/Big5/stats/players/Big-5-European-Leagues-Stats HTTP/1.1" 200 None
+2022-11-23 15:34:41 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:34:41 DEBUG    https://fbref.com:443 "GET /en/players/5bc43860/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:34:47 DEBUG    Starting new HTTPS connection (1): fbref.com:443
+2022-11-23 15:34:47 DEBUG    https://fbref.com:443 "GET /en/players/32c2d95f/scout/365_m1/ HTTP/1.1" 200 None
+2022-11-23 15:35:09 DEBUG    ----------- Starting -----------
+2022-11-23 15:36:41 DEBUG    ----------- Starting -----------
+2022-11-23 15:39:07 DEBUG    ----------- Starting -----------
+2022-11-23 15:41:00 DEBUG    ----------- Starting -----------
+2022-11-23 17:09:41 DEBUG    ----------- Starting -----------
+2022-11-23 17:09:42 INFO     Dash is running on http://127.0.0.1:8050/
+
+2022-11-23 17:09:43 DEBUG    ----------- Starting -----------
+2022-11-23 17:24:27 DEBUG    ----------- Starting -----------
+2022-11-23 17:25:58 DEBUG    ----------- Starting -----------
+2022-11-23 17:26:26 DEBUG    ----------- Starting -----------
+2022-11-23 17:26:27 INFO     Dash is running on http://127.0.0.1:8050/
+
+2022-11-23 17:26:28 DEBUG    ----------- Starting -----------

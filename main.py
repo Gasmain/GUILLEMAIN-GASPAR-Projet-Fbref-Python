@@ -1,4 +1,5 @@
 from scrapping import fbref as fb
+from dashboard import app
 import logging
 
 
@@ -8,4 +9,5 @@ if __name__ == '__main__':
 
     logging.debug('----------- Starting -----------')
 
-    fb.scrap()
+    #fb.scrap()
+    app.create()

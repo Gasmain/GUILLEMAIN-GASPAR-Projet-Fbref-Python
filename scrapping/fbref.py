@@ -231,16 +231,14 @@ def get_player_data(player_url):
                 all_scout_table_body = all_scout.find("tbody")
                 all_scout_rows = all_scout_table_body.find_all("tr")
 
-                players_stats = []
+                players_stats = {}
                 for row in all_scout_rows:
-                    stat = {}
                     if row.has_attr("class"):
                         if("spacer" in row["class"] or "thead" in row["class"]):
                             continue
-                    stat["name"] = row.find("th",{"data-stat": "statistic"}).text
-                    stat["per90"] = row.find("td",{"data-stat": "per90"}).text
-                    stat["percentile"] = row.find("td",{"data-stat": "percentile"})["csk"]
-                    players_stats.append(stat)
+                    stat_name = row.find("th",{"data-stat": "statistic"}).text
+                    players_stats[stat_name+"_per90"] = row.find("td",{"data-stat": "per90"}).text
+                    players_stats[stat_name+"_percentile"] = row.find("td",{"data-stat": "percentile"})["csk"]
                 player["stats"] = players_stats
 
 

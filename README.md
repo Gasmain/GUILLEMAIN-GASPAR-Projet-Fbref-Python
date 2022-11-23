@@ -23,6 +23,11 @@ Python Projet Data Visualization ESIEE 2022
       fb.scrap() # <- this line should not be commented if you want to rescrap the data
   ```
 
+- **Finally view the dashboard**
+
+  visit http://127.0.0.1:8050/ in your web browser to view the dashboard.
+
+
 
 
 
