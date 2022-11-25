@@ -1,5 +1,4 @@
-from scrapping import fbref as fb
-from dashboard import app
+import app
 import logging
 
 

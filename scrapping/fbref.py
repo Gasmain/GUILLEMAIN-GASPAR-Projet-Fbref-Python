@@ -70,12 +70,12 @@ def progress_bar():
 
 def get_player_url():
     """
-    Iterate over an html table and extract for each line the link to the players page
+    Iterate over an html table and extract for each line the link to the players pages
     """
 
     player_url_list = []
 
-    r = requests.get(FBREF_URL + TOP_5_LEAGUE_PLAYER_LIST, headers=headers)  # Requests the page with the players table
+    r = requests.get(FBREF_URL + TOP_5_LEAGUE_PLAYER_LIST, headers=headers)  # Requests the pages with the players table
     if r.status_code == 200:  # Si code = success
         try:
             soup = BeautifulSoup(r.content, 'html.parser')
@@ -141,7 +141,7 @@ def get_player_data(player_url):
 
     player = {}
 
-    r = requests.get(FBREF_URL + player_url, headers=headers)  # Requests the player's web page'
+    r = requests.get(FBREF_URL + player_url, headers=headers)  # Requests the player's web pages'
     if r.status_code == 200:  # If code = success
 
 
