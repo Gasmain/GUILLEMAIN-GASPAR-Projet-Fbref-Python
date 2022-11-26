@@ -8015,3 +8015,472 @@
 2022-11-25 15:26:57 INFO     127.0.0.1 - - [25/Nov/2022 15:26:57] "GET /_dash-dependencies HTTP/1.1" 200 -
 2022-11-25 15:26:57 INFO     127.0.0.1 - - [25/Nov/2022 15:26:57] "GET /src/img/src/img/soccer_logo.png HTTP/1.1" 200 -
 2022-11-25 15:26:57 INFO     127.0.0.1 - - [25/Nov/2022 15:26:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:29:42 INFO     127.0.0.1 - - [25/Nov/2022 15:29:42] "GET / HTTP/1.1" 200 -
+2022-11-25 15:29:42 INFO     127.0.0.1 - - [25/Nov/2022 15:29:42] "GET /assets/bootstrap.css?m=1669385327.539419 HTTP/1.1" 200 -
+2022-11-25 15:29:42 INFO     127.0.0.1 - - [25/Nov/2022 15:29:42] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:29:42 INFO     127.0.0.1 - - [25/Nov/2022 15:29:42] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:29:42 INFO     127.0.0.1 - - [25/Nov/2022 15:29:42] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:29:42 INFO     127.0.0.1 - - [25/Nov/2022 15:29:42] "GET /src/img/soccer_logo.png HTTP/1.1" 200 -
+2022-11-25 15:29:42 INFO     127.0.0.1 - - [25/Nov/2022 15:29:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:29:48 DEBUG    ----------- Starting -----------
+2022-11-25 15:29:48 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:29:48 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:29:48 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET / HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /assets/bootstrap.css?m=1669385327.539419 HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "GET /r'assets/soccer_logo.png HTTP/1.1" 200 -
+2022-11-25 15:29:53 INFO     127.0.0.1 - - [25/Nov/2022 15:29:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:30:09 DEBUG    ----------- Starting -----------
+2022-11-25 15:30:09 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:30:09 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:30:09 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET / HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /assets/bootstrap.css?m=1669385327.539419 HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:30:11 INFO     127.0.0.1 - - [25/Nov/2022 15:30:11] "GET /assets/soccer_logo.png HTTP/1.1" 200 -
+2022-11-25 15:30:12 INFO     127.0.0.1 - - [25/Nov/2022 15:30:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:30:24 DEBUG    ----------- Starting -----------
+2022-11-25 15:30:24 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:30:24 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:30:24 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET / HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /assets/bootstrap.css?m=1669385327.539419 HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:30:29 INFO     127.0.0.1 - - [25/Nov/2022 15:30:29] "GET /assets/soccer_logo.png HTTP/1.1" 200 -
+2022-11-25 15:30:30 INFO     127.0.0.1 - - [25/Nov/2022 15:30:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:30:38 DEBUG    ----------- Starting -----------
+2022-11-25 15:30:38 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:30:38 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:30:38 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET / HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /assets/bootstrap.css?m=1669385327.539419 HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /assets/soccer_logo.png HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:30:41 INFO     127.0.0.1 - - [25/Nov/2022 15:30:41] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:31:16 INFO     127.0.0.1 - - [25/Nov/2022 15:31:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:31:17 INFO     127.0.0.1 - - [25/Nov/2022 15:31:17] "GET / HTTP/1.1" 200 -
+2022-11-25 15:31:17 INFO     127.0.0.1 - - [25/Nov/2022 15:31:17] "[36mGET /assets/bootstrap.css?m=1669385327.539419 HTTP/1.1[0m" 304 -
+2022-11-25 15:31:17 INFO     127.0.0.1 - - [25/Nov/2022 15:31:17] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:31:17 INFO     127.0.0.1 - - [25/Nov/2022 15:31:17] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:31:17 INFO     127.0.0.1 - - [25/Nov/2022 15:31:17] "[36mGET /assets/soccer_logo.png HTTP/1.1[0m" 304 -
+2022-11-25 15:31:17 INFO     127.0.0.1 - - [25/Nov/2022 15:31:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:31:19 INFO     127.0.0.1 - - [25/Nov/2022 15:31:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:31:20 INFO     127.0.0.1 - - [25/Nov/2022 15:31:20] "GET / HTTP/1.1" 200 -
+2022-11-25 15:31:20 INFO     127.0.0.1 - - [25/Nov/2022 15:31:20] "[36mGET /assets/bootstrap.css?m=1669385327.539419 HTTP/1.1[0m" 304 -
+2022-11-25 15:31:20 INFO     127.0.0.1 - - [25/Nov/2022 15:31:20] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:31:20 INFO     127.0.0.1 - - [25/Nov/2022 15:31:20] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:31:20 INFO     127.0.0.1 - - [25/Nov/2022 15:31:20] "[36mGET /assets/soccer_logo.png HTTP/1.1[0m" 304 -
+2022-11-25 15:31:20 INFO     127.0.0.1 - - [25/Nov/2022 15:31:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:31:24 INFO     127.0.0.1 - - [25/Nov/2022 15:31:24] "GET / HTTP/1.1" 200 -
+2022-11-25 15:31:24 INFO     127.0.0.1 - - [25/Nov/2022 15:31:24] "[36mGET /assets/bootstrap.css?m=1669385327.539419 HTTP/1.1[0m" 304 -
+2022-11-25 15:31:24 INFO     127.0.0.1 - - [25/Nov/2022 15:31:24] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:31:24 INFO     127.0.0.1 - - [25/Nov/2022 15:31:24] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:31:24 INFO     127.0.0.1 - - [25/Nov/2022 15:31:24] "[36mGET /assets/soccer_logo.png HTTP/1.1[0m" 304 -
+2022-11-25 15:31:24 INFO     127.0.0.1 - - [25/Nov/2022 15:31:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:33:42 DEBUG    ----------- Starting -----------
+2022-11-25 15:33:42 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:33:42 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:33:42 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:33:48 INFO     127.0.0.1 - - [25/Nov/2022 15:33:48] "GET / HTTP/1.1" 200 -
+2022-11-25 15:33:48 INFO     127.0.0.1 - - [25/Nov/2022 15:33:48] "GET /assets/bootstrap.css?m=1669385327.539419 HTTP/1.1" 200 -
+2022-11-25 15:33:48 INFO     127.0.0.1 - - [25/Nov/2022 15:33:48] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:33:48 INFO     127.0.0.1 - - [25/Nov/2022 15:33:48] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:33:48 INFO     127.0.0.1 - - [25/Nov/2022 15:33:48] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:33:48 INFO     127.0.0.1 - - [25/Nov/2022 15:33:48] "GET /assets/logo.png HTTP/1.1" 200 -
+2022-11-25 15:33:48 INFO     127.0.0.1 - - [25/Nov/2022 15:33:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:37:45 DEBUG    ----------- Starting -----------
+2022-11-25 15:37:45 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:37:45 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:37:45 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:37:49 INFO     127.0.0.1 - - [25/Nov/2022 15:37:49] "GET / HTTP/1.1" 200 -
+2022-11-25 15:37:49 INFO     127.0.0.1 - - [25/Nov/2022 15:37:49] "GET /assets/bootstrap.css?m=1669387048.2551854 HTTP/1.1" 200 -
+2022-11-25 15:37:49 INFO     127.0.0.1 - - [25/Nov/2022 15:37:49] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:37:50 INFO     127.0.0.1 - - [25/Nov/2022 15:37:50] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:37:50 INFO     127.0.0.1 - - [25/Nov/2022 15:37:50] "[36mGET /assets/logo.png HTTP/1.1[0m" 304 -
+2022-11-25 15:37:50 INFO     127.0.0.1 - - [25/Nov/2022 15:37:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:38:43 DEBUG    ----------- Starting -----------
+2022-11-25 15:38:43 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:38:43 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:38:43 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:38:47 INFO     127.0.0.1 - - [25/Nov/2022 15:38:47] "GET / HTTP/1.1" 200 -
+2022-11-25 15:38:47 INFO     127.0.0.1 - - [25/Nov/2022 15:38:47] "GET /assets/bootstrap.css?m=1669387119.9842484 HTTP/1.1" 200 -
+2022-11-25 15:38:47 INFO     127.0.0.1 - - [25/Nov/2022 15:38:47] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:38:47 INFO     127.0.0.1 - - [25/Nov/2022 15:38:47] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:38:47 INFO     127.0.0.1 - - [25/Nov/2022 15:38:47] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:38:47 INFO     127.0.0.1 - - [25/Nov/2022 15:38:47] "GET /assets/logo.png HTTP/1.1" 200 -
+2022-11-25 15:38:47 INFO     127.0.0.1 - - [25/Nov/2022 15:38:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:38:57 INFO     127.0.0.1 - - [25/Nov/2022 15:38:57] "GET /assets/bootstrap.css?m=1669387119.9842484 HTTP/1.1" 200 -
+2022-11-25 15:39:41 INFO     127.0.0.1 - - [25/Nov/2022 15:39:41] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:41:34 DEBUG    ----------- Starting -----------
+2022-11-25 15:41:34 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:41:34 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:41:34 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:41:37 INFO     127.0.0.1 - - [25/Nov/2022 15:41:37] "GET /players HTTP/1.1" 200 -
+2022-11-25 15:41:37 INFO     127.0.0.1 - - [25/Nov/2022 15:41:37] "GET /assets/bootstrap.css?m=1669387285.099409 HTTP/1.1" 200 -
+2022-11-25 15:41:37 INFO     127.0.0.1 - - [25/Nov/2022 15:41:37] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:41:37 INFO     127.0.0.1 - - [25/Nov/2022 15:41:37] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:41:37 INFO     127.0.0.1 - - [25/Nov/2022 15:41:37] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:41:37 INFO     127.0.0.1 - - [25/Nov/2022 15:41:37] "GET /assets/logo.png HTTP/1.1" 200 -
+2022-11-25 15:41:38 INFO     127.0.0.1 - - [25/Nov/2022 15:41:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:41:39 INFO     127.0.0.1 - - [25/Nov/2022 15:41:39] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:43:06 DEBUG    ----------- Starting -----------
+2022-11-25 15:43:06 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:43:06 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:43:06 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:43:10 INFO     127.0.0.1 - - [25/Nov/2022 15:43:10] "GET / HTTP/1.1" 200 -
+2022-11-25 15:43:10 INFO     127.0.0.1 - - [25/Nov/2022 15:43:10] "GET /assets/bootstrap.css?m=1669387382.047868 HTTP/1.1" 200 -
+2022-11-25 15:43:10 INFO     127.0.0.1 - - [25/Nov/2022 15:43:10] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:43:10 INFO     127.0.0.1 - - [25/Nov/2022 15:43:10] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:43:10 INFO     127.0.0.1 - - [25/Nov/2022 15:43:10] "[36mGET /assets/logo.png HTTP/1.1[0m" 304 -
+2022-11-25 15:43:11 INFO     127.0.0.1 - - [25/Nov/2022 15:43:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:43:25 DEBUG    ----------- Starting -----------
+2022-11-25 15:43:25 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:43:25 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:43:25 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:43:28 INFO     127.0.0.1 - - [25/Nov/2022 15:43:28] "GET / HTTP/1.1" 200 -
+2022-11-25 15:43:28 INFO     127.0.0.1 - - [25/Nov/2022 15:43:28] "GET /assets/bootstrap.css?m=1669387401.989558 HTTP/1.1" 200 -
+2022-11-25 15:43:28 INFO     127.0.0.1 - - [25/Nov/2022 15:43:28] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:43:28 INFO     127.0.0.1 - - [25/Nov/2022 15:43:28] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:43:28 INFO     127.0.0.1 - - [25/Nov/2022 15:43:28] "[36mGET /assets/logo.png HTTP/1.1[0m" 304 -
+2022-11-25 15:43:28 INFO     127.0.0.1 - - [25/Nov/2022 15:43:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:44:07 DEBUG    ----------- Starting -----------
+2022-11-25 15:44:07 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:44:07 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:44:07 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:44:09 INFO     127.0.0.1 - - [25/Nov/2022 15:44:09] "GET / HTTP/1.1" 200 -
+2022-11-25 15:44:09 INFO     127.0.0.1 - - [25/Nov/2022 15:44:09] "[36mGET /assets/bootstrap.css?m=1669387401.989558 HTTP/1.1[0m" 304 -
+2022-11-25 15:44:09 INFO     127.0.0.1 - - [25/Nov/2022 15:44:09] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:44:09 INFO     127.0.0.1 - - [25/Nov/2022 15:44:09] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:44:09 INFO     127.0.0.1 - - [25/Nov/2022 15:44:09] "[36mGET /assets/logo.png HTTP/1.1[0m" 304 -
+2022-11-25 15:44:09 INFO     127.0.0.1 - - [25/Nov/2022 15:44:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:44:39 DEBUG    ----------- Starting -----------
+2022-11-25 15:44:39 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:44:39 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:44:39 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:44:41 INFO     127.0.0.1 - - [25/Nov/2022 15:44:41] "GET / HTTP/1.1" 200 -
+2022-11-25 15:44:41 INFO     127.0.0.1 - - [25/Nov/2022 15:44:41] "[36mGET /assets/bootstrap.css?m=1669387401.989558 HTTP/1.1[0m" 304 -
+2022-11-25 15:44:41 INFO     127.0.0.1 - - [25/Nov/2022 15:44:41] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:44:41 INFO     127.0.0.1 - - [25/Nov/2022 15:44:41] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:44:41 INFO     127.0.0.1 - - [25/Nov/2022 15:44:41] "[36mGET /assets/logo.png HTTP/1.1[0m" 304 -
+2022-11-25 15:44:42 INFO     127.0.0.1 - - [25/Nov/2022 15:44:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:45:07 INFO     127.0.0.1 - - [25/Nov/2022 15:45:07] "GET / HTTP/1.1" 200 -
+2022-11-25 15:45:07 INFO     127.0.0.1 - - [25/Nov/2022 15:45:07] "[36mGET /assets/bootstrap.css?m=1669387401.989558 HTTP/1.1[0m" 304 -
+2022-11-25 15:45:07 INFO     127.0.0.1 - - [25/Nov/2022 15:45:07] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:45:07 INFO     127.0.0.1 - - [25/Nov/2022 15:45:07] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:45:07 INFO     127.0.0.1 - - [25/Nov/2022 15:45:07] "[36mGET /assets/logo.png HTTP/1.1[0m" 304 -
+2022-11-25 15:45:07 INFO     127.0.0.1 - - [25/Nov/2022 15:45:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:45:11 DEBUG    ----------- Starting -----------
+2022-11-25 15:45:11 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:45:11 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:45:11 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET / HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /assets/bootstrap.css?m=1669387401.989558 HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "GET /assets/logo.png HTTP/1.1" 200 -
+2022-11-25 15:45:32 INFO     127.0.0.1 - - [25/Nov/2022 15:45:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:46:07 DEBUG    ----------- Starting -----------
+2022-11-25 15:46:07 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:46:07 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:46:07 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET / HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /assets/bootstrap.css?m=1669387401.989558 HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "GET /assets/logo.png HTTP/1.1" 200 -
+2022-11-25 15:46:16 INFO     127.0.0.1 - - [25/Nov/2022 15:46:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:52:26 DEBUG    ----------- Starting -----------
+2022-11-25 15:52:26 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:52:26 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:52:26 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:52:32 INFO     127.0.0.1 - - [25/Nov/2022 15:52:32] "GET / HTTP/1.1" 200 -
+2022-11-25 15:52:32 INFO     127.0.0.1 - - [25/Nov/2022 15:52:32] "GET /assets/bootstrap.css?m=1669387401.989558 HTTP/1.1" 200 -
+2022-11-25 15:52:32 INFO     127.0.0.1 - - [25/Nov/2022 15:52:32] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:52:32 INFO     127.0.0.1 - - [25/Nov/2022 15:52:32] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:52:32 INFO     127.0.0.1 - - [25/Nov/2022 15:52:32] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:52:32 INFO     127.0.0.1 - - [25/Nov/2022 15:52:32] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:52:32 INFO     127.0.0.1 - - [25/Nov/2022 15:52:32] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 15:52:32 INFO     127.0.0.1 - - [25/Nov/2022 15:52:32] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 15:52:32 INFO     127.0.0.1 - - [25/Nov/2022 15:52:32] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:52:33 INFO     127.0.0.1 - - [25/Nov/2022 15:52:33] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:52:33 INFO     127.0.0.1 - - [25/Nov/2022 15:52:33] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:52:33 INFO     127.0.0.1 - - [25/Nov/2022 15:52:33] "GET /assets/logo.png HTTP/1.1" 200 -
+2022-11-25 15:52:33 INFO     127.0.0.1 - - [25/Nov/2022 15:52:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:52:36 INFO     127.0.0.1 - - [25/Nov/2022 15:52:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:52:40 INFO     127.0.0.1 - - [25/Nov/2022 15:52:40] "GET /players HTTP/1.1" 200 -
+2022-11-25 15:52:40 INFO     127.0.0.1 - - [25/Nov/2022 15:52:40] "GET /assets/bootstrap.css?m=1669387401.989558 HTTP/1.1" 200 -
+2022-11-25 15:52:40 INFO     127.0.0.1 - - [25/Nov/2022 15:52:40] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:52:40 INFO     127.0.0.1 - - [25/Nov/2022 15:52:40] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:52:40 INFO     127.0.0.1 - - [25/Nov/2022 15:52:40] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:52:40 INFO     127.0.0.1 - - [25/Nov/2022 15:52:40] "GET /assets/logo.png HTTP/1.1" 200 -
+2022-11-25 15:52:40 INFO     127.0.0.1 - - [25/Nov/2022 15:52:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 15:54:54 DEBUG    ----------- Starting -----------
+2022-11-25 15:54:54 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 15:54:54 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 15:54:54 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /players HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /assets/bootstrap.css?m=1669387401.989558 HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 15:54:56 INFO     127.0.0.1 - - [25/Nov/2022 15:54:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 16:04:53 DEBUG    ----------- Starting -----------
+2022-11-25 16:04:53 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 16:04:53 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 16:04:53 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /players HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /assets/bootstrap.css?m=1669388691.9747758 HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 16:04:58 INFO     127.0.0.1 - - [25/Nov/2022 16:04:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 16:05:48 DEBUG    ----------- Starting -----------
+2022-11-25 16:05:48 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 16:05:48 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 16:05:48 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /players HTTP/1.1" 200 -
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /assets/bootstrap.css?m=1669388691.9747758 HTTP/1.1" 200 -
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 16:05:55 INFO     127.0.0.1 - - [25/Nov/2022 16:05:55] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 16:05:56 INFO     127.0.0.1 - - [25/Nov/2022 16:05:56] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 16:05:56 INFO     127.0.0.1 - - [25/Nov/2022 16:05:56] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 16:05:56 INFO     127.0.0.1 - - [25/Nov/2022 16:05:56] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 16:05:56 INFO     127.0.0.1 - - [25/Nov/2022 16:05:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 16:06:52 DEBUG    ----------- Starting -----------
+2022-11-25 16:06:52 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 16:06:52 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 16:06:52 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /players HTTP/1.1" 200 -
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /assets/bootstrap.css?m=1669388691.9747758 HTTP/1.1" 200 -
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 16:06:53 INFO     127.0.0.1 - - [25/Nov/2022 16:06:53] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 16:06:54 INFO     127.0.0.1 - - [25/Nov/2022 16:06:54] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 16:06:54 INFO     127.0.0.1 - - [25/Nov/2022 16:06:54] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 16:06:54 INFO     127.0.0.1 - - [25/Nov/2022 16:06:54] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 16:06:54 INFO     127.0.0.1 - - [25/Nov/2022 16:06:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 16:07:03 DEBUG    ----------- Starting -----------
+2022-11-25 16:07:03 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 16:07:03 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 16:07:03 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 16:07:07 INFO     127.0.0.1 - - [25/Nov/2022 16:07:07] "GET /players HTTP/1.1" 200 -
+2022-11-25 16:07:07 INFO     127.0.0.1 - - [25/Nov/2022 16:07:07] "[36mGET /assets/bootstrap.css?m=1669388691.9747758 HTTP/1.1[0m" 304 -
+2022-11-25 16:07:07 INFO     127.0.0.1 - - [25/Nov/2022 16:07:07] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 16:07:07 INFO     127.0.0.1 - - [25/Nov/2022 16:07:07] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 16:07:07 INFO     127.0.0.1 - - [25/Nov/2022 16:07:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 16:07:19 DEBUG    ----------- Starting -----------
+2022-11-25 16:07:19 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 16:07:19 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 16:07:19 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /players HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /assets/bootstrap.css?m=1669388691.9747758 HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 16:07:21 INFO     127.0.0.1 - - [25/Nov/2022 16:07:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 16:07:29 DEBUG    ----------- Starting -----------
+2022-11-25 16:07:29 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 16:07:29 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 16:07:29 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /players HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /assets/bootstrap.css?m=1669388691.9747758 HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 16:07:31 INFO     127.0.0.1 - - [25/Nov/2022 16:07:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 16:09:10 INFO     127.0.0.1 - - [25/Nov/2022 16:09:10] "GET /assets/bootstrap.css?m=1669388691.9747758 HTTP/1.1" 200 -
+2022-11-25 16:09:10 INFO     127.0.0.1 - - [25/Nov/2022 16:09:10] "GET /assets/bootstrap.css?m=1669388691.9747758 HTTP/1.1" 200 -
+2022-11-25 16:09:10 INFO     127.0.0.1 - - [25/Nov/2022 16:09:10] "GET /players HTTP/1.1" 200 -
+2022-11-25 16:09:38 DEBUG    ----------- Starting -----------
+2022-11-25 16:09:38 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-25 16:09:38 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-25 16:09:38 INFO     [33mPress CTRL+C to quit[0m
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /players HTTP/1.1" 200 -
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /assets/bootstrap.css?m=1669388691.9747758 HTTP/1.1" 200 -
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669206808.12.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669206808.8.1.min.js HTTP/1.1" 200 -
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669206808.14.0.min.js HTTP/1.1" 200 -
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669274342.min.js HTTP/1.1" 200 -
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669206807.min.js HTTP/1.1" 200 -
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669206808.js HTTP/1.1" 200 -
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669206807.js HTTP/1.1" 200 -
+2022-11-25 16:09:43 INFO     127.0.0.1 - - [25/Nov/2022 16:09:43] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669206808.min.js HTTP/1.1" 200 -
+2022-11-25 16:09:44 INFO     127.0.0.1 - - [25/Nov/2022 16:09:44] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-25 16:09:44 INFO     127.0.0.1 - - [25/Nov/2022 16:09:44] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-25 16:09:44 INFO     127.0.0.1 - - [25/Nov/2022 16:09:44] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-25 16:09:44 INFO     127.0.0.1 - - [25/Nov/2022 16:09:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-25 16:09:44 INFO     127.0.0.1 - - [25/Nov/2022 16:09:44] "POST /_dash-update-component HTTP/1.1" 200 -
