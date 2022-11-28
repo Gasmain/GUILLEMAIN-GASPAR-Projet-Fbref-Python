@@ -7,10 +7,10 @@ dash.register_page(__name__)
 layout = html.Div(children=[
     dbc.Alert(
                 [
-                    html.I(className="bi bi-x-octagon-fill me-2"),
+                    html.I(className="fa-solid fa-triangle-exclamation", style={"margin-right" : "10px"}),
                     "404 Error : Page was not found",
                 ],
                 color="danger",
-                className="d-flex align-items-center",
+                style= {"margin":"20px", "max-width" : "700px"}
             )
 ])

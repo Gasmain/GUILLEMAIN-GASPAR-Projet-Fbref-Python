@@ -10,9 +10,11 @@ Python Projet Data Visualization ESIEE 2022
 
   `$ pip install -r requirements.txt`
 
-- **Then run main.py to start the app**
+- **Then run main.py to start the app : **
 
-  The data is already scrapped and can be find in [data/player.csv](https://github.com/Gasmain/Projet-Open-Source-Fbref/blob/master/data/player.csv) but it    can be rescraped by uncommenting `fb.scrap()` method : 
+  `$ python main.py`
+
+  The data is already scrapped and can be found in [data/player.csv](https://github.com/Gasmain/Projet-Open-Source-Fbref/blob/master/data/player.csv) but it    can be rescraped by uncommenting `fb.scrap()` method : 
   ```Python
   if __name__ == '__main__':
       # Config logging output file

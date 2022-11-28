@@ -14,6 +14,8 @@ from threading import Thread
 PLAYER_FILE_CSV = "data/player.csv"
 PLAYER_FILE_JSON = "data/player.json"
 PLAYER_IMG_FOLDER = "data/playerimg"
+TEAM_IMG_FOLDER = "data/teamimg"
+TEAM_LOGO_URL = "https://cdn.ssref.net/req/202211181/tlogo/fb/"
 FBREF_URL = "https://fbref.com"
 TOP_5_LEAGUE_PLAYER_LIST = "/en/comps/Big5/stats/players/Big-5-European-Leagues-Stats"
 headers={
@@ -117,10 +119,11 @@ def build_player_list(player_url_list):
         player = get_player_data(player_url)
         if len(player)>0:
             if "stats" in player and "similar_players" in player: #Checks if the stats and sim player key exist in player dict before adding to list
-                player_list.append(player)
-                data.append(player)
-                with open(PLAYER_FILE_JSON, "w") as file:
-                    json.dump(data, file)
+                if len(player["stats"])>0 :
+                    player_list.append(player)
+                    data.append(player)
+                    with open(PLAYER_FILE_JSON, "w") as file:
+                        json.dump(data, file)
         progress += float(100.0/len(player_url_list))
     return player_list
 
@@ -206,16 +209,32 @@ def get_player_data(player_url):
                     player["birth_date"] = birth_date["data-birth"]
 
                 # Player nationality
-                p_contain_nationality = soup.find(id="meta").select('p:-soup-contains("National Team")')  # Search for a <p> containing "National Team" in the div of the biography
+                p_contain_nationality = soup.find(id="meta").select(
+                    'p:-soup-contains("National Team")')  # Search for a <p> containing "National Team" in the div of the biography
                 if len(p_contain_nationality) > 0:
                     player["nationality"] = p_contain_nationality[0].find("a").text
                 else :
-                    player["nationality"] = None
+                    p_contain_nationality = soup.find(id="meta").select(
+                        'p:-soup-contains("Citizenship")')  # Search for a <p> containing "National Team" in the div of the biography
+                    if len(p_contain_nationality) > 0:
+                        player["nationality"] = p_contain_nationality[0].find("a").text
+                    else:
+                        player["nationality"] = None
 
                 # Player club
                 p_contain_club = soup.find(id="meta").select('p:-soup-contains("Club:")')  # Search for a <p> containing "National Team" in the div of the biography
                 if len(p_contain_club) > 0:
                     player["club"] = p_contain_club[0].find("a").text
+                    club_url = p_contain_club[0].find("a")["href"]
+                    result = re.search(r".*\/squads\/(.*)\/", club_url)
+                    player["club_id"] = result.group(1)
+                    try:
+                        urllib.request.urlretrieve(TEAM_LOGO_URL+result.group(1)+".png",
+                                                   TEAM_IMG_FOLDER + "/" + player_id + ".png")  # Download and save the image in the playerimg folder
+                    except Exception as e:
+                        print("no image club found : " + str(e))
+                        pass
+
                 else :
                     player["club"] = None
 
@@ -228,18 +247,29 @@ def get_player_data(player_url):
                 player["similar_players"] = similar_players
                 # Player stats
                 all_scout = soup.find_all(id="all_scout")[1]
-                all_scout_table_body = all_scout.find("tbody")
-                all_scout_rows = all_scout_table_body.find_all("tr")
-
+                all_table = all_scout.find_all("table")
                 players_stats = {}
-                for row in all_scout_rows:
-                    if row.has_attr("class"):
-                        if("spacer" in row["class"] or "thead" in row["class"]):
-                            continue
-                    stat_name = row.find("th",{"data-stat": "statistic"}).text
-                    players_stats[stat_name+"_per90"] = row.find("td",{"data-stat": "per90"}).text
-                    players_stats[stat_name+"_percentile"] = row.find("td",{"data-stat": "percentile"})["csk"]
+                player_roles = []
+                for table in all_table:
+                    stats = {}
+                    print(table["id"])
+                    result = re.search(r".*full_(.*)", table["id"])
+                    role = result.group(1)
+                    player_roles.append(role)
+                    all_scout_table_body = table.find("tbody")
+                    all_scout_rows = all_scout_table_body.find_all("tr")
+
+
+                    for row in all_scout_rows:
+                        if row.has_attr("class"):
+                            if("spacer" in row["class"] or "thead" in row["class"]):
+                                continue
+                        stat_name = row.find("th",{"data-stat": "statistic"}).text
+                        stats[stat_name+"_per90"] = row.find("td",{"data-stat": "per90"}).text
+                        stats[stat_name+"_percentile"] = row.find("td",{"data-stat": "percentile"})["csk"]
+                    players_stats[role] = stats
                 player["stats"] = players_stats
+                player["roles"] = player_roles
 
 
             else:  # If player has no scouting report

@@ -7,13 +7,13 @@ import app
 dash.register_page(__name__)
 
 layout = html.Div(children=[
-    dbc.Input(id="input",
-              placeholder="Search for a player ...",
-              type="text", style={
-            "background-color": "#303030",
-            "padding": "0.8rem 1.5rem",
-            "color": "white"
-        })
+    html.Div([dash.html.H2(children='Players')], style={}, className="heading"),
+    #dbc.Input(id="input",
+          #placeholder="Search for a player ...",
+          #type="text"
+    #)
+
+
 ])
 
 

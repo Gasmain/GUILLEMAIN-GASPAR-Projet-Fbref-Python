@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
+
 
 :root {
   --blue: #007bff;
@@ -27,7 +27,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: 'Inter', sans-serif;;
+  --font-family-sans-serif: 'Inter var';
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
@@ -39,15 +39,17 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-feature-settings: "cv02","cv03","cv04","cv11" !important;
+  }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;;
-  font-size: 1rem;
+  font-family: 'Inter var';
+  font-size: .875rem;
   font-weight: 400;
   line-height: 1.5;
   color: #111827;
@@ -111,6 +113,22 @@ strong {
 
 small {
   font-size: 80%; }
+
+.heading{
+display : flex;
+align-items:center;
+width: 100%;
+height : 3.5rem;
+background-color:white;
+padding: 0px 2.5rem;
+--tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),0 1px 2px -1px rgb(0 0 0 / 0.1);
+--tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);
+box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+
+.heading h1,.heading h2{
+margin : 0px;
+}
 
 sub,
 sup {
@@ -291,26 +309,26 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2; }
 
 h1, .h1 {
-  font-size: 2.5rem; }
+  font-size: 1.875rem; }
 
 h2, .h2 {
-  font-size: 2rem; }
-
-h3, .h3 {
-  font-size: 1.75rem; }
-
-h4, .h4 {
   font-size: 1.5rem; }
 
-h5, .h5 {
+h3, .h3 {
   font-size: 1.25rem; }
 
-h6, .h6 {
+h4, .h4 {
   font-size: 1rem; }
+
+h5, .h5 {
+  font-size: .875rem; }
+
+h6, .h6 {
+  font-size: .875rem; }
 
 .lead {
   font-size: 1.25rem;
@@ -435,9 +453,8 @@ pre {
   overflow-y: scroll; }
 
 .container {
+  margin:0px !important;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -2985,8 +3002,9 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 12px 16px !important;
-  margin : 0px 10px;
+  padding: .5rem .75rem !important;
+  margin : 0px 8px;
+  font-weight : 500;
   }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
@@ -3048,7 +3066,9 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem; }
+  padding: 0px 2.5rem;
+  height: 4rem !important;
+  }
   .navbar .container,
   .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
     display: flex;
@@ -3060,7 +3080,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -4280,7 +4300,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter var';
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4365,7 +4385,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter var';
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;

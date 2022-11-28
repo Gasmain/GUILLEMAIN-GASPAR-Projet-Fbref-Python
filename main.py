@@ -1,4 +1,5 @@
 import app
+import scrapping.fbref as fbref
 import logging
 
 
@@ -8,5 +9,5 @@ if __name__ == '__main__':
 
     logging.debug('----------- Starting -----------')
 
-    #fb.scrap()
+    #fbref.scrap()
     app.create()
