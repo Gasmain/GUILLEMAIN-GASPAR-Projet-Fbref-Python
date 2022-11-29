@@ -9049,3 +9049,1277 @@
 2022-11-28 15:44:20 DEBUG    ----------- Starting -----------
 2022-11-28 15:44:39 DEBUG    ----------- Starting -----------
 2022-11-28 15:45:43 DEBUG    ----------- Starting -----------
+2022-11-29 08:31:44 DEBUG    ----------- Starting -----------
+2022-11-29 08:31:44 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 08:31:44 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 08:31:44 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 08:33:06 DEBUG    ----------- Starting -----------
+2022-11-29 09:04:54 DEBUG    ----------- Starting -----------
+2022-11-29 09:04:54 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 09:04:54 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 09:04:54 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET / HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1669669613.8.1.min.js HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1669669613.14.0.min.js HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1669669613.14.0.min.js HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1669669613.12.1.min.js HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1669669613.js HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1669669613.min.js HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1669669613.js HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1669669613.min.js HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1669670386.min.js HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1669669613.js HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 09:05:00 INFO     127.0.0.1 - - [29/Nov/2022 09:05:00] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 09:05:27 DEBUG    ----------- Starting -----------
+2022-11-29 09:05:27 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 09:05:27 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 09:05:27 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 09:05:31 INFO     127.0.0.1 - - [29/Nov/2022 09:05:31] "GET / HTTP/1.1" 200 -
+2022-11-29 09:05:31 INFO     127.0.0.1 - - [29/Nov/2022 09:05:31] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 09:05:31 INFO     127.0.0.1 - - [29/Nov/2022 09:05:31] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 09:05:31 INFO     127.0.0.1 - - [29/Nov/2022 09:05:31] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 09:05:31 INFO     127.0.0.1 - - [29/Nov/2022 09:05:31] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 09:05:31 INFO     127.0.0.1 - - [29/Nov/2022 09:05:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 09:05:32 INFO     127.0.0.1 - - [29/Nov/2022 09:05:32] "GET / HTTP/1.1" 200 -
+2022-11-29 09:05:32 INFO     127.0.0.1 - - [29/Nov/2022 09:05:32] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 09:05:32 INFO     127.0.0.1 - - [29/Nov/2022 09:05:32] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 09:05:32 INFO     127.0.0.1 - - [29/Nov/2022 09:05:32] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 09:05:32 INFO     127.0.0.1 - - [29/Nov/2022 09:05:32] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 09:05:32 INFO     127.0.0.1 - - [29/Nov/2022 09:05:32] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 09:05:32 INFO     127.0.0.1 - - [29/Nov/2022 09:05:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 09:06:03 DEBUG    ----------- Starting -----------
+2022-11-29 09:06:03 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 09:06:03 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 09:06:03 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 09:06:06 INFO     127.0.0.1 - - [29/Nov/2022 09:06:06] "GET / HTTP/1.1" 200 -
+2022-11-29 09:06:06 INFO     127.0.0.1 - - [29/Nov/2022 09:06:06] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 09:06:06 INFO     127.0.0.1 - - [29/Nov/2022 09:06:06] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 09:06:06 INFO     127.0.0.1 - - [29/Nov/2022 09:06:06] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 09:06:06 INFO     127.0.0.1 - - [29/Nov/2022 09:06:06] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 09:06:06 INFO     127.0.0.1 - - [29/Nov/2022 09:06:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 09:07:48 DEBUG    ----------- Starting -----------
+2022-11-29 09:08:01 DEBUG    ----------- Starting -----------
+2022-11-29 09:08:01 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 09:08:01 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 09:08:01 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 09:08:03 INFO     127.0.0.1 - - [29/Nov/2022 09:08:03] "GET / HTTP/1.1" 200 -
+2022-11-29 09:08:03 INFO     127.0.0.1 - - [29/Nov/2022 09:08:03] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 09:08:03 INFO     127.0.0.1 - - [29/Nov/2022 09:08:03] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 09:08:03 INFO     127.0.0.1 - - [29/Nov/2022 09:08:03] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 09:08:03 INFO     127.0.0.1 - - [29/Nov/2022 09:08:03] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 09:08:03 INFO     127.0.0.1 - - [29/Nov/2022 09:08:03] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 09:08:03 INFO     127.0.0.1 - - [29/Nov/2022 09:08:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 09:09:22 DEBUG    ----------- Starting -----------
+2022-11-29 09:09:22 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 09:09:22 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 09:09:22 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 09:09:24 INFO     127.0.0.1 - - [29/Nov/2022 09:09:24] "GET / HTTP/1.1" 200 -
+2022-11-29 09:09:24 INFO     127.0.0.1 - - [29/Nov/2022 09:09:24] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 09:09:24 INFO     127.0.0.1 - - [29/Nov/2022 09:09:24] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 09:09:24 INFO     127.0.0.1 - - [29/Nov/2022 09:09:24] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 09:09:24 INFO     127.0.0.1 - - [29/Nov/2022 09:09:24] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 09:09:24 INFO     127.0.0.1 - - [29/Nov/2022 09:09:24] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 09:09:24 INFO     127.0.0.1 - - [29/Nov/2022 09:09:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 09:09:24 INFO     127.0.0.1 - - [29/Nov/2022 09:09:24] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2022-11-29 09:25:29 DEBUG    ----------- Starting -----------
+2022-11-29 09:25:30 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 09:25:30 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 09:25:30 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 09:25:55 DEBUG    ----------- Starting -----------
+2022-11-29 09:25:55 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 09:25:55 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 09:25:55 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:12:49 DEBUG    ----------- Starting -----------
+2022-11-29 11:12:49 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:12:49 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:12:49 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:13:43 DEBUG    ----------- Starting -----------
+2022-11-29 11:13:43 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:13:43 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:13:43 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:15:26 INFO     127.0.0.1 - - [29/Nov/2022 11:15:26] "GET / HTTP/1.1" 200 -
+2022-11-29 11:15:26 INFO     127.0.0.1 - - [29/Nov/2022 11:15:26] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:15:27 INFO     127.0.0.1 - - [29/Nov/2022 11:15:27] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:15:27 INFO     127.0.0.1 - - [29/Nov/2022 11:15:27] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:15:27 INFO     127.0.0.1 - - [29/Nov/2022 11:15:27] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:15:27 INFO     127.0.0.1 - - [29/Nov/2022 11:15:27] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:15:27 INFO     127.0.0.1 - - [29/Nov/2022 11:15:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:15:27 INFO     127.0.0.1 - - [29/Nov/2022 11:15:27] "GET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1" 200 -
+2022-11-29 11:15:36 DEBUG    ----------- Starting -----------
+2022-11-29 11:15:36 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:15:36 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:15:36 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:17:06 DEBUG    ----------- Starting -----------
+2022-11-29 11:17:06 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:17:06 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:17:06 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:18:54 DEBUG    ----------- Starting -----------
+2022-11-29 11:18:55 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:18:55 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:18:55 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:18:57 INFO     127.0.0.1 - - [29/Nov/2022 11:18:57] "GET / HTTP/1.1" 200 -
+2022-11-29 11:18:57 INFO     127.0.0.1 - - [29/Nov/2022 11:18:57] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:18:58 INFO     127.0.0.1 - - [29/Nov/2022 11:18:58] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:18:58 INFO     127.0.0.1 - - [29/Nov/2022 11:18:58] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:18:58 INFO     127.0.0.1 - - [29/Nov/2022 11:18:58] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:18:58 INFO     127.0.0.1 - - [29/Nov/2022 11:18:58] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:18:58 INFO     127.0.0.1 - - [29/Nov/2022 11:18:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:19:01 INFO     127.0.0.1 - - [29/Nov/2022 11:19:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:19:44 DEBUG    ----------- Starting -----------
+2022-11-29 11:19:44 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:19:44 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:19:44 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:19:46 INFO     127.0.0.1 - - [29/Nov/2022 11:19:46] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:19:46 INFO     127.0.0.1 - - [29/Nov/2022 11:19:46] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 11:19:46 INFO     127.0.0.1 - - [29/Nov/2022 11:19:46] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:19:46 INFO     127.0.0.1 - - [29/Nov/2022 11:19:46] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:19:46 INFO     127.0.0.1 - - [29/Nov/2022 11:19:46] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:19:46 INFO     127.0.0.1 - - [29/Nov/2022 11:19:46] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:19:46 INFO     127.0.0.1 - - [29/Nov/2022 11:19:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:20:20 DEBUG    ----------- Starting -----------
+2022-11-29 11:20:20 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:20:20 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:20:20 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:20:21 INFO     127.0.0.1 - - [29/Nov/2022 11:20:21] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:20:21 INFO     127.0.0.1 - - [29/Nov/2022 11:20:21] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:20:21 INFO     127.0.0.1 - - [29/Nov/2022 11:20:21] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:20:21 INFO     127.0.0.1 - - [29/Nov/2022 11:20:21] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:20:21 INFO     127.0.0.1 - - [29/Nov/2022 11:20:21] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:20:21 INFO     127.0.0.1 - - [29/Nov/2022 11:20:21] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:20:21 INFO     127.0.0.1 - - [29/Nov/2022 11:20:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:21:30 DEBUG    ----------- Starting -----------
+2022-11-29 11:21:30 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:21:30 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:21:30 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:21:58 DEBUG    ----------- Starting -----------
+2022-11-29 11:21:58 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:21:58 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:21:58 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:22:00 INFO     127.0.0.1 - - [29/Nov/2022 11:22:00] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:22:00 INFO     127.0.0.1 - - [29/Nov/2022 11:22:00] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:22:00 INFO     127.0.0.1 - - [29/Nov/2022 11:22:00] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:22:00 INFO     127.0.0.1 - - [29/Nov/2022 11:22:00] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:22:00 INFO     127.0.0.1 - - [29/Nov/2022 11:22:00] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:22:00 INFO     127.0.0.1 - - [29/Nov/2022 11:22:00] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:22:00 INFO     127.0.0.1 - - [29/Nov/2022 11:22:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:23:49 DEBUG    ----------- Starting -----------
+2022-11-29 11:23:49 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:23:49 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:23:49 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:23:53 INFO     127.0.0.1 - - [29/Nov/2022 11:23:53] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:23:53 INFO     127.0.0.1 - - [29/Nov/2022 11:23:53] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:23:53 INFO     127.0.0.1 - - [29/Nov/2022 11:23:53] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:23:53 INFO     127.0.0.1 - - [29/Nov/2022 11:23:53] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:23:53 INFO     127.0.0.1 - - [29/Nov/2022 11:23:53] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:23:53 INFO     127.0.0.1 - - [29/Nov/2022 11:23:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:26:01 DEBUG    ----------- Starting -----------
+2022-11-29 11:26:01 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:26:01 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:26:01 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:26:04 INFO     127.0.0.1 - - [29/Nov/2022 11:26:04] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:26:04 INFO     127.0.0.1 - - [29/Nov/2022 11:26:04] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:26:04 INFO     127.0.0.1 - - [29/Nov/2022 11:26:04] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:26:04 INFO     127.0.0.1 - - [29/Nov/2022 11:26:04] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:26:04 INFO     127.0.0.1 - - [29/Nov/2022 11:26:04] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:26:04 INFO     127.0.0.1 - - [29/Nov/2022 11:26:04] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:26:04 INFO     127.0.0.1 - - [29/Nov/2022 11:26:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:26:27 DEBUG    ----------- Starting -----------
+2022-11-29 11:27:57 DEBUG    ----------- Starting -----------
+2022-11-29 11:27:57 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:27:57 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:27:57 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:28:01 INFO     127.0.0.1 - - [29/Nov/2022 11:28:01] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:28:01 INFO     127.0.0.1 - - [29/Nov/2022 11:28:01] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:28:01 INFO     127.0.0.1 - - [29/Nov/2022 11:28:01] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:28:01 INFO     127.0.0.1 - - [29/Nov/2022 11:28:01] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:28:01 INFO     127.0.0.1 - - [29/Nov/2022 11:28:01] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:28:01 INFO     127.0.0.1 - - [29/Nov/2022 11:28:01] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:28:01 INFO     127.0.0.1 - - [29/Nov/2022 11:28:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:33:22 INFO     127.0.0.1 - - [29/Nov/2022 11:33:22] "GET / HTTP/1.1" 200 -
+2022-11-29 11:33:22 INFO     127.0.0.1 - - [29/Nov/2022 11:33:22] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:33:22 INFO     127.0.0.1 - - [29/Nov/2022 11:33:22] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:33:22 INFO     127.0.0.1 - - [29/Nov/2022 11:33:22] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:33:22 INFO     127.0.0.1 - - [29/Nov/2022 11:33:22] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:33:22 INFO     127.0.0.1 - - [29/Nov/2022 11:33:22] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:33:22 INFO     127.0.0.1 - - [29/Nov/2022 11:33:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:33:24 INFO     127.0.0.1 - - [29/Nov/2022 11:33:24] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:33:30 INFO     127.0.0.1 - - [29/Nov/2022 11:33:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:41:04 DEBUG    ----------- Starting -----------
+2022-11-29 11:41:04 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:41:04 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:41:04 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:41:08 INFO     127.0.0.1 - - [29/Nov/2022 11:41:08] "GET / HTTP/1.1" 200 -
+2022-11-29 11:41:08 INFO     127.0.0.1 - - [29/Nov/2022 11:41:08] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:41:08 INFO     127.0.0.1 - - [29/Nov/2022 11:41:08] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:41:08 INFO     127.0.0.1 - - [29/Nov/2022 11:41:08] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:41:09 INFO     127.0.0.1 - - [29/Nov/2022 11:41:09] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:41:09 INFO     127.0.0.1 - - [29/Nov/2022 11:41:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:41:10 INFO     127.0.0.1 - - [29/Nov/2022 11:41:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:42:06 DEBUG    ----------- Starting -----------
+2022-11-29 11:42:06 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:42:06 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:42:06 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:43:07 DEBUG    ----------- Starting -----------
+2022-11-29 11:43:07 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:43:07 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:43:07 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:43:10 INFO     127.0.0.1 - - [29/Nov/2022 11:43:10] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:43:10 INFO     127.0.0.1 - - [29/Nov/2022 11:43:10] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:43:10 INFO     127.0.0.1 - - [29/Nov/2022 11:43:10] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:43:10 INFO     127.0.0.1 - - [29/Nov/2022 11:43:10] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:43:10 INFO     127.0.0.1 - - [29/Nov/2022 11:43:10] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:43:10 INFO     127.0.0.1 - - [29/Nov/2022 11:43:10] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:43:10 INFO     127.0.0.1 - - [29/Nov/2022 11:43:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:44:02 DEBUG    ----------- Starting -----------
+2022-11-29 11:44:02 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:44:02 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:44:02 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:44:03 INFO     127.0.0.1 - - [29/Nov/2022 11:44:03] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:44:03 INFO     127.0.0.1 - - [29/Nov/2022 11:44:03] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 11:44:04 INFO     127.0.0.1 - - [29/Nov/2022 11:44:04] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:44:04 INFO     127.0.0.1 - - [29/Nov/2022 11:44:04] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:44:04 INFO     127.0.0.1 - - [29/Nov/2022 11:44:04] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 11:44:04 INFO     127.0.0.1 - - [29/Nov/2022 11:44:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:44:17 DEBUG    ----------- Starting -----------
+2022-11-29 11:44:17 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:44:17 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:44:17 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:44:45 DEBUG    ----------- Starting -----------
+2022-11-29 11:44:45 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:44:45 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:44:45 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:44:52 INFO     127.0.0.1 - - [29/Nov/2022 11:44:52] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:44:52 INFO     127.0.0.1 - - [29/Nov/2022 11:44:52] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:44:52 INFO     127.0.0.1 - - [29/Nov/2022 11:44:52] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:44:52 INFO     127.0.0.1 - - [29/Nov/2022 11:44:52] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:44:52 INFO     127.0.0.1 - - [29/Nov/2022 11:44:52] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:44:52 INFO     127.0.0.1 - - [29/Nov/2022 11:44:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:45:55 DEBUG    ----------- Starting -----------
+2022-11-29 11:45:55 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:45:55 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:45:55 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:45:57 INFO     127.0.0.1 - - [29/Nov/2022 11:45:57] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:45:57 INFO     127.0.0.1 - - [29/Nov/2022 11:45:57] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 11:45:57 INFO     127.0.0.1 - - [29/Nov/2022 11:45:57] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:45:57 INFO     127.0.0.1 - - [29/Nov/2022 11:45:57] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:45:57 INFO     127.0.0.1 - - [29/Nov/2022 11:45:57] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 11:45:57 INFO     127.0.0.1 - - [29/Nov/2022 11:45:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:52:40 DEBUG    ----------- Starting -----------
+2022-11-29 11:52:40 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:52:41 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:52:41 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:52:49 INFO     127.0.0.1 - - [29/Nov/2022 11:52:49] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:52:49 INFO     127.0.0.1 - - [29/Nov/2022 11:52:49] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:52:49 INFO     127.0.0.1 - - [29/Nov/2022 11:52:49] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:52:49 INFO     127.0.0.1 - - [29/Nov/2022 11:52:49] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:52:49 INFO     127.0.0.1 - - [29/Nov/2022 11:52:49] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:52:49 INFO     127.0.0.1 - - [29/Nov/2022 11:52:49] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:52:49 INFO     127.0.0.1 - - [29/Nov/2022 11:52:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:52:49 INFO     127.0.0.1 - - [29/Nov/2022 11:52:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:52:50 INFO     127.0.0.1 - - [29/Nov/2022 11:52:50] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:52:50 INFO     127.0.0.1 - - [29/Nov/2022 11:52:50] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 11:52:50 INFO     127.0.0.1 - - [29/Nov/2022 11:52:50] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:52:50 INFO     127.0.0.1 - - [29/Nov/2022 11:52:50] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:52:50 INFO     127.0.0.1 - - [29/Nov/2022 11:52:50] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 11:52:50 INFO     127.0.0.1 - - [29/Nov/2022 11:52:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:52:50 INFO     127.0.0.1 - - [29/Nov/2022 11:52:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:52:51 INFO     127.0.0.1 - - [29/Nov/2022 11:52:51] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:52:51 INFO     127.0.0.1 - - [29/Nov/2022 11:52:51] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:52:51 INFO     127.0.0.1 - - [29/Nov/2022 11:52:51] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:52:51 INFO     127.0.0.1 - - [29/Nov/2022 11:52:51] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:52:51 INFO     127.0.0.1 - - [29/Nov/2022 11:52:51] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:52:51 INFO     127.0.0.1 - - [29/Nov/2022 11:52:51] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:52:51 INFO     127.0.0.1 - - [29/Nov/2022 11:52:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:52:51 INFO     127.0.0.1 - - [29/Nov/2022 11:52:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:52:52 INFO     127.0.0.1 - - [29/Nov/2022 11:52:52] "GET / HTTP/1.1" 200 -
+2022-11-29 11:52:52 INFO     127.0.0.1 - - [29/Nov/2022 11:52:52] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 11:52:53 INFO     127.0.0.1 - - [29/Nov/2022 11:52:53] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:52:53 INFO     127.0.0.1 - - [29/Nov/2022 11:52:53] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:52:53 INFO     127.0.0.1 - - [29/Nov/2022 11:52:53] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 11:52:53 INFO     127.0.0.1 - - [29/Nov/2022 11:52:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:52:54 INFO     127.0.0.1 - - [29/Nov/2022 11:52:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:52:54 INFO     127.0.0.1 - - [29/Nov/2022 11:52:54] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:53:09 DEBUG    ----------- Starting -----------
+2022-11-29 11:53:09 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:53:09 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:53:09 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:53:13 INFO     127.0.0.1 - - [29/Nov/2022 11:53:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:53:13 INFO     127.0.0.1 - - [29/Nov/2022 11:53:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:53:15 INFO     127.0.0.1 - - [29/Nov/2022 11:53:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:53:15 INFO     127.0.0.1 - - [29/Nov/2022 11:53:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:53:24 INFO     127.0.0.1 - - [29/Nov/2022 11:53:24] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:53:24 INFO     127.0.0.1 - - [29/Nov/2022 11:53:24] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:53:24 INFO     127.0.0.1 - - [29/Nov/2022 11:53:24] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:53:24 INFO     127.0.0.1 - - [29/Nov/2022 11:53:24] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:53:24 INFO     127.0.0.1 - - [29/Nov/2022 11:53:24] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:53:24 INFO     127.0.0.1 - - [29/Nov/2022 11:53:24] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:53:24 INFO     127.0.0.1 - - [29/Nov/2022 11:53:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:53:24 INFO     127.0.0.1 - - [29/Nov/2022 11:53:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:53:55 DEBUG    ----------- Starting -----------
+2022-11-29 11:53:55 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:53:55 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:53:55 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:54:03 DEBUG    ----------- Starting -----------
+2022-11-29 11:54:03 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 11:54:03 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 11:54:03 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 11:54:10 INFO     127.0.0.1 - - [29/Nov/2022 11:54:10] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:54:10 INFO     127.0.0.1 - - [29/Nov/2022 11:54:10] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:54:11 INFO     127.0.0.1 - - [29/Nov/2022 11:54:11] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:54:11 INFO     127.0.0.1 - - [29/Nov/2022 11:54:11] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:54:11 INFO     127.0.0.1 - - [29/Nov/2022 11:54:11] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:54:11 INFO     127.0.0.1 - - [29/Nov/2022 11:54:11] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:54:11 INFO     127.0.0.1 - - [29/Nov/2022 11:54:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:11 INFO     127.0.0.1 - - [29/Nov/2022 11:54:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:12 INFO     127.0.0.1 - - [29/Nov/2022 11:54:12] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:54:12 INFO     127.0.0.1 - - [29/Nov/2022 11:54:12] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 11:54:12 INFO     127.0.0.1 - - [29/Nov/2022 11:54:12] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:54:12 INFO     127.0.0.1 - - [29/Nov/2022 11:54:12] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:54:12 INFO     127.0.0.1 - - [29/Nov/2022 11:54:12] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 11:54:12 INFO     127.0.0.1 - - [29/Nov/2022 11:54:12] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 11:54:12 INFO     127.0.0.1 - - [29/Nov/2022 11:54:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:12 INFO     127.0.0.1 - - [29/Nov/2022 11:54:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:16 INFO     127.0.0.1 - - [29/Nov/2022 11:54:16] "GET /players HTTP/1.1" 200 -
+2022-11-29 11:54:16 INFO     127.0.0.1 - - [29/Nov/2022 11:54:16] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 11:54:16 INFO     127.0.0.1 - - [29/Nov/2022 11:54:16] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 11:54:16 INFO     127.0.0.1 - - [29/Nov/2022 11:54:16] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 11:54:16 INFO     127.0.0.1 - - [29/Nov/2022 11:54:16] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 11:54:16 INFO     127.0.0.1 - - [29/Nov/2022 11:54:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:16 INFO     127.0.0.1 - - [29/Nov/2022 11:54:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:19 INFO     127.0.0.1 - - [29/Nov/2022 11:54:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:21 INFO     127.0.0.1 - - [29/Nov/2022 11:54:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:22 INFO     127.0.0.1 - - [29/Nov/2022 11:54:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:23 INFO     127.0.0.1 - - [29/Nov/2022 11:54:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:23 INFO     127.0.0.1 - - [29/Nov/2022 11:54:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:24 INFO     127.0.0.1 - - [29/Nov/2022 11:54:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:24 INFO     127.0.0.1 - - [29/Nov/2022 11:54:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:24 INFO     127.0.0.1 - - [29/Nov/2022 11:54:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:25 INFO     127.0.0.1 - - [29/Nov/2022 11:54:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:25 INFO     127.0.0.1 - - [29/Nov/2022 11:54:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:25 INFO     127.0.0.1 - - [29/Nov/2022 11:54:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:25 INFO     127.0.0.1 - - [29/Nov/2022 11:54:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:25 INFO     127.0.0.1 - - [29/Nov/2022 11:54:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:25 INFO     127.0.0.1 - - [29/Nov/2022 11:54:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:26 INFO     127.0.0.1 - - [29/Nov/2022 11:54:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:26 INFO     127.0.0.1 - - [29/Nov/2022 11:54:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:26 INFO     127.0.0.1 - - [29/Nov/2022 11:54:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:26 INFO     127.0.0.1 - - [29/Nov/2022 11:54:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:26 INFO     127.0.0.1 - - [29/Nov/2022 11:54:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 11:54:26 INFO     127.0.0.1 - - [29/Nov/2022 11:54:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:04:10 DEBUG    ----------- Starting -----------
+2022-11-29 12:04:10 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:04:10 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:04:10 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:04:12 INFO     127.0.0.1 - - [29/Nov/2022 12:04:12] "GET / HTTP/1.1" 200 -
+2022-11-29 12:04:12 INFO     127.0.0.1 - - [29/Nov/2022 12:04:12] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 12:04:13 INFO     127.0.0.1 - - [29/Nov/2022 12:04:13] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 12:04:13 INFO     127.0.0.1 - - [29/Nov/2022 12:04:13] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 12:04:13 INFO     127.0.0.1 - - [29/Nov/2022 12:04:13] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 12:04:13 INFO     127.0.0.1 - - [29/Nov/2022 12:04:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:04:16 INFO     127.0.0.1 - - [29/Nov/2022 12:04:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:04:16 INFO     127.0.0.1 - - [29/Nov/2022 12:04:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:04:16 INFO     127.0.0.1 - - [29/Nov/2022 12:04:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:04:24 INFO     127.0.0.1 - - [29/Nov/2022 12:04:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:04:24 ERROR    Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: False
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\dash.py", line 1274, in dispatch
+    ctx.run(
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\_callback.py", line 440, in add_context
+    output_value = func(*func_args, **func_kwargs)  # %% callback invoked %%
+  File "D:\ESIEE\Projet-Open-Source-Fbref\pages\players.py", line 44, in fill_search_result
+    list = db.df_best_pos[val in db.df_best_pos['name']]
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: False
+2022-11-29 12:04:24 INFO     127.0.0.1 - - [29/Nov/2022 12:04:24] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2022-11-29 12:04:44 DEBUG    ----------- Starting -----------
+2022-11-29 12:04:44 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:04:44 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:04:44 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:04:48 INFO     127.0.0.1 - - [29/Nov/2022 12:04:48] "GET /players HTTP/1.1" 200 -
+2022-11-29 12:04:48 INFO     127.0.0.1 - - [29/Nov/2022 12:04:48] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 12:04:48 INFO     127.0.0.1 - - [29/Nov/2022 12:04:48] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 12:04:48 INFO     127.0.0.1 - - [29/Nov/2022 12:04:48] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 12:04:48 INFO     127.0.0.1 - - [29/Nov/2022 12:04:48] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 12:04:48 INFO     127.0.0.1 - - [29/Nov/2022 12:04:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:04:48 INFO     127.0.0.1 - - [29/Nov/2022 12:04:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:04:48 INFO     127.0.0.1 - - [29/Nov/2022 12:04:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:04:49 INFO     127.0.0.1 - - [29/Nov/2022 12:04:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:04:49 ERROR    Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: False
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\dash.py", line 1274, in dispatch
+    ctx.run(
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\_callback.py", line 440, in add_context
+    output_value = func(*func_args, **func_kwargs)  # %% callback invoked %%
+  File "D:\ESIEE\Projet-Open-Source-Fbref\pages\players.py", line 44, in fill_search_result
+    list = db.df_best_pos[val in db.df_best_pos['name']]
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: False
+2022-11-29 12:04:49 INFO     127.0.0.1 - - [29/Nov/2022 12:04:49] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2022-11-29 12:10:37 DEBUG    ----------- Starting -----------
+2022-11-29 12:11:21 DEBUG    ----------- Starting -----------
+2022-11-29 12:11:22 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:11:22 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:11:22 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:11:37 DEBUG    ----------- Starting -----------
+2022-11-29 12:14:06 DEBUG    ----------- Starting -----------
+2022-11-29 12:14:06 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:14:06 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:14:06 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:15:10 DEBUG    ----------- Starting -----------
+2022-11-29 12:15:10 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:15:10 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:15:10 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:15:13 INFO     127.0.0.1 - - [29/Nov/2022 12:15:13] "GET /players HTTP/1.1" 200 -
+2022-11-29 12:15:13 INFO     127.0.0.1 - - [29/Nov/2022 12:15:13] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 12:15:13 INFO     127.0.0.1 - - [29/Nov/2022 12:15:13] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 12:15:13 INFO     127.0.0.1 - - [29/Nov/2022 12:15:13] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 12:15:13 INFO     127.0.0.1 - - [29/Nov/2022 12:15:13] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 12:15:13 INFO     127.0.0.1 - - [29/Nov/2022 12:15:13] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 12:15:13 INFO     127.0.0.1 - - [29/Nov/2022 12:15:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:13 INFO     127.0.0.1 - - [29/Nov/2022 12:15:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:13 INFO     127.0.0.1 - - [29/Nov/2022 12:15:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:15 INFO     127.0.0.1 - - [29/Nov/2022 12:15:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:15 INFO     127.0.0.1 - - [29/Nov/2022 12:15:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:15 INFO     127.0.0.1 - - [29/Nov/2022 12:15:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:15 INFO     127.0.0.1 - - [29/Nov/2022 12:15:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:16 INFO     127.0.0.1 - - [29/Nov/2022 12:15:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:16 INFO     127.0.0.1 - - [29/Nov/2022 12:15:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:20 INFO     127.0.0.1 - - [29/Nov/2022 12:15:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:20 INFO     127.0.0.1 - - [29/Nov/2022 12:15:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:20 INFO     127.0.0.1 - - [29/Nov/2022 12:15:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:20 INFO     127.0.0.1 - - [29/Nov/2022 12:15:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:23 INFO     127.0.0.1 - - [29/Nov/2022 12:15:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:23 INFO     127.0.0.1 - - [29/Nov/2022 12:15:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:23 INFO     127.0.0.1 - - [29/Nov/2022 12:15:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:23 INFO     127.0.0.1 - - [29/Nov/2022 12:15:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:24 INFO     127.0.0.1 - - [29/Nov/2022 12:15:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:24 INFO     127.0.0.1 - - [29/Nov/2022 12:15:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:24 INFO     127.0.0.1 - - [29/Nov/2022 12:15:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:24 INFO     127.0.0.1 - - [29/Nov/2022 12:15:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:25 INFO     127.0.0.1 - - [29/Nov/2022 12:15:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:25 INFO     127.0.0.1 - - [29/Nov/2022 12:15:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:25 INFO     127.0.0.1 - - [29/Nov/2022 12:15:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:25 INFO     127.0.0.1 - - [29/Nov/2022 12:15:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:26 INFO     127.0.0.1 - - [29/Nov/2022 12:15:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:26 INFO     127.0.0.1 - - [29/Nov/2022 12:15:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:15:34 DEBUG    ----------- Starting -----------
+2022-11-29 12:15:34 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:15:34 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:15:34 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:15:36 ERROR    Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\dash.py", line 1221, in dispatch
+    cb = self.callback_map[output]
+KeyError: 'collapse.is_open'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\dash.py", line 1270, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'collapse.is_open', perhaps you forgot to prepend the '@'?"
+2022-11-29 12:15:36 INFO     127.0.0.1 - - [29/Nov/2022 12:15:36] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2022-11-29 12:15:36 INFO     127.0.0.1 - - [29/Nov/2022 12:15:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:40 DEBUG    ----------- Starting -----------
+2022-11-29 12:16:40 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:16:40 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:16:40 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:16:41 INFO     127.0.0.1 - - [29/Nov/2022 12:16:41] "GET /players HTTP/1.1" 200 -
+2022-11-29 12:16:41 INFO     127.0.0.1 - - [29/Nov/2022 12:16:41] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 12:16:42 INFO     127.0.0.1 - - [29/Nov/2022 12:16:42] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 12:16:42 INFO     127.0.0.1 - - [29/Nov/2022 12:16:42] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 12:16:42 INFO     127.0.0.1 - - [29/Nov/2022 12:16:42] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 12:16:42 INFO     127.0.0.1 - - [29/Nov/2022 12:16:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:42 INFO     127.0.0.1 - - [29/Nov/2022 12:16:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:42 INFO     127.0.0.1 - - [29/Nov/2022 12:16:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:45 INFO     127.0.0.1 - - [29/Nov/2022 12:16:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:45 INFO     127.0.0.1 - - [29/Nov/2022 12:16:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:47 INFO     127.0.0.1 - - [29/Nov/2022 12:16:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:47 INFO     127.0.0.1 - - [29/Nov/2022 12:16:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:48 INFO     127.0.0.1 - - [29/Nov/2022 12:16:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:48 INFO     127.0.0.1 - - [29/Nov/2022 12:16:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:55 INFO     127.0.0.1 - - [29/Nov/2022 12:16:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:55 INFO     127.0.0.1 - - [29/Nov/2022 12:16:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:55 INFO     127.0.0.1 - - [29/Nov/2022 12:16:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:55 INFO     127.0.0.1 - - [29/Nov/2022 12:16:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:56 INFO     127.0.0.1 - - [29/Nov/2022 12:16:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:56 INFO     127.0.0.1 - - [29/Nov/2022 12:16:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:57 INFO     127.0.0.1 - - [29/Nov/2022 12:16:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:57 INFO     127.0.0.1 - - [29/Nov/2022 12:16:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:57 INFO     127.0.0.1 - - [29/Nov/2022 12:16:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:57 INFO     127.0.0.1 - - [29/Nov/2022 12:16:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:57 INFO     127.0.0.1 - - [29/Nov/2022 12:16:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:57 INFO     127.0.0.1 - - [29/Nov/2022 12:16:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:58 INFO     127.0.0.1 - - [29/Nov/2022 12:16:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:58 INFO     127.0.0.1 - - [29/Nov/2022 12:16:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:58 INFO     127.0.0.1 - - [29/Nov/2022 12:16:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:58 INFO     127.0.0.1 - - [29/Nov/2022 12:16:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:58 INFO     127.0.0.1 - - [29/Nov/2022 12:16:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:58 INFO     127.0.0.1 - - [29/Nov/2022 12:16:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:59 INFO     127.0.0.1 - - [29/Nov/2022 12:16:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:59 INFO     127.0.0.1 - - [29/Nov/2022 12:16:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:59 INFO     127.0.0.1 - - [29/Nov/2022 12:16:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:59 INFO     127.0.0.1 - - [29/Nov/2022 12:16:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:59 INFO     127.0.0.1 - - [29/Nov/2022 12:16:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:16:59 INFO     127.0.0.1 - - [29/Nov/2022 12:16:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:00 INFO     127.0.0.1 - - [29/Nov/2022 12:17:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:00 INFO     127.0.0.1 - - [29/Nov/2022 12:17:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:00 INFO     127.0.0.1 - - [29/Nov/2022 12:17:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:00 INFO     127.0.0.1 - - [29/Nov/2022 12:17:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:01 INFO     127.0.0.1 - - [29/Nov/2022 12:17:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:01 INFO     127.0.0.1 - - [29/Nov/2022 12:17:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:02 INFO     127.0.0.1 - - [29/Nov/2022 12:17:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:02 INFO     127.0.0.1 - - [29/Nov/2022 12:17:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:02 INFO     127.0.0.1 - - [29/Nov/2022 12:17:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:02 INFO     127.0.0.1 - - [29/Nov/2022 12:17:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:03 INFO     127.0.0.1 - - [29/Nov/2022 12:17:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:03 INFO     127.0.0.1 - - [29/Nov/2022 12:17:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:03 INFO     127.0.0.1 - - [29/Nov/2022 12:17:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:03 INFO     127.0.0.1 - - [29/Nov/2022 12:17:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:04 INFO     127.0.0.1 - - [29/Nov/2022 12:17:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:04 INFO     127.0.0.1 - - [29/Nov/2022 12:17:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:04 INFO     127.0.0.1 - - [29/Nov/2022 12:17:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:04 INFO     127.0.0.1 - - [29/Nov/2022 12:17:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:05 INFO     127.0.0.1 - - [29/Nov/2022 12:17:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:05 INFO     127.0.0.1 - - [29/Nov/2022 12:17:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:05 INFO     127.0.0.1 - - [29/Nov/2022 12:17:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:05 INFO     127.0.0.1 - - [29/Nov/2022 12:17:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:05 INFO     127.0.0.1 - - [29/Nov/2022 12:17:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:05 INFO     127.0.0.1 - - [29/Nov/2022 12:17:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:05 INFO     127.0.0.1 - - [29/Nov/2022 12:17:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:05 INFO     127.0.0.1 - - [29/Nov/2022 12:17:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:05 INFO     127.0.0.1 - - [29/Nov/2022 12:17:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:05 INFO     127.0.0.1 - - [29/Nov/2022 12:17:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:06 INFO     127.0.0.1 - - [29/Nov/2022 12:17:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:06 INFO     127.0.0.1 - - [29/Nov/2022 12:17:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:06 INFO     127.0.0.1 - - [29/Nov/2022 12:17:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:06 INFO     127.0.0.1 - - [29/Nov/2022 12:17:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:06 INFO     127.0.0.1 - - [29/Nov/2022 12:17:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:06 INFO     127.0.0.1 - - [29/Nov/2022 12:17:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:07 INFO     127.0.0.1 - - [29/Nov/2022 12:17:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:07 INFO     127.0.0.1 - - [29/Nov/2022 12:17:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:07 INFO     127.0.0.1 - - [29/Nov/2022 12:17:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:07 INFO     127.0.0.1 - - [29/Nov/2022 12:17:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:08 INFO     127.0.0.1 - - [29/Nov/2022 12:17:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:08 INFO     127.0.0.1 - - [29/Nov/2022 12:17:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:10 INFO     127.0.0.1 - - [29/Nov/2022 12:17:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:10 INFO     127.0.0.1 - - [29/Nov/2022 12:17:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:10 INFO     127.0.0.1 - - [29/Nov/2022 12:17:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:10 INFO     127.0.0.1 - - [29/Nov/2022 12:17:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:11 INFO     127.0.0.1 - - [29/Nov/2022 12:17:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:11 INFO     127.0.0.1 - - [29/Nov/2022 12:17:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:12 INFO     127.0.0.1 - - [29/Nov/2022 12:17:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:12 INFO     127.0.0.1 - - [29/Nov/2022 12:17:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:12 INFO     127.0.0.1 - - [29/Nov/2022 12:17:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:12 INFO     127.0.0.1 - - [29/Nov/2022 12:17:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:12 INFO     127.0.0.1 - - [29/Nov/2022 12:17:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:12 INFO     127.0.0.1 - - [29/Nov/2022 12:17:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:12 INFO     127.0.0.1 - - [29/Nov/2022 12:17:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:17:12 INFO     127.0.0.1 - - [29/Nov/2022 12:17:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:19:02 DEBUG    ----------- Starting -----------
+2022-11-29 12:19:02 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:19:02 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:19:02 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:19:05 INFO     127.0.0.1 - - [29/Nov/2022 12:19:05] "GET /players HTTP/1.1" 200 -
+2022-11-29 12:19:05 INFO     127.0.0.1 - - [29/Nov/2022 12:19:05] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 12:19:05 INFO     127.0.0.1 - - [29/Nov/2022 12:19:05] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 12:19:05 INFO     127.0.0.1 - - [29/Nov/2022 12:19:05] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 12:19:05 INFO     127.0.0.1 - - [29/Nov/2022 12:19:05] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 12:19:05 INFO     127.0.0.1 - - [29/Nov/2022 12:19:05] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 12:19:05 INFO     127.0.0.1 - - [29/Nov/2022 12:19:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:19:05 INFO     127.0.0.1 - - [29/Nov/2022 12:19:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:19:05 INFO     127.0.0.1 - - [29/Nov/2022 12:19:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:19:07 INFO     127.0.0.1 - - [29/Nov/2022 12:19:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:19:07 ERROR    Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\dash.py", line 1274, in dispatch
+    ctx.run(
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\_callback.py", line 440, in add_context
+    output_value = func(*func_args, **func_kwargs)  # %% callback invoked %%
+  File "D:\ESIEE\Projet-Open-Source-Fbref\pages\players.py", line 46, in fill_search_result
+    result = db.df_best_pos[db.df_best_pos['name'].str.lower().contains(val.lower())]
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'Series' object has no attribute 'contains'
+2022-11-29 12:19:07 INFO     127.0.0.1 - - [29/Nov/2022 12:19:07] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2022-11-29 12:21:35 DEBUG    ----------- Starting -----------
+2022-11-29 12:21:35 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:21:35 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:21:35 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "GET /players HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "GET /players HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:38 INFO     127.0.0.1 - - [29/Nov/2022 12:21:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:40 INFO     127.0.0.1 - - [29/Nov/2022 12:21:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:40 ERROR    Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\dash.py", line 1274, in dispatch
+    ctx.run(
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\_callback.py", line 440, in add_context
+    output_value = func(*func_args, **func_kwargs)  # %% callback invoked %%
+  File "D:\ESIEE\Projet-Open-Source-Fbref\pages\players.py", line 46, in fill_search_result
+    result = db.df_best_pos[db.df_best_pos['name'].lower().str.contains(val)]
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'Series' object has no attribute 'lower'
+2022-11-29 12:21:40 INFO     127.0.0.1 - - [29/Nov/2022 12:21:40] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2022-11-29 12:21:50 DEBUG    ----------- Starting -----------
+2022-11-29 12:21:50 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:21:50 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:21:50 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:21:52 INFO     127.0.0.1 - - [29/Nov/2022 12:21:52] "GET /players HTTP/1.1" 200 -
+2022-11-29 12:21:52 INFO     127.0.0.1 - - [29/Nov/2022 12:21:52] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 12:21:52 INFO     127.0.0.1 - - [29/Nov/2022 12:21:52] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 12:21:52 INFO     127.0.0.1 - - [29/Nov/2022 12:21:52] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 12:21:52 INFO     127.0.0.1 - - [29/Nov/2022 12:21:52] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 12:21:52 INFO     127.0.0.1 - - [29/Nov/2022 12:21:52] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 12:21:52 INFO     127.0.0.1 - - [29/Nov/2022 12:21:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:52 INFO     127.0.0.1 - - [29/Nov/2022 12:21:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:52 INFO     127.0.0.1 - - [29/Nov/2022 12:21:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:53 INFO     127.0.0.1 - - [29/Nov/2022 12:21:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:53 INFO     127.0.0.1 - - [29/Nov/2022 12:21:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:55 INFO     127.0.0.1 - - [29/Nov/2022 12:21:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:55 INFO     127.0.0.1 - - [29/Nov/2022 12:21:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:55 INFO     127.0.0.1 - - [29/Nov/2022 12:21:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:55 INFO     127.0.0.1 - - [29/Nov/2022 12:21:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:56 INFO     127.0.0.1 - - [29/Nov/2022 12:21:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:56 INFO     127.0.0.1 - - [29/Nov/2022 12:21:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:57 INFO     127.0.0.1 - - [29/Nov/2022 12:21:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:57 INFO     127.0.0.1 - - [29/Nov/2022 12:21:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:57 INFO     127.0.0.1 - - [29/Nov/2022 12:21:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:57 INFO     127.0.0.1 - - [29/Nov/2022 12:21:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:58 INFO     127.0.0.1 - - [29/Nov/2022 12:21:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:58 INFO     127.0.0.1 - - [29/Nov/2022 12:21:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:58 INFO     127.0.0.1 - - [29/Nov/2022 12:21:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:58 INFO     127.0.0.1 - - [29/Nov/2022 12:21:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:58 INFO     127.0.0.1 - - [29/Nov/2022 12:21:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:58 INFO     127.0.0.1 - - [29/Nov/2022 12:21:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:59 INFO     127.0.0.1 - - [29/Nov/2022 12:21:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:59 INFO     127.0.0.1 - - [29/Nov/2022 12:21:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:59 INFO     127.0.0.1 - - [29/Nov/2022 12:21:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:59 INFO     127.0.0.1 - - [29/Nov/2022 12:21:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:59 INFO     127.0.0.1 - - [29/Nov/2022 12:21:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:59 INFO     127.0.0.1 - - [29/Nov/2022 12:21:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:59 INFO     127.0.0.1 - - [29/Nov/2022 12:21:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:59 INFO     127.0.0.1 - - [29/Nov/2022 12:21:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:59 INFO     127.0.0.1 - - [29/Nov/2022 12:21:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:21:59 INFO     127.0.0.1 - - [29/Nov/2022 12:21:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:22:56 INFO     127.0.0.1 - - [29/Nov/2022 12:22:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:23 DEBUG    ----------- Starting -----------
+2022-11-29 12:26:23 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:26:23 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:26:23 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:26:25 INFO     127.0.0.1 - - [29/Nov/2022 12:26:25] "GET /players HTTP/1.1" 200 -
+2022-11-29 12:26:25 INFO     127.0.0.1 - - [29/Nov/2022 12:26:25] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 12:26:25 INFO     127.0.0.1 - - [29/Nov/2022 12:26:25] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 12:26:25 INFO     127.0.0.1 - - [29/Nov/2022 12:26:25] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 12:26:25 INFO     127.0.0.1 - - [29/Nov/2022 12:26:25] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 12:26:25 INFO     127.0.0.1 - - [29/Nov/2022 12:26:25] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 12:26:25 INFO     127.0.0.1 - - [29/Nov/2022 12:26:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:25 INFO     127.0.0.1 - - [29/Nov/2022 12:26:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:25 INFO     127.0.0.1 - - [29/Nov/2022 12:26:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:28 INFO     127.0.0.1 - - [29/Nov/2022 12:26:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:28 ERROR    Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\dash.py", line 1274, in dispatch
+    ctx.run(
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\_callback.py", line 440, in add_context
+    output_value = func(*func_args, **func_kwargs)  # %% callback invoked %%
+  File "D:\ESIEE\Projet-Open-Source-Fbref\pages\players.py", line 46, in fill_search_result
+    result = db.df_best_pos[db.df_best_pos['name'].str.contains(val|val.capitalize())]
+TypeError: unsupported operand type(s) for |: 'str' and 'str'
+2022-11-29 12:26:28 INFO     127.0.0.1 - - [29/Nov/2022 12:26:28] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2022-11-29 12:26:53 DEBUG    ----------- Starting -----------
+2022-11-29 12:26:53 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 12:26:53 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 12:26:53 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 12:26:55 INFO     127.0.0.1 - - [29/Nov/2022 12:26:55] "GET /players HTTP/1.1" 200 -
+2022-11-29 12:26:55 INFO     127.0.0.1 - - [29/Nov/2022 12:26:55] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 12:26:55 INFO     127.0.0.1 - - [29/Nov/2022 12:26:55] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 12:26:55 INFO     127.0.0.1 - - [29/Nov/2022 12:26:55] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 12:26:55 INFO     127.0.0.1 - - [29/Nov/2022 12:26:55] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 12:26:55 INFO     127.0.0.1 - - [29/Nov/2022 12:26:55] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 12:26:55 INFO     127.0.0.1 - - [29/Nov/2022 12:26:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:55 INFO     127.0.0.1 - - [29/Nov/2022 12:26:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:55 INFO     127.0.0.1 - - [29/Nov/2022 12:26:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:56 INFO     127.0.0.1 - - [29/Nov/2022 12:26:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:56 INFO     127.0.0.1 - - [29/Nov/2022 12:26:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:58 INFO     127.0.0.1 - - [29/Nov/2022 12:26:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:58 INFO     127.0.0.1 - - [29/Nov/2022 12:26:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:59 INFO     127.0.0.1 - - [29/Nov/2022 12:26:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:59 INFO     127.0.0.1 - - [29/Nov/2022 12:26:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:59 INFO     127.0.0.1 - - [29/Nov/2022 12:26:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:59 INFO     127.0.0.1 - - [29/Nov/2022 12:26:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:59 INFO     127.0.0.1 - - [29/Nov/2022 12:26:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:26:59 INFO     127.0.0.1 - - [29/Nov/2022 12:26:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:00 INFO     127.0.0.1 - - [29/Nov/2022 12:27:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:00 INFO     127.0.0.1 - - [29/Nov/2022 12:27:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:00 INFO     127.0.0.1 - - [29/Nov/2022 12:27:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:00 INFO     127.0.0.1 - - [29/Nov/2022 12:27:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:00 INFO     127.0.0.1 - - [29/Nov/2022 12:27:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:00 INFO     127.0.0.1 - - [29/Nov/2022 12:27:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:03 INFO     127.0.0.1 - - [29/Nov/2022 12:27:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:03 INFO     127.0.0.1 - - [29/Nov/2022 12:27:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:03 INFO     127.0.0.1 - - [29/Nov/2022 12:27:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:03 INFO     127.0.0.1 - - [29/Nov/2022 12:27:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:03 INFO     127.0.0.1 - - [29/Nov/2022 12:27:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:03 INFO     127.0.0.1 - - [29/Nov/2022 12:27:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:03 INFO     127.0.0.1 - - [29/Nov/2022 12:27:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:03 INFO     127.0.0.1 - - [29/Nov/2022 12:27:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:04 INFO     127.0.0.1 - - [29/Nov/2022 12:27:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:05 INFO     127.0.0.1 - - [29/Nov/2022 12:27:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:05 INFO     127.0.0.1 - - [29/Nov/2022 12:27:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:05 INFO     127.0.0.1 - - [29/Nov/2022 12:27:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:05 INFO     127.0.0.1 - - [29/Nov/2022 12:27:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:05 INFO     127.0.0.1 - - [29/Nov/2022 12:27:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:05 INFO     127.0.0.1 - - [29/Nov/2022 12:27:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:06 INFO     127.0.0.1 - - [29/Nov/2022 12:27:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:06 INFO     127.0.0.1 - - [29/Nov/2022 12:27:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:06 INFO     127.0.0.1 - - [29/Nov/2022 12:27:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:06 INFO     127.0.0.1 - - [29/Nov/2022 12:27:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:06 INFO     127.0.0.1 - - [29/Nov/2022 12:27:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:06 INFO     127.0.0.1 - - [29/Nov/2022 12:27:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:06 INFO     127.0.0.1 - - [29/Nov/2022 12:27:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:06 INFO     127.0.0.1 - - [29/Nov/2022 12:27:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:06 INFO     127.0.0.1 - - [29/Nov/2022 12:27:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:06 INFO     127.0.0.1 - - [29/Nov/2022 12:27:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:07 INFO     127.0.0.1 - - [29/Nov/2022 12:27:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:07 INFO     127.0.0.1 - - [29/Nov/2022 12:27:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:07 INFO     127.0.0.1 - - [29/Nov/2022 12:27:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:07 INFO     127.0.0.1 - - [29/Nov/2022 12:27:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:07 INFO     127.0.0.1 - - [29/Nov/2022 12:27:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:07 INFO     127.0.0.1 - - [29/Nov/2022 12:27:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:07 INFO     127.0.0.1 - - [29/Nov/2022 12:27:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:07 INFO     127.0.0.1 - - [29/Nov/2022 12:27:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:09 INFO     127.0.0.1 - - [29/Nov/2022 12:27:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:09 INFO     127.0.0.1 - - [29/Nov/2022 12:27:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:09 INFO     127.0.0.1 - - [29/Nov/2022 12:27:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:09 INFO     127.0.0.1 - - [29/Nov/2022 12:27:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:09 INFO     127.0.0.1 - - [29/Nov/2022 12:27:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:09 INFO     127.0.0.1 - - [29/Nov/2022 12:27:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:10 INFO     127.0.0.1 - - [29/Nov/2022 12:27:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:10 INFO     127.0.0.1 - - [29/Nov/2022 12:27:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:10 INFO     127.0.0.1 - - [29/Nov/2022 12:27:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:10 INFO     127.0.0.1 - - [29/Nov/2022 12:27:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:18 INFO     127.0.0.1 - - [29/Nov/2022 12:27:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:18 INFO     127.0.0.1 - - [29/Nov/2022 12:27:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:18 INFO     127.0.0.1 - - [29/Nov/2022 12:27:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:18 INFO     127.0.0.1 - - [29/Nov/2022 12:27:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:19 INFO     127.0.0.1 - - [29/Nov/2022 12:27:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:19 INFO     127.0.0.1 - - [29/Nov/2022 12:27:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:19 INFO     127.0.0.1 - - [29/Nov/2022 12:27:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:19 INFO     127.0.0.1 - - [29/Nov/2022 12:27:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:19 INFO     127.0.0.1 - - [29/Nov/2022 12:27:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:19 INFO     127.0.0.1 - - [29/Nov/2022 12:27:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:20 INFO     127.0.0.1 - - [29/Nov/2022 12:27:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:20 INFO     127.0.0.1 - - [29/Nov/2022 12:27:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:20 INFO     127.0.0.1 - - [29/Nov/2022 12:27:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:20 INFO     127.0.0.1 - - [29/Nov/2022 12:27:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:21 INFO     127.0.0.1 - - [29/Nov/2022 12:27:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:21 INFO     127.0.0.1 - - [29/Nov/2022 12:27:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:21 INFO     127.0.0.1 - - [29/Nov/2022 12:27:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:21 INFO     127.0.0.1 - - [29/Nov/2022 12:27:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:22 INFO     127.0.0.1 - - [29/Nov/2022 12:27:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:22 INFO     127.0.0.1 - - [29/Nov/2022 12:27:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:22 INFO     127.0.0.1 - - [29/Nov/2022 12:27:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:22 INFO     127.0.0.1 - - [29/Nov/2022 12:27:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:22 INFO     127.0.0.1 - - [29/Nov/2022 12:27:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:22 INFO     127.0.0.1 - - [29/Nov/2022 12:27:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:22 INFO     127.0.0.1 - - [29/Nov/2022 12:27:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:22 INFO     127.0.0.1 - - [29/Nov/2022 12:27:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:23 INFO     127.0.0.1 - - [29/Nov/2022 12:27:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:23 INFO     127.0.0.1 - - [29/Nov/2022 12:27:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:23 INFO     127.0.0.1 - - [29/Nov/2022 12:27:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:23 INFO     127.0.0.1 - - [29/Nov/2022 12:27:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:23 INFO     127.0.0.1 - - [29/Nov/2022 12:27:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:23 INFO     127.0.0.1 - - [29/Nov/2022 12:27:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:23 INFO     127.0.0.1 - - [29/Nov/2022 12:27:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:23 INFO     127.0.0.1 - - [29/Nov/2022 12:27:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:32 INFO     127.0.0.1 - - [29/Nov/2022 12:27:32] "GET /players HTTP/1.1" 200 -
+2022-11-29 12:27:32 INFO     127.0.0.1 - - [29/Nov/2022 12:27:32] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 12:27:32 INFO     127.0.0.1 - - [29/Nov/2022 12:27:32] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 12:27:32 INFO     127.0.0.1 - - [29/Nov/2022 12:27:32] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 12:27:32 INFO     127.0.0.1 - - [29/Nov/2022 12:27:32] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 12:27:32 INFO     127.0.0.1 - - [29/Nov/2022 12:27:32] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 12:27:32 INFO     127.0.0.1 - - [29/Nov/2022 12:27:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:32 INFO     127.0.0.1 - - [29/Nov/2022 12:27:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:32 INFO     127.0.0.1 - - [29/Nov/2022 12:27:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:33 INFO     127.0.0.1 - - [29/Nov/2022 12:27:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:33 INFO     127.0.0.1 - - [29/Nov/2022 12:27:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:34 INFO     127.0.0.1 - - [29/Nov/2022 12:27:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:34 INFO     127.0.0.1 - - [29/Nov/2022 12:27:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:34 INFO     127.0.0.1 - - [29/Nov/2022 12:27:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:34 INFO     127.0.0.1 - - [29/Nov/2022 12:27:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:34 INFO     127.0.0.1 - - [29/Nov/2022 12:27:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:34 INFO     127.0.0.1 - - [29/Nov/2022 12:27:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:34 INFO     127.0.0.1 - - [29/Nov/2022 12:27:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:34 INFO     127.0.0.1 - - [29/Nov/2022 12:27:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:35 INFO     127.0.0.1 - - [29/Nov/2022 12:27:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:35 INFO     127.0.0.1 - - [29/Nov/2022 12:27:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:35 INFO     127.0.0.1 - - [29/Nov/2022 12:27:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:35 INFO     127.0.0.1 - - [29/Nov/2022 12:27:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:35 INFO     127.0.0.1 - - [29/Nov/2022 12:27:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:35 INFO     127.0.0.1 - - [29/Nov/2022 12:27:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:36 INFO     127.0.0.1 - - [29/Nov/2022 12:27:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 12:27:36 INFO     127.0.0.1 - - [29/Nov/2022 12:27:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:16:59 DEBUG    ----------- Starting -----------
+2022-11-29 14:17:00 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 14:17:00 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 14:17:00 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 14:17:09 INFO     127.0.0.1 - - [29/Nov/2022 14:17:09] "GET / HTTP/1.1" 200 -
+2022-11-29 14:17:09 INFO     127.0.0.1 - - [29/Nov/2022 14:17:09] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 14:17:09 INFO     127.0.0.1 - - [29/Nov/2022 14:17:09] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:17:09 INFO     127.0.0.1 - - [29/Nov/2022 14:17:09] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:17:09 INFO     127.0.0.1 - - [29/Nov/2022 14:17:09] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 14:17:10 INFO     127.0.0.1 - - [29/Nov/2022 14:17:10] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 14:17:10 INFO     127.0.0.1 - - [29/Nov/2022 14:17:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:12 INFO     127.0.0.1 - - [29/Nov/2022 14:17:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:12 INFO     127.0.0.1 - - [29/Nov/2022 14:17:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:12 INFO     127.0.0.1 - - [29/Nov/2022 14:17:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:13 INFO     127.0.0.1 - - [29/Nov/2022 14:17:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:13 INFO     127.0.0.1 - - [29/Nov/2022 14:17:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:13 INFO     127.0.0.1 - - [29/Nov/2022 14:17:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:13 INFO     127.0.0.1 - - [29/Nov/2022 14:17:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:16 INFO     127.0.0.1 - - [29/Nov/2022 14:17:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:16 INFO     127.0.0.1 - - [29/Nov/2022 14:17:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:17 INFO     127.0.0.1 - - [29/Nov/2022 14:17:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:17 INFO     127.0.0.1 - - [29/Nov/2022 14:17:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:17 INFO     127.0.0.1 - - [29/Nov/2022 14:17:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:17 INFO     127.0.0.1 - - [29/Nov/2022 14:17:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:18 INFO     127.0.0.1 - - [29/Nov/2022 14:17:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:18 INFO     127.0.0.1 - - [29/Nov/2022 14:17:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:18 INFO     127.0.0.1 - - [29/Nov/2022 14:17:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:18 INFO     127.0.0.1 - - [29/Nov/2022 14:17:18] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:19 INFO     127.0.0.1 - - [29/Nov/2022 14:17:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:19 INFO     127.0.0.1 - - [29/Nov/2022 14:17:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:22 INFO     127.0.0.1 - - [29/Nov/2022 14:17:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:22 INFO     127.0.0.1 - - [29/Nov/2022 14:17:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:22 INFO     127.0.0.1 - - [29/Nov/2022 14:17:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:22 INFO     127.0.0.1 - - [29/Nov/2022 14:17:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:23 INFO     127.0.0.1 - - [29/Nov/2022 14:17:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:23 INFO     127.0.0.1 - - [29/Nov/2022 14:17:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:23 INFO     127.0.0.1 - - [29/Nov/2022 14:17:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:23 INFO     127.0.0.1 - - [29/Nov/2022 14:17:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:24 INFO     127.0.0.1 - - [29/Nov/2022 14:17:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:24 INFO     127.0.0.1 - - [29/Nov/2022 14:17:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:24 INFO     127.0.0.1 - - [29/Nov/2022 14:17:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:24 INFO     127.0.0.1 - - [29/Nov/2022 14:17:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:25 INFO     127.0.0.1 - - [29/Nov/2022 14:17:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:25 INFO     127.0.0.1 - - [29/Nov/2022 14:17:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:25 INFO     127.0.0.1 - - [29/Nov/2022 14:17:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:25 INFO     127.0.0.1 - - [29/Nov/2022 14:17:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:25 INFO     127.0.0.1 - - [29/Nov/2022 14:17:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:25 INFO     127.0.0.1 - - [29/Nov/2022 14:17:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:26 INFO     127.0.0.1 - - [29/Nov/2022 14:17:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:26 INFO     127.0.0.1 - - [29/Nov/2022 14:17:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:26 INFO     127.0.0.1 - - [29/Nov/2022 14:17:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:26 INFO     127.0.0.1 - - [29/Nov/2022 14:17:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:26 INFO     127.0.0.1 - - [29/Nov/2022 14:17:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:26 INFO     127.0.0.1 - - [29/Nov/2022 14:17:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:27 INFO     127.0.0.1 - - [29/Nov/2022 14:17:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:27 INFO     127.0.0.1 - - [29/Nov/2022 14:17:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:27 INFO     127.0.0.1 - - [29/Nov/2022 14:17:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:27 INFO     127.0.0.1 - - [29/Nov/2022 14:17:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:28 INFO     127.0.0.1 - - [29/Nov/2022 14:17:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:28 INFO     127.0.0.1 - - [29/Nov/2022 14:17:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:28 INFO     127.0.0.1 - - [29/Nov/2022 14:17:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:28 INFO     127.0.0.1 - - [29/Nov/2022 14:17:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:29 INFO     127.0.0.1 - - [29/Nov/2022 14:17:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:29 INFO     127.0.0.1 - - [29/Nov/2022 14:17:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:29 INFO     127.0.0.1 - - [29/Nov/2022 14:17:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:29 INFO     127.0.0.1 - - [29/Nov/2022 14:17:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:29 INFO     127.0.0.1 - - [29/Nov/2022 14:17:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:29 INFO     127.0.0.1 - - [29/Nov/2022 14:17:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:30 INFO     127.0.0.1 - - [29/Nov/2022 14:17:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:30 INFO     127.0.0.1 - - [29/Nov/2022 14:17:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:30 INFO     127.0.0.1 - - [29/Nov/2022 14:17:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:30 INFO     127.0.0.1 - - [29/Nov/2022 14:17:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:31 INFO     127.0.0.1 - - [29/Nov/2022 14:17:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:31 INFO     127.0.0.1 - - [29/Nov/2022 14:17:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:31 INFO     127.0.0.1 - - [29/Nov/2022 14:17:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:31 INFO     127.0.0.1 - - [29/Nov/2022 14:17:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:31 INFO     127.0.0.1 - - [29/Nov/2022 14:17:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:31 INFO     127.0.0.1 - - [29/Nov/2022 14:17:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:31 INFO     127.0.0.1 - - [29/Nov/2022 14:17:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:31 INFO     127.0.0.1 - - [29/Nov/2022 14:17:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:32 INFO     127.0.0.1 - - [29/Nov/2022 14:17:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:32 INFO     127.0.0.1 - - [29/Nov/2022 14:17:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:32 INFO     127.0.0.1 - - [29/Nov/2022 14:17:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:32 INFO     127.0.0.1 - - [29/Nov/2022 14:17:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:32 INFO     127.0.0.1 - - [29/Nov/2022 14:17:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:32 INFO     127.0.0.1 - - [29/Nov/2022 14:17:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:32 INFO     127.0.0.1 - - [29/Nov/2022 14:17:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:32 INFO     127.0.0.1 - - [29/Nov/2022 14:17:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:32 INFO     127.0.0.1 - - [29/Nov/2022 14:17:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:32 INFO     127.0.0.1 - - [29/Nov/2022 14:17:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:33 INFO     127.0.0.1 - - [29/Nov/2022 14:17:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:33 INFO     127.0.0.1 - - [29/Nov/2022 14:17:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:33 INFO     127.0.0.1 - - [29/Nov/2022 14:17:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:33 INFO     127.0.0.1 - - [29/Nov/2022 14:17:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:34 INFO     127.0.0.1 - - [29/Nov/2022 14:17:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:34 INFO     127.0.0.1 - - [29/Nov/2022 14:17:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:34 INFO     127.0.0.1 - - [29/Nov/2022 14:17:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:34 INFO     127.0.0.1 - - [29/Nov/2022 14:17:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:35 INFO     127.0.0.1 - - [29/Nov/2022 14:17:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:35 INFO     127.0.0.1 - - [29/Nov/2022 14:17:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:36 INFO     127.0.0.1 - - [29/Nov/2022 14:17:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:36 INFO     127.0.0.1 - - [29/Nov/2022 14:17:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:36 INFO     127.0.0.1 - - [29/Nov/2022 14:17:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:36 INFO     127.0.0.1 - - [29/Nov/2022 14:17:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:36 INFO     127.0.0.1 - - [29/Nov/2022 14:17:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:36 INFO     127.0.0.1 - - [29/Nov/2022 14:17:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:36 INFO     127.0.0.1 - - [29/Nov/2022 14:17:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:36 INFO     127.0.0.1 - - [29/Nov/2022 14:17:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:36 INFO     127.0.0.1 - - [29/Nov/2022 14:17:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:36 INFO     127.0.0.1 - - [29/Nov/2022 14:17:36] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:37 INFO     127.0.0.1 - - [29/Nov/2022 14:17:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:37 INFO     127.0.0.1 - - [29/Nov/2022 14:17:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:42 INFO     127.0.0.1 - - [29/Nov/2022 14:17:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:42 INFO     127.0.0.1 - - [29/Nov/2022 14:17:42] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:44 INFO     127.0.0.1 - - [29/Nov/2022 14:17:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:44 INFO     127.0.0.1 - - [29/Nov/2022 14:17:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:45 INFO     127.0.0.1 - - [29/Nov/2022 14:17:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:45 INFO     127.0.0.1 - - [29/Nov/2022 14:17:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:45 INFO     127.0.0.1 - - [29/Nov/2022 14:17:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:45 INFO     127.0.0.1 - - [29/Nov/2022 14:17:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:46 INFO     127.0.0.1 - - [29/Nov/2022 14:17:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:46 INFO     127.0.0.1 - - [29/Nov/2022 14:17:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:46 INFO     127.0.0.1 - - [29/Nov/2022 14:17:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:46 INFO     127.0.0.1 - - [29/Nov/2022 14:17:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:47 INFO     127.0.0.1 - - [29/Nov/2022 14:17:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:47 INFO     127.0.0.1 - - [29/Nov/2022 14:17:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:48 INFO     127.0.0.1 - - [29/Nov/2022 14:17:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:48 INFO     127.0.0.1 - - [29/Nov/2022 14:17:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:48 INFO     127.0.0.1 - - [29/Nov/2022 14:17:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:48 INFO     127.0.0.1 - - [29/Nov/2022 14:17:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:48 INFO     127.0.0.1 - - [29/Nov/2022 14:17:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:48 INFO     127.0.0.1 - - [29/Nov/2022 14:17:48] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:49 INFO     127.0.0.1 - - [29/Nov/2022 14:17:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:49 INFO     127.0.0.1 - - [29/Nov/2022 14:17:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:49 INFO     127.0.0.1 - - [29/Nov/2022 14:17:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:49 INFO     127.0.0.1 - - [29/Nov/2022 14:17:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:49 INFO     127.0.0.1 - - [29/Nov/2022 14:17:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:49 INFO     127.0.0.1 - - [29/Nov/2022 14:17:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:49 INFO     127.0.0.1 - - [29/Nov/2022 14:17:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:49 INFO     127.0.0.1 - - [29/Nov/2022 14:17:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:50 INFO     127.0.0.1 - - [29/Nov/2022 14:17:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:50 INFO     127.0.0.1 - - [29/Nov/2022 14:17:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:50 INFO     127.0.0.1 - - [29/Nov/2022 14:17:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:50 INFO     127.0.0.1 - - [29/Nov/2022 14:17:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:50 INFO     127.0.0.1 - - [29/Nov/2022 14:17:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:17:50 INFO     127.0.0.1 - - [29/Nov/2022 14:17:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:22:27 DEBUG    ----------- Starting -----------
+2022-11-29 14:22:28 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 14:22:28 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 14:22:28 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 14:23:58 ERROR    Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 1818, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\flask\app.py", line 2309, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\dash.py", line 2102, in router
+    [
+  File "D:\ESIEE\Projet-Open-Source-Fbref\functions\venv\lib\site-packages\dash\dash.py", line 2103, in <listcomp>
+    page["layout"]() if callable(page["layout"]) else page["layout"]
+  File "D:\ESIEE\Projet-Open-Source-Fbref\pages\players.py", line 12, in layout
+    html.Div([dash.html.H2(children='Players : '+player_id)], style={}, className="heading"),
+TypeError: can only concatenate str (not "NoneType") to str
+2022-11-29 14:23:58 INFO     127.0.0.1 - - [29/Nov/2022 14:23:58] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2022-11-29 14:23:58 INFO     127.0.0.1 - - [29/Nov/2022 14:23:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:23:58 INFO     127.0.0.1 - - [29/Nov/2022 14:23:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:23:58 INFO     127.0.0.1 - - [29/Nov/2022 14:23:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:24:00 INFO     127.0.0.1 - - [29/Nov/2022 14:24:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:24:00 INFO     127.0.0.1 - - [29/Nov/2022 14:24:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:24:02 INFO     127.0.0.1 - - [29/Nov/2022 14:24:02] "GET /players HTTP/1.1" 200 -
+2022-11-29 14:24:02 INFO     127.0.0.1 - - [29/Nov/2022 14:24:02] "GET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1" 200 -
+2022-11-29 14:24:02 INFO     127.0.0.1 - - [29/Nov/2022 14:24:02] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:24:02 INFO     127.0.0.1 - - [29/Nov/2022 14:24:02] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:24:02 INFO     127.0.0.1 - - [29/Nov/2022 14:24:02] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
+2022-11-29 14:24:02 INFO     127.0.0.1 - - [29/Nov/2022 14:24:02] "GET /assets/football.png HTTP/1.1" 200 -
+2022-11-29 14:24:02 INFO     127.0.0.1 - - [29/Nov/2022 14:24:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:24:50 DEBUG    ----------- Starting -----------
+2022-11-29 14:24:50 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 14:24:50 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 14:24:50 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 14:24:53 INFO     127.0.0.1 - - [29/Nov/2022 14:24:53] "GET / HTTP/1.1" 200 -
+2022-11-29 14:24:53 INFO     127.0.0.1 - - [29/Nov/2022 14:24:53] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 14:24:53 INFO     127.0.0.1 - - [29/Nov/2022 14:24:53] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:24:53 INFO     127.0.0.1 - - [29/Nov/2022 14:24:53] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:24:53 INFO     127.0.0.1 - - [29/Nov/2022 14:24:53] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 14:24:53 INFO     127.0.0.1 - - [29/Nov/2022 14:24:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:24:55 INFO     127.0.0.1 - - [29/Nov/2022 14:24:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:25:09 INFO     127.0.0.1 - - [29/Nov/2022 14:25:09] "GET /players/0 HTTP/1.1" 200 -
+2022-11-29 14:25:09 INFO     127.0.0.1 - - [29/Nov/2022 14:25:09] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 14:25:09 INFO     127.0.0.1 - - [29/Nov/2022 14:25:09] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:25:09 INFO     127.0.0.1 - - [29/Nov/2022 14:25:09] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:25:09 INFO     127.0.0.1 - - [29/Nov/2022 14:25:09] "GET /players/assets/football.png HTTP/1.1" 200 -
+2022-11-29 14:25:09 INFO     127.0.0.1 - - [29/Nov/2022 14:25:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:25:12 INFO     127.0.0.1 - - [29/Nov/2022 14:25:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:25:13 INFO     127.0.0.1 - - [29/Nov/2022 14:25:13] "GET / HTTP/1.1" 200 -
+2022-11-29 14:25:13 INFO     127.0.0.1 - - [29/Nov/2022 14:25:13] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 14:25:13 INFO     127.0.0.1 - - [29/Nov/2022 14:25:13] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:25:13 INFO     127.0.0.1 - - [29/Nov/2022 14:25:13] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:25:13 INFO     127.0.0.1 - - [29/Nov/2022 14:25:13] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 14:25:13 INFO     127.0.0.1 - - [29/Nov/2022 14:25:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:25:14 INFO     127.0.0.1 - - [29/Nov/2022 14:25:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:25:47 INFO     127.0.0.1 - - [29/Nov/2022 14:25:47] "GET /players HTTP/1.1" 200 -
+2022-11-29 14:25:47 INFO     127.0.0.1 - - [29/Nov/2022 14:25:47] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 14:25:47 INFO     127.0.0.1 - - [29/Nov/2022 14:25:47] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:25:47 INFO     127.0.0.1 - - [29/Nov/2022 14:25:47] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:25:47 INFO     127.0.0.1 - - [29/Nov/2022 14:25:47] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 14:25:47 INFO     127.0.0.1 - - [29/Nov/2022 14:25:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:26:05 DEBUG    ----------- Starting -----------
+2022-11-29 14:26:05 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 14:26:05 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 14:26:05 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 14:26:05 INFO     127.0.0.1 - - [29/Nov/2022 14:26:05] "GET /players HTTP/1.1" 200 -
+2022-11-29 14:26:05 INFO     127.0.0.1 - - [29/Nov/2022 14:26:05] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 14:26:05 INFO     127.0.0.1 - - [29/Nov/2022 14:26:05] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:26:05 INFO     127.0.0.1 - - [29/Nov/2022 14:26:05] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:26:05 INFO     127.0.0.1 - - [29/Nov/2022 14:26:05] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 14:26:05 INFO     127.0.0.1 - - [29/Nov/2022 14:26:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:26:06 INFO     127.0.0.1 - - [29/Nov/2022 14:26:06] "GET /players HTTP/1.1" 200 -
+2022-11-29 14:26:06 INFO     127.0.0.1 - - [29/Nov/2022 14:26:06] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 14:26:06 INFO     127.0.0.1 - - [29/Nov/2022 14:26:06] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:26:06 INFO     127.0.0.1 - - [29/Nov/2022 14:26:06] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:26:06 INFO     127.0.0.1 - - [29/Nov/2022 14:26:06] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 14:26:06 INFO     127.0.0.1 - - [29/Nov/2022 14:26:06] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:26:09 INFO     127.0.0.1 - - [29/Nov/2022 14:26:09] "GET /players/5 HTTP/1.1" 200 -
+2022-11-29 14:26:09 INFO     127.0.0.1 - - [29/Nov/2022 14:26:09] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 14:26:09 INFO     127.0.0.1 - - [29/Nov/2022 14:26:09] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:26:09 INFO     127.0.0.1 - - [29/Nov/2022 14:26:09] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:26:09 INFO     127.0.0.1 - - [29/Nov/2022 14:26:09] "GET /players/assets/football.png HTTP/1.1" 200 -
+2022-11-29 14:26:09 INFO     127.0.0.1 - - [29/Nov/2022 14:26:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:26:09 INFO     127.0.0.1 - - [29/Nov/2022 14:26:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:26:09 INFO     127.0.0.1 - - [29/Nov/2022 14:26:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "GET / HTTP/1.1" 200 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "GET / HTTP/1.1" 200 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 14:26:39 INFO     127.0.0.1 - - [29/Nov/2022 14:26:39] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:26:40 INFO     127.0.0.1 - - [29/Nov/2022 14:26:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:29:07 DEBUG    ----------- Starting -----------
+2022-11-29 14:29:07 INFO     Dash is running on http://127.0.0.1:3005/
+
+2022-11-29 14:29:07 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3005
+2022-11-29 14:29:07 INFO     [33mPress CTRL+C to quit[0m
+2022-11-29 14:29:09 INFO     127.0.0.1 - - [29/Nov/2022 14:29:09] "GET / HTTP/1.1" 200 -
+2022-11-29 14:29:09 INFO     127.0.0.1 - - [29/Nov/2022 14:29:09] "[36mGET /assets/bootstrap.css?m=1669669391.6349268 HTTP/1.1[0m" 304 -
+2022-11-29 14:29:09 INFO     127.0.0.1 - - [29/Nov/2022 14:29:09] "GET /_dash-layout HTTP/1.1" 200 -
+2022-11-29 14:29:09 INFO     127.0.0.1 - - [29/Nov/2022 14:29:09] "GET /_dash-dependencies HTTP/1.1" 200 -
+2022-11-29 14:29:09 INFO     127.0.0.1 - - [29/Nov/2022 14:29:09] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
+2022-11-29 14:29:09 INFO     127.0.0.1 - - [29/Nov/2022 14:29:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:29:10 INFO     127.0.0.1 - - [29/Nov/2022 14:29:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:29:10 INFO     127.0.0.1 - - [29/Nov/2022 14:29:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2022-11-29 14:29:10 INFO     127.0.0.1 - - [29/Nov/2022 14:29:10] "POST /_dash-update-component HTTP/1.1" 200 -
