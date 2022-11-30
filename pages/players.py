@@ -10,7 +10,13 @@ db = Database()
 def layout(player_id=None, **other_unknown_query_strings):
     player_page = ""
     if player_id != None:
-        player_page = html.H2(player_id)
+        player_page = html.Div([
+            html.Div([
+                html.Div([
+
+                ], className="dash_block")
+            ], style={"background-color":"purple", "width" : "100%", "height" : "300px"})
+        ])
 
     layout = html.Div(children=[
         html.Div([dash.html.H2(children='Players')], style={}, className="heading"),
@@ -18,7 +24,7 @@ def layout(player_id=None, **other_unknown_query_strings):
             dbc.Input(id="input", placeholder="Search a player ...", type="text"),
             dbc.Collapse(
                 [dbc.ListGroup(id="search_result",
-                               style={"margin-top": "20px", "height": "300px", "overflow-y": "scroll"})],
+                               style={"margin-top": "20px", "max-height": "300px", "overflow-y": "scroll"})],
                 id="collapse",
                 is_open=False,
             ),
@@ -53,6 +59,6 @@ def fill_search_result(val):
 
     result = db.df_best_pos[db.df_best_pos['name'].str.contains(val+"|"+val.capitalize())]
 
-    result_hml = [dbc.ListGroupItem([html.A(row["name"], href="/players?player_id="+row["id"])])
+    result_hml = [dbc.ListGroupItem([html.A(row["name"], href="/players?player_id="+row["id"], className="link_list_group",style={"text-decoration" : "none", "color": "#111827"})])
               for index, row in result.iterrows()]
     return result_hml

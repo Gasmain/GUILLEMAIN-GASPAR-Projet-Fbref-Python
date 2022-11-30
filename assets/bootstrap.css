@@ -107,6 +107,22 @@ dd {
 blockquote {
   margin: 0 0 1rem; }
 
+.list-group-item:hover{
+background-color: #E7E8FF;
+}
+
+.list-group-item{
+ cursor : pointer;
+}
+
+
+.link_list_group {
+  display: flex;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+}
+
+
 b,
 strong {
   font-weight: bolder; }
@@ -3856,6 +3872,11 @@ input[type="button"].btn-block {
 .media-body {
   flex: 1; }
 
+.dash_block{
+    display:flex;
+    
+}
+
 .list-group {
   display: flex;
   flex-direction: column;
@@ -3879,7 +3900,6 @@ input[type="button"].btn-block {
 .list-group-item {
   position: relative;
   display: block;
-  padding: 0.75rem 1.25rem;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125); }
   .list-group-item:first-child {
