@@ -10,11 +10,14 @@ from tkinter import *
 from tkinter.ttk import *
 import asyncio
 from threading import Thread
+import json
+import pandas as pd
 
-PLAYER_FILE_CSV = "data/player.csv"
+PLAYER_ALL_ROLE_FILE_CSV = "data/player_all_role.csv"
+PLAYER_BEST_ROLE_FILE_CSV = "data/player_best_role.csv"
 PLAYER_FILE_JSON = "data/player.json"
-PLAYER_IMG_FOLDER = "data/playerimg"
-TEAM_IMG_FOLDER = "data/teamimg"
+PLAYER_IMG_FOLDER = "assets/playerimg"
+TEAM_IMG_FOLDER = "assets/teamimg"
 TEAM_LOGO_URL = "https://cdn.ssref.net/req/202211181/tlogo/fb/"
 FBREF_URL = "https://fbref.com"
 TOP_5_LEAGUE_PLAYER_LIST = "/en/comps/Big5/stats/players/Big-5-European-Leagues-Stats"
@@ -26,7 +29,7 @@ headers={
 }
 data = []
 progress = 0
-stop_threads = False;
+stop_threads = False
 
 
 
@@ -220,7 +223,9 @@ def get_player_data(player_url):
                         player["nationality"] = p_contain_nationality[0].find("a").text
                     else:
                         player["nationality"] = None
-
+                if p_contain_nationality != None:
+                    flag_name = p_contain_nationality[0].find("span").text
+                    player["flag_name"] = flag_name
                 # Player club
                 p_contain_club = soup.find(id="meta").select('p:-soup-contains("Club:")')  # Search for a <p> containing "National Team" in the div of the biography
                 if len(p_contain_club) > 0:
@@ -292,3 +297,16 @@ def get_player_data(player_url):
 def extractId(url):
     result = re.search(r"\/en\/players\/(.*?)\/", url)  # Search in the url for the player id
     return result.group(1)
+
+
+def build_data_frame():
+    f = open(PLAYER_FILE_JSON)
+    data = json.load(f)
+    df_role = pd.json_normalize(data)
+    for player in data:
+        best_pos_stats = player["stats"][list(player["stats"].keys())[0]]
+        player.pop('stats', None)
+        player["stats"] = best_pos_stats
+    df_best_pos = pd.json_normalize(data)
+    df_best_pos.to_csv(PLAYER_BEST_ROLE_FILE_CSV, encoding='utf-8', index=False)
+    df_role.to_csv(PLAYER_ALL_ROLE_FILE_CSV, encoding='utf-8', index=False)

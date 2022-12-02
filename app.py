@@ -9,13 +9,14 @@ import dash_bootstrap_components as dbc
 from dash import Output, Input
 from flask.helpers import get_root_path
 
-from database import Database
 
 PLAYER_FILE_JSON = "data/player.json"
-PLAYER_FILE_CSV = "data/player.csv"
-PLAYER_FILE_CSV2 = "data/player2.csv"
 MY_LOGO = "assets/football.png"
+PLAYER_ALL_ROLE_FILE_CSV = "data/player_all_role.csv"
+PLAYER_BEST_ROLE_FILE_CSV = "data/player_best_role.csv"
 
+df_best_role = pd.read_csv(PLAYER_BEST_ROLE_FILE_CSV)
+df_all_role = pd.read_csv(PLAYER_ALL_ROLE_FILE_CSV)
 
 # TODO : Shoot, Pass, deffense, dribble
 
@@ -26,7 +27,6 @@ Creates a plotly dashboard
 
 
 def create():
-    db = Database()
     app = dash.Dash(
         __name__,
         use_pages=True,
