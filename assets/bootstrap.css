@@ -1841,13 +1841,13 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(122, 124, 242, 0.5); }
 
 .btn-secondary {
-  color: #fff;
-  background-color: #111827;
-  border-color: #111827; }
+  color: #111827;
+  background-color: #D7DEE5;
+  border-color: #D7DEE5; }
   .btn-secondary:hover {
-    color: #fff;
-    background-color: #05080c;
-    border-color: #020203; }
+    color: #111827;
+    background-color: #AAB6C1;
+    border-color: #AAB6C1; }
   .btn-secondary:focus, .btn-secondary.focus {
     color: #fff;
     background-color: #05080c;
@@ -3872,8 +3872,18 @@ input[type="button"].btn-block {
 .media-body {
   flex: 1; }
 
+.separator{
+    height : 80px;
+    width: 1px;
+    background-color : rgba(89, 94, 104, 0.3);
+    margin:0px 40px;
+
+}
+
 .dash_block{
+    width : max-content;
     display:flex;
+    align-items:center;
     background-color:white;
     padding:30px;
     border-radius : 8px;

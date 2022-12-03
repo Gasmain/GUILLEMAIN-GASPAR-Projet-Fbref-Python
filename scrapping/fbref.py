@@ -12,6 +12,7 @@ import asyncio
 from threading import Thread
 import json
 import pandas as pd
+import copy
 
 PLAYER_ALL_ROLE_FILE_CSV = "data/player_all_role.csv"
 PLAYER_BEST_ROLE_FILE_CSV = "data/player_best_role.csv"
@@ -30,6 +31,9 @@ headers={
 data = []
 progress = 0
 stop_threads = False
+
+FB_OVERALL_STATS = {"Goals":2, "Assists":8, "Red Cards": 3, "Pass Completion %":6,"Expected Assists":8,"Key Passes": 7, "Crosses into Penalty Area" : 5,"Progressive Passes": 5, "Shot-Creating Actions":5,"Goal-Creating Actions" : 6,"% of dribblers tackled" : 5, "Tackles Won" : 5, "Dribbled Past" :4, "Blocks" : 4,"Interceptions" :5,"Successful Dribble %" : 5,"Dribbles Completed" : 5, "Dispossessed" : 5, "Progressive Passes Rec" : 4, "Miscontrols" : 4 }
+
 
 
 
@@ -224,8 +228,8 @@ def get_player_data(player_url):
                     else:
                         player["nationality"] = None
                 if p_contain_nationality != None:
-                    flag_name = p_contain_nationality[0].find("span").text
-                    player["flag_name"] = flag_name
+                    flag_name = p_contain_nationality[0].find("span")["class"]
+                    player["flag_name"] = (''.join(flag_name)).replace("f-if-", "")
                 # Player club
                 p_contain_club = soup.find(id="meta").select('p:-soup-contains("Club:")')  # Search for a <p> containing "National Team" in the div of the biography
                 if len(p_contain_club) > 0:
@@ -235,7 +239,7 @@ def get_player_data(player_url):
                     player["club_id"] = result.group(1)
                     try:
                         urllib.request.urlretrieve(TEAM_LOGO_URL+result.group(1)+".png",
-                                                   TEAM_IMG_FOLDER + "/" + player_id + ".png")  # Download and save the image in the playerimg folder
+                                                   TEAM_IMG_FOLDER + "/" + player["club_id"] + ".png")  # Download and save the image in the playerimg folder
                     except Exception as e:
                         print("no image club found : " + str(e))
                         pass
@@ -301,12 +305,30 @@ def extractId(url):
 
 def build_data_frame():
     f = open(PLAYER_FILE_JSON)
-    data = json.load(f)
-    df_role = pd.json_normalize(data)
-    for player in data:
+    data_json = json.load(f)
+
+    for player in data_json:
+        for role in player["roles"]:
+            overall = 0
+            if role == "FB":
+                count = 0
+                for stat in FB_OVERALL_STATS.keys():
+                    overall += int(player["stats"][role][stat+"_percentile"]) * FB_OVERALL_STATS[stat]
+                    count +=FB_OVERALL_STATS[stat]
+                overall = overall / count
+                if overall > 50:
+                    overall += (100-overall)/4
+                elif overall < 50 :
+                    overall -= overall/4
+                overall = round(overall)
+            player["stats"][role].update({"overall" : overall})
+
+    df_role = pd.json_normalize(data_json)
+
+    for player in data_json:
         best_pos_stats = player["stats"][list(player["stats"].keys())[0]]
         player.pop('stats', None)
         player["stats"] = best_pos_stats
-    df_best_pos = pd.json_normalize(data)
+    df_best_pos = pd.json_normalize(data_json)
     df_best_pos.to_csv(PLAYER_BEST_ROLE_FILE_CSV, encoding='utf-8', index=False)
     df_role.to_csv(PLAYER_ALL_ROLE_FILE_CSV, encoding='utf-8', index=False)

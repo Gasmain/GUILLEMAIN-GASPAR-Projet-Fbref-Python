@@ -36,7 +36,7 @@ def create():
     navbar = create_nav_bar()
     content = dash.html.Div([dash.page_container], id="pages-content")
     app.layout = dash.html.Div([dash.dcc.Location(id="url"), navbar,content])
-    app.run_server(debug=False, port=3005)
+    app.run_server(debug=False, port=8051)
 
 def create_nav_bar():
     navbar = dbc.NavbarSimple(
