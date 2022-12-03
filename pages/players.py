@@ -1,3 +1,4 @@
+import math
 import os
 from datetime import date
 import ast
@@ -46,7 +47,14 @@ def layout(player_id=None,role=None, **other_unknown_query_strings):
         else:
             position_buttons.append(html.A([html.Button(pos, className="btn btn-secondary")],href="/players?player_id="+player_id+"&role="+pos))
 
-
+    if not math.isnan(player["height"].iloc[0]) and not math.isnan(player["weight"].iloc[0]):
+        player_physique = str(int(player["height"].iloc[0])) + ' cm | ' + str(int(player["weight"].iloc[0])) + " kg"
+    elif not math.isnan(player["height"].iloc[0]):
+        player_physique = str(int(player["height"].iloc[0])) + ' cm'
+    elif not math.isnan(player["weight"].iloc[0]):
+        player_physique = str(int(player["weight"].iloc[0])) + " kg"
+    else :
+        player_physique = ""
 
     overall_pie = go.Figure(data=[go.Pie(labels=["progress", "rest"], values=[overall, 100-overall], hole=0.85,marker=dict(colors=['#6265F0', '#D7DEE5']), direction ='clockwise', sort=False)])
     overall_pie.update(layout_showlegend=False)
@@ -91,7 +99,7 @@ def layout(player_id=None,role=None, **other_unknown_query_strings):
                     dash.html.Span("(" + player["birth_date"].iloc[0] + ")", className="light_text",
                                    style={"margin-left": "3px"}),
                     dash.html.Span(
-                        str(int(player["height"].iloc[0])) + ' cm | ' + str(int(player["weight"].iloc[0])) + " kg",
+                        player_physique,
                         className="light_text",
                         style={"display": "block"})
                 ]),
