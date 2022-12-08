@@ -36,7 +36,7 @@ def create():
     navbar = create_nav_bar()
     content = dash.html.Div([dash.page_container], id="pages-content")
     app.layout = dash.html.Div([dash.dcc.Location(id="url"), navbar,content])
-    app.run_server(debug=False, port=8051)
+    app.run_server(debug=False, port=8050)
 
 def create_nav_bar():
     navbar = dbc.NavbarSimple(
@@ -51,8 +51,13 @@ def create_nav_bar():
                         href="/", active="exact"),
             dbc.NavLink([dash.html.I(className="fa-solid fa-user", style={"margin-right": "10px"}), "Players"],
                         href="/players", active="exact"),
+            dbc.NavLink([dash.html.I(className="fa-solid fa-people-group", style={"margin-right": "10px"}), "Squad Builder"],
+                        href="/scrapping", active="exact"),
             dbc.NavLink([dash.html.I(className="fa-solid fa-circle-down", style={"margin-right": "10px"}), "Scrapping"],
+                        href="/scrapping", active="exact"),
+            dbc.NavLink([dash.html.I(className="fa-solid fa-gear", style={"margin-right": "10px"}), "Settings"],
                         href="/scrapping", active="exact")
+
         ],
         color="dark",
         dark=True

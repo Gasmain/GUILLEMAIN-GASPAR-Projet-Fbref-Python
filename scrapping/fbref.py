@@ -33,7 +33,7 @@ progress = 0
 stop_threads = False
 
 FB_OVERALL_STATS = {"Goals":2, "Assists":8, "Red Cards": 3, "Pass Completion %":6,"Expected Assists":8,"Key Passes": 7, "Crosses into Penalty Area" : 5,"Progressive Passes": 5, "Shot-Creating Actions":5,"Goal-Creating Actions" : 6,"% of dribblers tackled" : 5, "Tackles Won" : 5, "Dribbled Past" :4, "Blocks" : 4,"Interceptions" :5,"Successful Dribble %" : 5,"Dribbles Completed" : 5, "Dispossessed" : 5, "Progressive Passes Rec" : 4, "Miscontrols" : 4 }
-
+CB_OVERALL_STATS = {"Goals":2, "Red Cards":3, "Pass Completion %":5,"Progressive Passes":4, "% of dribblers tackled" : 5,"Dribbled Past": 5, "Pass Completion % (Long)" :4, "Tackles Won" : 3,"Interceptions" :3, "Blocks":3, "% of Aerials Won":4, "Penalty Kicks Conceded":4, "Touches" : 7,"Miscontrols" : 5, "Errors" : 6  }
 
 
 
@@ -42,7 +42,7 @@ def scrap():
     global data
     t = Thread(target=progress_bar)
     t.start()
-    f = open(PLAYER_FILE_JSON)
+    f = open(PLAYER_FILE_JSON, encoding="utf-8")
     data = json.load(f)
 
     logging.debug('Starting fbref scrapping')
@@ -129,7 +129,7 @@ def build_player_list(player_url_list):
                 if len(player["stats"])>0 :
                     player_list.append(player)
                     data.append(player)
-                    with open(PLAYER_FILE_JSON, "w") as file:
+                    with open(PLAYER_FILE_JSON, "w", encoding="utf-8") as file:
                         json.dump(data, file)
         progress += float(100.0/len(player_url_list))
     return player_list
@@ -310,11 +310,16 @@ def build_data_frame():
     for player in data_json:
         for role in player["roles"]:
             overall = 0
+            if role == "CB" :
+                stat_list = CB_OVERALL_STATS
             if role == "FB":
+                stat_list = FB_OVERALL_STATS
+
+            if role == "FB" or role == "CB":
                 count = 0
-                for stat in FB_OVERALL_STATS.keys():
-                    overall += int(player["stats"][role][stat+"_percentile"]) * FB_OVERALL_STATS[stat]
-                    count +=FB_OVERALL_STATS[stat]
+                for stat in stat_list.keys():
+                    overall += int(player["stats"][role][stat+"_percentile"]) * stat_list[stat]
+                    count +=stat_list[stat]
                 overall = overall / count
                 if overall > 50:
                     overall += (100-overall)/4
