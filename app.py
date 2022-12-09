@@ -34,9 +34,9 @@ def create():
         # Loads icons css and Inter font
     )
     navbar = create_nav_bar()
-    content = dash.html.Div([dash.page_container], id="pages-content")
-    app.layout = dash.html.Div([dash.dcc.Location(id="url"), navbar,content])
-    app.run_server(debug=False, port=8050)
+    content = dash.html.Div([dash.page_container], id="pages-content", style={"flex": "1 1 auto"})
+    app.layout = dash.html.Div([dash.dcc.Location(id="url"), navbar,content], style={"display":"flex","flex-flow": "column", "height":"100%"})
+    app.run_server(debug=False, port=8051)
 
 def create_nav_bar():
     navbar = dbc.NavbarSimple(
@@ -60,7 +60,8 @@ def create_nav_bar():
 
         ],
         color="dark",
-        dark=True
+        dark=True,
+        style={"flex":" 0 1 4rem"}
     )
 
     return navbar

@@ -54,7 +54,8 @@ body {
   line-height: 1.5;
   color: #111827;
   text-align: left;
-  background-color: #F3F4F6; }
+  background-color: #F3F4F6;
+  height:100vh;}
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important; }
@@ -207,6 +208,10 @@ caption {
   color: #6c757d;
   text-align: left;
   caption-side: bottom; }
+
+ #react-entry-point{
+ height:100%;
+ }
 
 th {
   text-align: inherit; }
