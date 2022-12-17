@@ -52,14 +52,15 @@ def create_nav_bar():
             dbc.NavLink([dash.html.I(className="fa-solid fa-user", style={"margin-right": "10px"}), "Players"],
                         href="/players", active="exact"),
             dbc.NavLink([dash.html.I(className="fa-solid fa-people-group", style={"margin-right": "10px"}), "Squad Builder"],
-                        href="/scrapping", active="exact"),
+                        href="/squad-builder", active="exact"),
             dbc.NavLink([dash.html.I(className="fa-solid fa-circle-down", style={"margin-right": "10px"}), "Scrapping"],
                         href="/scrapping", active="exact"),
             dbc.NavLink([dash.html.I(className="fa-solid fa-gear", style={"margin-right": "10px"}), "Settings"],
-                        href="/scrapping", active="exact")
+                        href="/settings", active="exact")
 
         ],
         color="dark",
+
         dark=True,
         style={"flex":" 0 1 4rem"}
     )

@@ -36,16 +36,44 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
             role = ast.literal_eval(player["roles"].iloc[0])[0]
 
     if player["stats." + role + ".overall"].iloc[0] is None:
-        overall = 0
+        overall_role = 0
     else:
-        overall = player["stats." + role + ".overall"].iloc[0]
+        overall_role = player["stats." + role + ".overall"].iloc[0]
+
+    stats_col = [col for col in player.columns if
+                 'stats.' + role in col and "percentile" in col and not math.isnan(player[col].iloc[0])]
+
+
+    overall = 0
+    count = 0
+    top_stat_count = 0
+    for s in stats_col:
+        if int(player[s].iloc[0]) >= 98:
+            overall += int(player[s].iloc[0])*3
+            count += 3
+            top_stat_count += 1
+        else :
+            overall += int(player[s].iloc[0])
+            count += 1
+
+
+
+    overall = round(((overall / count) + overall_role)/2)
+
+    if overall > 50:
+        overall += (100 - overall) / 4
+    elif overall < 50:
+        overall -= overall / 4
+
+    overall = round(overall)
+    overall = max(0, min(overall, 100))
+
 
     overall_stats = [player["stats." + role + ".atk_overall"].iloc[0],
                      player["stats." + role + ".dribble_overall"].iloc[0],
                      player["stats." + role + ".pass_overall"].iloc[0],
                      player["stats." + role + ".mental_overall"].iloc[0],
                      player["stats." + role + ".def_overall"].iloc[0]]
-
 
     position_buttons = []
     for pos in ast.literal_eval(player["roles"].iloc[0]):
@@ -84,6 +112,9 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
             range=[0, 99]
         )))
 
+
+
+
     if " " in player["name"].iloc[0]:
         player_name = dash.html.H2(
             [player["name"].iloc[0].split(' ', 1)[0], html.Br(), player["name"].iloc[0].split(' ', 1)[1]],
@@ -105,6 +136,8 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
             team_img = DEFAULT_TEAM_IMG
     except:
         team_img = DEFAULT_TEAM_IMG
+
+
 
     player_page = html.Div([
         html.Div([
@@ -147,7 +180,8 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
                     html.Div(position_buttons, style={"margin-left": "30px", "display": "flex", "gap": "10px"})
                 ], className="dash_block"),
 
-            ], style={"padding": "20px 0px", "display": "flex", "gap": "20px", "flex": "0 1 auto" , "width":"min-content"}),
+            ], style={"padding": "20px 0px", "display": "flex", "gap": "20px", "flex": "0 1 auto",
+                      "width": "min-content"}),
             html.Div([
                 html.Div([
                     dash.html.Div([
@@ -158,23 +192,45 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
 
                     ], className="dash_block"),
                     html.Div([
-                        html.H3("Similar players :"),
+                        html.H3("Similar players :", style={"flex": "0 1 auto"}),
                         build_similar_player_list(player)
-                    ], className="dash_block", style={"display":"flex","flex-direction":"column","align-items":"flex-start","margin":"20px 0px 0px 0px","width":"100%", "flex": "1 1 auto", "overflow-y":"hidden"}),
-                ], style={"display":"flex","flex-direction":"column", "flex": "0 1 auto"}),
+                    ], className="dash_block",
+                        style={"display": "flex", "flex-direction": "column", "align-items": "flex-start",
+                               "margin": "20px 0px 0px 0px", "width": "100%", "flex": "1 1 auto"}),
+                ], style={"display": "flex", "flex-direction": "column", "flex": "0 1 auto"}),
                 html.Div([
+                    html.Div([
+                        html.Div([
+                            html.Div([
+                                html.Span(name.replace("stats." + role + ".", "").replace("_percentile", "")),
+                                html.Div([
+                                    html.Div(
+                                        [html.Div(
+                                            style={"width": str(int(player[name].iloc[0])) + "%", "height": "100%",
+                                                   "background-color": get_color_by_rate(int(player[name].iloc[0]))})],
+                                        style={"height": "10px", "background-color": "#D7DEE5", "flex": "1 1 auto"}),
+                                    html.Span(str(int(player[name].iloc[0])),
+                                              style={"margin-left": "20px", "flex": "0 1 auto", "display": "block",
+                                                     "width": "30px", "font-weight":"700", "color":get_color_by_rate(int(player[name].iloc[0]))})
+                                ], style={"display": "flex", "width": "100%", "align-items": "center"})
+                            ], style={"display": "flex", "align-items": "flex-start", "width": "100%",
+                                      "flex-direction": "column", "margin-bottom": "5px"})
+                            for name in stats_col
+                        ], style={"position": "absolute", "height": "100%", "width": "100%"})
+                    ], style={"height": "100%", "width": "100%", "position": "relative"})
+                ], className="dash_block", style={"flex": "1 1 auto", "display": "flex", "flex-direction": "column",
+                                                  "align-items": "flex-start", "gap": "10px", "overflow-y": "scroll"})
 
-                ], className="dash_block", style={"flex": "1 1 auto"})
-
-            ], style={ "display": "flex", "gap": "20px", "flex": "1 1 auto"}),
-        ], style={"display":"flex", "flex-direction":"column", "width":"min-content", "height":"100%"}),
+            ], style={"display": "flex", "gap": "20px", "flex": "1 1 auto"}),
+        ], style={"display": "flex", "flex-direction": "column", "width": "min-content", "height": "100%"}),
         html.Div([
             html.Div([
+                html.Div([])
 
-            ], className="dash_block", style={"height":"100%", "width":"100%"})
-        ], style={"flex": "1 1 auto", "padding":"20px 0px 0px 20px"})
+            ], className="dash_block", style={"height": "100%", "width": "100%"})
+        ], style={"flex": "1 1 auto", "padding": "20px 0px 0px 20px"})
 
-    ], style={"flex": "1 1 auto","display":"flex"})
+    ], style={"flex": "1 1 auto", "display": "flex"})
 
     layout = html.Div(children=[
         html.Div([dash.html.H2(children='Players')], style={"flex": "0 1 auto"}, className="heading"),
@@ -182,15 +238,16 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
             dbc.Input(id="input", placeholder="Search a player ...", type="text", style={"flex": "0 1 auto"}),
             dbc.Collapse(
                 [dbc.ListGroup(id="search_result",
-                               style={"margin-top": "20px", "flex": "0 1 auto","max-height": "300px", "overflow-y": "scroll"})],
+                               style={"margin-top": "20px", "flex": "0 1 auto", "max-height": "300px",
+                                      "overflow-y": "scroll"})],
                 id="collapse",
                 is_open=False,
             ),
             player_page
 
-        ], style={"padding": "20px", "flex": "1 1 auto", "display":"flex", "flex-direction":"column"}),
+        ], style={"padding": "20px", "flex": "1 1 auto", "display": "flex", "flex-direction": "column"}),
 
-    ], style={"height":"calc(100vh - 4rem)", "display":"flex", "flex-direction":"column"})
+    ], style={"height": "calc(100vh - 4rem)", "display": "flex", "flex-direction": "column"})
     return layout
 
 
@@ -227,8 +284,8 @@ def calculate_age(born):
     age = today.year - birth.year - ((today.month, today.day) < (birth.month, birth.day))
     return str(age)
 
-def build_similar_player_list(player):
 
+def build_similar_player_list(player):
     similar_players = app.df_best_role[app.df_all_role['id'].isin(ast.literal_eval(player["similar_players"].iloc[0]))]
     similar_players = similar_players.reset_index(drop=True)
     similar_player_img = []
@@ -239,18 +296,32 @@ def build_similar_player_list(player):
         else:
             similar_player_img.append(DEFAULT_PLAYER_IMG)
 
-
-    result = html.Div([
+    result = html.Div(html.Div([
         html.A([
             html.Img(src=similar_player_img[index], height="30px", style={"margin-right": "10px"}),
             dash.html.Div([
                 dash.html.Img(src=FLAG_URL + row["flag_name"] + ".svg", width="14x",
                               style={"border-radius": "1px"})
             ], style={"padding": "5px", "border-radius": "2px", "background-color": "#D7DEE5",
-                      "display": "flex", "margin-right":"10px"}),
-            html.Span(row["name"], style={"max-width": "120px", "display":"block", "color":"#111827", "text-overflow": "ellipsis", "overflow": "hidden", "white-space": "nowrap"}),
-        ], style={"display":"flex", "align-items":"center", "margin":"10px 0px"}, href="/players?player_id=" + row["id"])
+                      "display": "flex", "margin-right": "10px"}),
+            html.Span(row["name"],
+                      style={"max-width": "120px", "display": "block", "color": "#111827", "text-overflow": "ellipsis",
+                             "overflow": "hidden", "white-space": "nowrap"}),
+        ], style={"display": "flex", "align-items": "center", "margin": "10px 0px"},
+            href="/players?player_id=" + row["id"])
         for index, row in similar_players.iterrows()
 
-    ], style={"position":"absolute"})
+    ], style={"position": "absolute"}),
+        style={"flex": "1 1 auto", "position": "relative", "width": "100%", "overflow-y": "scroll"})
     return result
+
+
+def get_color_by_rate(rate):
+    if rate >= 75:
+        return "#27AC5F"
+    elif rate >= 50:
+        return "#B8D640"
+    elif rate >= 25:
+        return "#F29947"
+    else:
+        return "#EB5757"
