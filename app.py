@@ -33,10 +33,14 @@ def create():
         external_stylesheets=[dbc.icons.FONT_AWESOME, "https://rsms.me/inter/inter.css"]
         # Loads icons css and Inter font
     )
+
+    app.layout = serve_layout
+    app.run_server(debug=False, port=8050)
+
+def serve_layout():
     navbar = create_nav_bar()
     content = dash.html.Div([dash.page_container], id="pages-content", style={"flex": "1 1 auto"})
-    app.layout = dash.html.Div([dash.dcc.Location(id="url"), navbar,content], style={"display":"flex","flex-flow": "column", "height":"100%"})
-    app.run_server(debug=False, port=8051)
+    return dash.html.Div([dash.dcc.Location(id="url"), navbar,content], style={"display":"flex","flex-flow": "column", "height":"100%"})
 
 def create_nav_bar():
     navbar = dbc.NavbarSimple(

@@ -9,7 +9,7 @@ import dash
 from datetime import datetime
 from dash import html, dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
-
+from utils import simple_functions as sf
 import app
 
 PLAYER_IMG_FOLDER = "assets/playerimg"
@@ -35,45 +35,7 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
         if role not in ast.literal_eval(player["roles"].iloc[0]):
             role = ast.literal_eval(player["roles"].iloc[0])[0]
 
-    if player["stats." + role + ".overall"].iloc[0] is None:
-        overall_role = 0
-    else:
-        overall_role = player["stats." + role + ".overall"].iloc[0]
-
-    stats_col = [col for col in player.columns if
-                 'stats.' + role in col and "percentile" in col and not math.isnan(player[col].iloc[0])]
-
-
-    overall = 0
-    count = 0
-    top_stat_count = 0
-    for s in stats_col:
-        if int(player[s].iloc[0]) >= 98:
-            overall += int(player[s].iloc[0])*3
-            count += 3
-            top_stat_count += 1
-        else :
-            overall += int(player[s].iloc[0])
-            count += 1
-
-
-
-    overall = round(((overall / count) + overall_role)/2)
-
-    if overall > 50:
-        overall += (100 - overall) / 4
-    elif overall < 50:
-        overall -= overall / 4
-
-    overall = round(overall)
-    overall = max(0, min(overall, 100))
-
-
-    overall_stats = [player["stats." + role + ".atk_overall"].iloc[0],
-                     player["stats." + role + ".dribble_overall"].iloc[0],
-                     player["stats." + role + ".pass_overall"].iloc[0],
-                     player["stats." + role + ".mental_overall"].iloc[0],
-                     player["stats." + role + ".def_overall"].iloc[0]]
+    overall, overall_stats, stats_col = sf.get_overall(player, role)
 
     position_buttons = []
     for pos in ast.literal_eval(player["roles"].iloc[0]):
@@ -84,14 +46,7 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
             position_buttons.append(html.A([html.Button(pos, className="btn btn-secondary")],
                                            href="/players?player_id=" + player_id + "&role=" + pos))
 
-    if not math.isnan(player["height"].iloc[0]) and not math.isnan(player["weight"].iloc[0]):
-        player_physique = str(int(player["height"].iloc[0])) + ' cm | ' + str(int(player["weight"].iloc[0])) + " kg"
-    elif not math.isnan(player["height"].iloc[0]):
-        player_physique = str(int(player["height"].iloc[0])) + ' cm'
-    elif not math.isnan(player["weight"].iloc[0]):
-        player_physique = str(int(player["weight"].iloc[0])) + " kg"
-    else:
-        player_physique = ""
+    player_physique = sf.get_physique(player)
 
     overall_pie = go.Figure(data=[go.Pie(labels=["progress", "rest"], values=[overall, 100 - overall], hole=0.85,
                                          marker=dict(colors=['#6265F0', '#D7DEE5']), direction='clockwise',
@@ -154,7 +109,7 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
                             dash.html.Span(player["nationality"].iloc[0], className="light_text")
 
                         ], style={"display": "flex", "align-items": "center", "gap": "10px"}),
-                        dash.html.H3(calculate_age(str(player["birth_date"].iloc[0])) + " ans", className="light_text",
+                        dash.html.H3(sf.calculate_age(str(player["birth_date"].iloc[0])) + " ans", className="light_text",
                                      style={"margin-top": "5px", "display": "inline-block"}),
                         dash.html.Span("(" + player["birth_date"].iloc[0] + ")", className="light_text",
                                        style={"margin-left": "3px"}),
@@ -278,11 +233,7 @@ def fill_search_result(val):
     return result_hml
 
 
-def calculate_age(born):
-    birth = datetime.strptime(born, '%Y-%m-%d')
-    today = date.today()
-    age = today.year - birth.year - ((today.month, today.day) < (birth.month, birth.day))
-    return str(age)
+
 
 
 def build_similar_player_list(player):

@@ -1,7 +1,9 @@
+import os.path
+
 import app
 import scrapping.fbref as fbref
 import logging
-
+from utils import simple_functions as sf
 
 if __name__ == '__main__':
     # Config logging output file
@@ -9,5 +11,8 @@ if __name__ == '__main__':
 
     logging.debug('----------- Starting -----------')
     #fbref.scrap()
-    fbref.build_data_frame()
+    #sf.temp()
+    sf.build_data_frame()
+    if not os.path.exists("data/my_team.json"):
+        sf.create_random_team()
     app.create()
