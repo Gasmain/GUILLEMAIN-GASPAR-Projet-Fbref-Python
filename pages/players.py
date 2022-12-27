@@ -35,7 +35,7 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
         if role not in ast.literal_eval(player["roles"].iloc[0]):
             role = ast.literal_eval(player["roles"].iloc[0])[0]
 
-    overall, overall_stats, stats_col = sf.get_overall(player, role)
+    overall, overall_stats, stats_col = sf.get_overall(player.iloc[0], role)
 
     position_buttons = []
     for pos in ast.literal_eval(player["roles"].iloc[0]):
@@ -48,24 +48,9 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
 
     player_physique = sf.get_physique(player)
 
-    overall_pie = go.Figure(data=[go.Pie(labels=["progress", "rest"], values=[overall, 100 - overall], hole=0.85,
-                                         marker=dict(colors=['#6265F0', '#D7DEE5']), direction='clockwise',
-                                         sort=False)])
-    overall_pie.update(layout_showlegend=False)
-    overall_pie.update_layout(margin=dict(t=0, b=0, l=0, r=0), height=75, width=75)
-    overall_pie.update_traces(textinfo='none', hoverinfo='skip', hovertemplate=None)
+    overall_pie = sf.build_overall_pie(overall)
 
-    overall_radar = go.Figure(data=go.Scatterpolar(
-        r=overall_stats,
-        theta=['ATK', 'DRI', 'PAS', 'MTL', 'DEF'],
-        fill='toself'
-    ))
-    overall_radar.update(layout_showlegend=False)
-    overall_radar.update_layout(margin=dict(t=10, b=10, l=30, r=30), height=200, width=200, polar=dict(
-        radialaxis=dict(
-            visible=False,
-            range=[0, 99]
-        )))
+    overall_radar = sf.build_overall_radar(overall_stats)
 
 
 

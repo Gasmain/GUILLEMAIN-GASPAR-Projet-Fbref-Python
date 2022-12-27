@@ -6,3 +6,5 @@ numpy==1.23.5
 plotly==5.11.0
 Flask==2.2.2
 dash-bootstrap-components==1.2.1
+dash-cytoscape==0.3.0
+pycountry==20.7.3

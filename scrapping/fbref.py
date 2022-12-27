@@ -38,10 +38,6 @@ DEF_OVERALL_STATS = {"Tackles Won":3, "% of dribblers tackled": 5, "Dribbled Pas
 PASS_OVERALL_STATS = {"Passes Completed":3, "Pass Completion %":4,"Assists":5, "Key Passes":4, "Progressive Passes":3}
 MENTAL_OVERALL_STATS={"Red Cards":4,"Yellow Cards":2, "Fouls Committed":2, "Own Goals":4, "Errors" :2}
 
-FB_OVERALL_STATS = {"Goals":2, "Assists":8, "Red Cards": 3, "Pass Completion %":6,"Expected Assists":8,"Key Passes": 7, "Crosses into Penalty Area" : 5,"Progressive Passes": 5, "Shot-Creating Actions":5,"Goal-Creating Actions" : 6,"% of dribblers tackled" : 5, "Tackles Won" : 5, "Dribbled Past" :4, "Blocks" : 4,"Interceptions" :5,"Successful Dribble %" : 5,"Dribbles Completed" : 5, "Dispossessed" : 5, "Progressive Passes Rec" : 4, "Miscontrols" : 4 }
-CB_OVERALL_STATS = {"Goals":2, "Red Cards":3, "Pass Completion %":5,"Progressive Passes":4, "% of dribblers tackled" : 5,"Dribbled Past": 5, "Pass Completion % (Long)" :4, "Tackles Won" : 3,"Interceptions" :3, "Blocks":3, "% of Aerials Won":4, "Penalty Kicks Conceded":4, "Touches" : 7,"Miscontrols" : 5 }
-FW_OVERALL_STATS = {"Goals" : 10, "Assists":6, "Red Cards": 2, "Goals - xG":7, "xG":6, "Shots on target %":5, "Pass Completion %":5, "Key Passes":5, "Goal-Creating Actions" : 5, "Dispossessed" : 4, "Touches":4, "Offsides": 4}
-
 
 
 def scrap():

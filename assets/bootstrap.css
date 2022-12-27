@@ -136,6 +136,7 @@ display : flex;
 align-items:center;
 width: 100%;
 height : 3.5rem;
+min-height: 3.5rem;
 background-color:white;
 padding: 0px 2.5rem;
 --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -351,6 +352,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: .875rem; }
 
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300; }
@@ -359,6 +361,11 @@ h6, .h6 {
   font-size: 6rem;
   font-weight: 300;
   line-height: 1.2; }
+
+
+.dash-dropdown{
+    width:100px;
+}
 
 .display-2 {
   font-size: 5.5rem;
@@ -394,6 +401,22 @@ mark,
 .list-unstyled {
   padding-left: 0;
   list-style: none; }
+
+.Select-clear-zone{
+background-color:white;
+}
+
+.Select-arrow-zone{
+    background-color:#6265F0;
+}
+
+.Select-arrow {
+  border-color: #fff transparent transparent;
+  }
+
+ .graph_holder{
+ flex-wrap:wrap;
+ }
 
 .list-inline {
   padding-left: 0;
