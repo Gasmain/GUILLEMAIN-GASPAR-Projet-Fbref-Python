@@ -1,19 +1,15 @@
 import os.path
-
 import app
-import scrapping.fbref as fbref
 import logging
-from utils import simple_functions as sf
+from utils import shared_functions as sf, Constants
 
 if __name__ == '__main__':
     # Config logging output file
-    logging.basicConfig(filename='logs/main.log', level=logging.CRITICAL, format='%(asctime)s %(levelname)-8s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+    logging.basicConfig(filename=Constants.LOGS_FILE, level=logging.CRITICAL,
+                        format='%(asctime)s %(levelname)-8s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
-    logging.debug('----------- Starting -----------')
-    #fbref.scrap()
-    #sf.temp()
-
-    sf.build_data_frame()
-    if not os.path.exists("data/my_team.json"):
+    # sf.temp() // TODO : scrapping replace image : none par image : default.png
+    sf.build_data_frame()  # converts the .json file in dataframe, recalculate overall (useful if json changed)
+    if not os.path.exists(Constants.MY_TEAM_FILE):  # Creates a random team if no team file was found
         sf.create_random_team()
-    app.create()
+    app.create()  # Runs the dash app

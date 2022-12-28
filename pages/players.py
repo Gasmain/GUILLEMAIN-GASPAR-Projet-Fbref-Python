@@ -9,7 +9,7 @@ import dash
 from datetime import datetime
 from dash import html, dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
-from utils import simple_functions as sf
+from utils import shared_functions as sf
 import app
 
 PLAYER_IMG_FOLDER = "assets/playerimg"
@@ -94,7 +94,7 @@ def layout(player_id=None, role=None, **other_unknown_query_strings):
                             dash.html.Span(player["nationality"].iloc[0], className="light_text")
 
                         ], style={"display": "flex", "align-items": "center", "gap": "10px"}),
-                        dash.html.H3(sf.calculate_age(str(player["birth_date"].iloc[0])) + " ans", className="light_text",
+                        dash.html.H3(str(sf.calculate_age(str(player["birth_date"].iloc[0]))) + " ans", className="light_text",
                                      style={"margin-top": "5px", "display": "inline-block"}),
                         dash.html.Span("(" + player["birth_date"].iloc[0] + ")", className="light_text",
                                        style={"margin-left": "3px"}),

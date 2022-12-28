@@ -1,29 +1,10 @@
-import json
-import os
-
 import pandas as pd
-import numpy as np
 import dash
-import plotly.express as px
 import dash_bootstrap_components as dbc
-from dash.exceptions import PreventUpdate
-from dash import Output, Input
-from flask.helpers import get_root_path
+from utils import Constants
 
-PLAYER_FILE_JSON = "data/player.json"
-MY_LOGO = "assets/football.png"
-PLAYER_ALL_ROLE_FILE_CSV = "data/player_all_role.csv"
-PLAYER_BEST_ROLE_FILE_CSV = "data/player_best_role.csv"
-
-df_best_role = pd.read_csv(PLAYER_BEST_ROLE_FILE_CSV)
-df_all_role = pd.read_csv(PLAYER_ALL_ROLE_FILE_CSV)
-
-# TODO : Shoot, Pass, deffense, dribble
-
-
-"""
-Creates a plotly dashboard
-"""
+df_best_role = pd.read_csv(Constants.PLAYER_BEST_ROLE_FILE_CSV)
+df_all_role = pd.read_csv(Constants.PLAYER_ALL_ROLE_FILE_CSV)
 
 app = dash.Dash(
     __name__,
@@ -35,6 +16,9 @@ app = dash.Dash(
 
 
 def create():
+    """
+    Creates a plotly dashboard on port 8050
+    """
     app.layout = serve_layout
     app.run_server(debug=False, port=8050)
 
@@ -50,8 +34,7 @@ def create_nav_bar():
     navbar = dbc.NavbarSimple(
         children=[
             dash.html.A(
-                # Use row and col to control vertical alignment of logo / brand
-                [dash.html.Img(src=MY_LOGO, height="40px")],
+                [dash.html.Img(src=Constants.MY_LOGO, height="40px")],
                 href="/",
                 style={"textDecoration": "none"},
             ),
@@ -69,7 +52,6 @@ def create_nav_bar():
 
         ],
         color="dark",
-
         dark=True,
         style={"flex": " 0 1 4rem"}
     )

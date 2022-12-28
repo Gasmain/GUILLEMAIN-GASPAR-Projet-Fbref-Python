@@ -135,7 +135,8 @@ def change_scatter_plot_axis(new_value_x, new_value_y, current_value_x, current_
     Output("histo-ctn", "children"),
     Input("dropdown-metric", "value"),
     State("dropdown-metric", "value"),
-    prevent_initial_call=True)
+    prevent_initial_call=True
+)
 def change_histo_axis(new_value, current_value):
     return dcc.Graph(figure=build_histogram(current_value), config={
                     "displaylogo": False,

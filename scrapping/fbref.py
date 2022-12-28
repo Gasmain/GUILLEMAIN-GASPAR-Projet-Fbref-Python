@@ -1,5 +1,3 @@
-import re
-import json
 from bs4 import BeautifulSoup
 import requests
 import logging
@@ -7,299 +5,367 @@ import urllib.request
 from random import randint
 from time import sleep
 from tkinter import *
-from tkinter.ttk import *
-import asyncio
-from threading import Thread
 import json
-import pandas as pd
-import copy
+from utils import Constants
 
-PLAYER_ALL_ROLE_FILE_CSV = "data/player_all_role.csv"
-PLAYER_BEST_ROLE_FILE_CSV = "data/player_best_role.csv"
-PLAYER_FILE_JSON = "data/player.json"
-PLAYER_IMG_FOLDER = "assets/playerimg"
-TEAM_IMG_FOLDER = "assets/teamimg"
-TEAM_LOGO_URL = "https://cdn.ssref.net/req/202211181/tlogo/fb/"
-FBREF_URL = "https://fbref.com"
-TOP_5_LEAGUE_PLAYER_LIST = "/en/comps/Big5/stats/players/Big-5-European-Leagues-Stats"
-headers={
-    "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Host":"fbref.com",
-    "Referer":"https://fbref.com/en/players/",
-    "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0"
-}
 data = []
-progress = 0
-stop_threads = False
-
-ATK_OVERALL_STATS = {"Goals":5, "Shots on target %" : 2, "Non-Penalty Goals - npxG":4, "xG":3}
-DRB_OVERALL_STATS = {"Successful Dribble %":5, "Dribbles Completed":4, "Dispossessed":2, "Miscontrols":3, "Touches":2, "Goal-Creating Actions":2}
-DEF_OVERALL_STATS = {"Tackles Won":3, "% of dribblers tackled": 5, "Dribbled Past":3, "Blocks":3, "Interceptions":3}
-PASS_OVERALL_STATS = {"Passes Completed":3, "Pass Completion %":4,"Assists":5, "Key Passes":4, "Progressive Passes":3}
-MENTAL_OVERALL_STATS={"Red Cards":4,"Yellow Cards":2, "Fouls Committed":2, "Own Goals":4, "Errors" :2}
 
 
+class Scrapper:
+    running = False
+    progress = 0
 
-def scrap():
-    global data
-    t = Thread(target=progress_bar)
-    t.start()
-    f = open(PLAYER_FILE_JSON, encoding="utf-8")
-    data = json.load(f)
+    @staticmethod
+    def scrap():
+        global data
+        if not Scrapper.running:
+            Scrapper.running = True
+            f = open(Constants.PLAYER_FILE_JSON, encoding="utf-8")
+            data = json.load(f)
 
-    logging.debug('Starting fbref scrapping')
-    player_url_list = ["/en/players/1467af0d/scout/365_m1/Marco-Verratti-Scouting-Report"]
+            logging.debug('Starting fbref scrapping')
+            player_url_list = Scrapper.get_player_url()
 
-    if len(player_url_list) == 0:
-        logging.error('player_url_list is empty')
-        print("error : player_url_list is empty")
+            if len(player_url_list) == 0:
+                logging.error('player_url_list is empty')
+                return
+            else:
+                player_list = Scrapper.build_player_list(player_url_list)
         return
-    else:
-        player_list = build_player_list(player_url_list)
-    stop_threads = True
-    t.join()
-    return
 
-
-def progress_bar():
-    global progress, stop_threads
-    window = Tk()
-    window.wm_title("Scrapping progress")
-    window.geometry("400x200")
-    text = Label(window, text="0")
-    text.place(x=180,y=90)
-    bar = Progressbar(window, orient=HORIZONTAL, length=300)
-    bar.pack(pady=50)
-
-    while True:
-        bar["value"] = progress
-        text.config(text=str(round(progress, 2))+"%")
-        window.update()
-        if stop_threads:
-            break
-
-
-def get_player_url():
-    """
-    Iterate over an html table and extract for each line the link to the players pages
-    """
-
-    player_url_list = []
-
-    r = requests.get(FBREF_URL + TOP_5_LEAGUE_PLAYER_LIST, headers=headers)  # Requests the pages with the players table
-    if r.status_code == 200:  # Si code = success
-        try:
-            soup = BeautifulSoup(r.content, 'html.parser')
-            player_table = soup.find(id="stats_standard")
-            player_table_body = player_table.find("tbody")
-            player_table_rows = player_table_body.select(
-                "tr:not(.thead)")  # Get all the rows of the table that are not of class thead
-        except:
-            logging.error('Could not find the table of players correctly')
-            print("error : Could not find the table of players correctly")
-            exit()  # We stop the run because if the table can't be read we can't go any further
-
-        for row in player_table_rows:
+    @staticmethod
+    def get_player_url():
+        """
+        Iterate over an html table and extract for each line the link to the players pages
+        """
+        player_url_list = []
+        # Requests the pages with the players table
+        r = requests.get(Constants.FBREF_URL + Constants.TOP_5_LEAGUE_PLAYER_LIST, headers=Constants.headers)
+        if r.status_code == 200:  # If code = success
             try:
-                player_url = row.find_all("td")[0].find("a")['href']  # Get link of the player
-                # Rebuilding the url to get the player scouting report
-                result = re.search(r"(.*)\/", player_url)  # Search in the url for the part without the player name
-                player_url = result.group(1) + "/scout/365_m1/"
-                player_url_list.append(player_url)
+                soup = BeautifulSoup(r.content, 'html.parser')
+                player_table = soup.find(id="stats_standard")
+                player_table_body = player_table.find("tbody")
+                player_table_rows = player_table_body.select(
+                    "tr:not(.thead)")  # Get all the rows of the table that are not of class thead
             except:
-                pass
+                logging.error('Could not find the table of players correctly')
+                return []  # We stop the run because if the table can't be read we can't go any further
 
-        player_url_list = list(dict.fromkeys(player_url_list))  # Drop duplicate urls
-
-    else:  # Si code = error
-        print("error : Got code " + str(r.status_code) + " for url : " + FBREF_URL + TOP_5_LEAGUE_PLAYER_LIST)
-        logging.error('Got code ' + str(r.status_code) + " for url : " + FBREF_URL + TOP_5_LEAGUE_PLAYER_LIST)
-
-    return player_url_list
-
-
-def build_player_list(player_url_list):
-    """
-    Builds a list of players, each one being a json object
-    """
-    global data, progress
-    player_list = []
-    for player_url in player_url_list:
-        player = get_player_data(player_url)
-        if len(player)>0:
-            if "stats" in player and "similar_players" in player: #Checks if the stats and sim player key exist in player dict before adding to list
-                if len(player["stats"])>0 :
-                    player_list.append(player)
-                    data.append(player)
-                    with open(PLAYER_FILE_JSON, "w", encoding="utf-8") as file:
-                        json.dump(data, file)
-        progress += float(100.0/len(player_url_list))
-    return player_list
-
-
-def get_player_data(player_url):
-    """
-    Gather the player's data such as his name, nationality ...
-    and parse all his stats from the extended scouting report
-
-    {
-    "name" : "Neymar",
-    "age" : 28,
-    ...
-    "stats" : {}
-    }
-
-    """
-
-    player = {}
-
-    r = requests.get(FBREF_URL + player_url, headers=headers)  # Requests the player's web pages'
-    if r.status_code == 200:  # If code = success
-
-
-        try:
-            soup = BeautifulSoup(r.content, 'html.parser')
-
-            # Check if player has a scouting report
-            if soup.find(id="all_scout") is not None:
-
-                # ---- Player id ----
-
-                player_id = extractId(player_url)
-                player["id"] = player_id
-
-                # ---- Player name ----
-                player_name = soup.find("h1").text
-                player["name"] = player_name.replace("\n", "")
-
-                # ---- Player img ----
+            for row in player_table_rows:
                 try:
-                    player_img_src = soup.find(class_="media-item").find("img")["src"]
-                    urllib.request.urlretrieve(player_img_src,
-                                               PLAYER_IMG_FOLDER + "/" + player_id + ".jpg")  # Download and save the image in the playerimg folder
-                except Exception as e:
-                    print("no image found : " + str(e))
+                    player_url = row.find_all("td")[0].find("a")['href']  # Get link of the player
+                    # Rebuilding the url to get the player scouting report
+                    result = re.search(r"(.*)\/", player_url)  # Search in the url for the part without the player name
+                    player_url = result.group(1) + "/scout/365_m1/"
+                    player_url_list.append(player_url)
+                except:
                     pass
 
-                # ---- Player strong foot ----
-                p_contain_foot = str(soup.select('p:-soup-contains("Footed:")'))  # Find <p> containing "Footed:"
-                result = re.search(r".*strong> (.*)<", p_contain_foot)  # Search in the <p> the strong foot
+            player_url_list = list(dict.fromkeys(player_url_list))  # Drop duplicate urls
 
-                if result:  # If regex found matches it means player has strong foot
-                    player["strong_foot"] = result.group(1)
-                else :
-                    player["strong_foot"] = None
+        else:  # Si code = error
+            logging.error('Got code ' + str(r.status_code) + " for url : " + Constants.FBREF_URL +
+                          Constants.TOP_5_LEAGUE_PLAYER_LIST)
 
-                # ---- Player height ----
-                player["height"] = None
-                p_contain_height = soup.find(id="meta").select('p:-soup-contains("cm")')  # Search for a <p> containing "cm" in the div of the biography
-                if len(p_contain_height) > 0 :
-                    for p in p_contain_height:
-                        result = re.findall(r"(\d*)cm", p.text)  # Search for the height in <p>
-                        if len(result) > 0 :
-                            player["height"] = result[0]
-                            break
+        return player_url_list
 
-                # ---- Player weight ----
-                player["weight"] = None
-                p_contain_weight = soup.find(id="meta").select('p:-soup-contains("kg")')  # Search for a <p> containing "kg" in the div of the biography
-                if len(p_contain_weight) > 0:
-                    for p in p_contain_weight:
-                        result = re.findall(r"(\d*)kg", p.text)  # Search for the weight in <p>
-                        if len(result) > 0:
-                            player["weight"] = result[0]
-                            break
+    @staticmethod
+    def build_player_list(player_url_list):
+        """
+        Builds a list of players, each one being a json object
 
-                # ---- Player birthdate ----
-                birth_date = soup.find(id="necro-birth")
-                if birth_date == None :
-                    player["birth_date"] = None
-                else:
-                    player["birth_date"] = birth_date["data-birth"]
+        :param player_url_list: list of the urls of the players to create
+        :return: list of players (list of json objects)
+        """
+        global data
 
-                # Player nationality
-                p_contain_nationality = soup.find(id="meta").select(
-                    'p:-soup-contains("National Team")')  # Search for a <p> containing "National Team" in the div of the biography
-                if len(p_contain_nationality) > 0:
-                    player["nationality"] = p_contain_nationality[0].find("a").text
-                else :
-                    p_contain_nationality = soup.find(id="meta").select(
-                        'p:-soup-contains("Citizenship")')  # Search for a <p> containing "National Team" in the div of the biography
-                    if len(p_contain_nationality) > 0:
-                        player["nationality"] = p_contain_nationality[0].find("a").text
-                    else:
-                        player["nationality"] = None
-                if p_contain_nationality != None:
-                    flag_name = p_contain_nationality[0].find("span")["class"]
-                    player["flag_name"] = (''.join(flag_name)).replace("f-if-", "")
-                # Player club
-                p_contain_club = soup.find(id="meta").select('p:-soup-contains("Club:")')  # Search for a <p> containing "National Team" in the div of the biography
-                if len(p_contain_club) > 0:
-                    player["club"] = p_contain_club[0].find("a").text
-                    club_url = p_contain_club[0].find("a")["href"]
-                    result = re.search(r".*\/squads\/(.*)\/", club_url)
-                    player["club_id"] = result.group(1)
-                    try:
-                        urllib.request.urlretrieve(TEAM_LOGO_URL+result.group(1)+".png",
-                                                   TEAM_IMG_FOLDER + "/" + player["club_id"] + ".png")  # Download and save the image in the playerimg folder
-                    except Exception as e:
-                        print("no image club found : " + str(e))
-                        pass
+        player_list = []
 
-                else :
-                    player["club"] = None
+        for player_url in player_url_list:
+            player = Scrapper.get_player_data(player_url)  # Build a player
+            # Verify if the json is not empty and that the stats and similar player attributes are in the json obj
+            if len(player) > 0 and "stats" in player and "similar_players" in player:
+                if len(player["stats"]) > 0:
+                    player_list.append(player)
+                    data.append(player)
+                    # save after every new player was scraped, avoid losing scrapped player when script stop before
+                    # finishing to scrap all players
+                    with open(Constants.PLAYER_FILE_JSON, "w", encoding="utf-8") as file:
+                        json.dump(data, file)
+                        file.close()
+            Scrapper.progress += float(100.0 / len(player_url_list))  # increase the progress after each player was
+            # scrapped (for the dash progress bar)
+        return player_list
 
-                # Similar players
-                similar_table = soup.find(id="all_similar")
-                similar_table_row = similar_table.find_all("td", {"class": "left", "data-stat": "player"})
-                similar_players = []
-                for row in similar_table_row:
-                    similar_players.append(extractId(row.find("a")["href"]))
-                player["similar_players"] = similar_players
-                # Player stats
-                all_scout = soup.find_all(id="all_scout")[1]
-                all_table = all_scout.find_all("table")
-                players_stats = {}
-                player_roles = []
-                for table in all_table:
-                    stats = {}
-                    print(table["id"])
-                    result = re.search(r".*full_(.*)", table["id"])
-                    role = result.group(1)
-                    player_roles.append(role)
-                    all_scout_table_body = table.find("tbody")
-                    all_scout_rows = all_scout_table_body.find_all("tr")
+    @staticmethod
+    def get_player_data(player_url):
+        """
+        Gather the player's data such as his name, nationality ...
+        and parse all his stats from the extended scouting report
 
+        {
+        "name" : "Neymar",
+        "age" : 28,
+        ...
+        "stats" : {}
+        }
 
-                    for row in all_scout_rows:
-                        if row.has_attr("class"):
-                            if("spacer" in row["class"] or "thead" in row["class"]):
-                                continue
-                        stat_name = row.find("th",{"data-stat": "statistic"}).text
-                        stats[stat_name+"_per90"] = row.find("td",{"data-stat": "per90"}).text
-                        stats[stat_name+"_percentile"] = row.find("td",{"data-stat": "percentile"})["csk"]
-                    players_stats[role] = stats
-                player["stats"] = players_stats
-                player["roles"] = player_roles
+        :param player_url: url of the player to scrap
+        :return: returns the json obj representing the player
+        """
+        player = {}
 
+        # Requests the player's web pages
+        r = requests.get(Constants.FBREF_URL + player_url, headers=Constants.headers)
+        if r.status_code == 200:  # If code is success
+            try:
+                soup = BeautifulSoup(r.content, 'html.parser')
 
-            else:  # If player has no scouting report
-                logging.warning("Player has not scouting report : " + FBREF_URL + player_url)
+                # Check if player has a scouting report
+                if soup.find(id="all_scout") is not None:
 
+                    player, player_id = Scrapper.get_name_id(player, soup, player_url)  # Get player name and id
+                    Scrapper.get_player_img()  # Download player img
+                    player = Scrapper.get_player_foot(soup, player)  # Get player strong foot
+                    player = Scrapper.get_height_weight(soup, player)  # Get player height and weight
+                    player = Scrapper.get_birthdate(soup, player)  # Get player birthdate
+                    player = Scrapper.get_nationality(soup, player)  # Get player nationality
+                    player = Scrapper.get_club(soup, player)  # Get player's club
+                    player = Scrapper.get_similar_players(soup, player)
+                    player = Scrapper.get_stats_roles(soup, player)
+
+                else:  # If player has no scouting report
+                    logging.warning("Player has not scouting report : " + Constants.FBREF_URL + player_url)
+
+            except Exception as e:
+                logging.error("Error with player : " + Constants.FBREF_URL + player_url + "\n" + str(e))
+
+        else:  # If code = error
+            logging.error('Got code ' + str(r.status_code) + " for url : " + Constants.FBREF_URL + player_url)
+
+        sleep(randint(4, 7))  # Sleep a random time between 4 and 7 sec to avoid getting ban by the site
+
+        return player
+
+    @staticmethod
+    def extract_id(url):
+        """
+        Extract from an url the player's id
+        :param url: the player's url in string
+        :return: player's id in string
+        """
+        result = re.search(r"\/en\/players\/(.*?)\/", url)  # Search in the url for the player id
+        return result.group(1)
+
+    @staticmethod
+    def get_name_id(player, soup, player_url):
+        """
+        add to the player json it's fbref id and its name
+        :param player: the json object
+        :param soup: soup instance
+        :param player_url: the string of the player url
+        :return: the json object & the player_id
+        """
+        player_id = Scrapper.extract_id(player_url)
+        player["id"] = player_id
+
+        # ---- Player name ----
+        player_name = soup.find("h1").text
+        player["name"] = player_name.replace("\n", "")
+
+        return player, player_id
+
+    @staticmethod
+    def get_player_img(soup, player_id):
+        """
+        Download and save the player img if one was found
+        :param soup: soup instance
+        :param player_id: the id of the player, used as a name to save the image
+        """
+        try:
+            player_img_src = soup.find(class_="media-item").find("img")["src"]
+            urllib.request.urlretrieve(player_img_src,
+                                       Constants.PLAYER_IMG_FOLDER + "/" + player_id + ".jpg")  # Download and save the image in the playerimg folder
         except Exception as e:
-            logging.error("Error with player : " + FBREF_URL + player_url + "\n" + str(e))
-            print("error : Error with player : " + FBREF_URL + player_url + "\n" + str(e))
+            logging.warning("no image found : " + str(e))
+            pass
 
+    @staticmethod
+    def get_player_foot(soup, player):
+        """
+        Adds the the player json it's preferred foot
+        :param soup: instance of the soup
+        :param player: the player json object
+        :return: the player json object
+        """
+        p_contain_foot = str(soup.select('p:-soup-contains("Footed:")'))  # Find <p> containing "Footed:"
+        result = re.search(r".*strong> (.*)<", p_contain_foot)  # Search in the <p> the strong foot
 
-    else:  # If code = error
-        logging.error('Got code ' + str(r.status_code) + " for url : " + FBREF_URL + player_url)
-        print("error : Got code " + str(r.status_code) + " for url : " + FBREF_URL + player_url)
+        if result:  # If regex found matches it means player has strong foot
+            player["strong_foot"] = result.group(1)
+        else:
+            player["strong_foot"] = None
 
-    sleep(randint(4, 7))
+        return player
 
-    return player
+    @staticmethod
+    def get_height_weight(soup, player):
+        """
+        Adds to the player json object it's height and it's weight
+        :param soup: instance of soup
+        :param player: player json
+        :return: player json
+        """
+        labels = [["height", "cm"], ["weight", "kg"]]
 
+        for l in labels:
+            player[l[0]] = None
+            p_contain = soup.find(id="meta").select(
+                'p:-soup-contains("' + l[
+                    1] + '")')  # Search for a <p> containing "cm" or "kg" in the div of the biography
+            if len(p_contain) > 0:
+                for p in p_contain:
+                    result = re.findall(r"(\d*)" + l[1], p.text)  # Search for the height or weight in <p>
+                    if len(result) > 0:
+                        player[l[0]] = result[0]
+                        break
+        return player
 
-def extractId(url):
-    result = re.search(r"\/en\/players\/(.*?)\/", url)  # Search in the url for the player id
-    return result.group(1)
+    @staticmethod
+    def get_birthdate(soup, player):
+        """
+        Adds to the player json it's birthdate
+        :param soup: instance of soup
+        :param player: player json
+        :return: player json
+        """
+        birth_date = soup.find(id="necro-birth")
+        if birth_date == None:
+            player["birth_date"] = None
+        else:
+            player["birth_date"] = birth_date["data-birth"]
+
+        return player
+
+    @staticmethod
+    def get_nationality(soup, player):
+        """
+        Adds to the player json it's nationality and the player flag code
+        :param soup: instance of soup
+        :param player: player json
+        :return: player json
+        """
+        p_contain_nationality = soup.find(id="meta").select(
+            'p:-soup-contains("National Team")')  # Search for a <p> containing "National Team" in the div of the biography
+        if len(p_contain_nationality) > 0:
+            player["nationality"] = p_contain_nationality[0].find("a").text
+        else:
+            p_contain_nationality = soup.find(id="meta").select(
+                'p:-soup-contains("Citizenship")')  # Search for a <p> containing "Citizenship" in the div of the biography
+            if len(p_contain_nationality) > 0:
+                player["nationality"] = p_contain_nationality[0].find("a").text
+            else:
+                player["nationality"] = None
+
+        if p_contain_nationality is not None:
+            flag_name = p_contain_nationality[0].find("span")[
+                "class"]  # Get the code of the flag (used to get the flag img url
+            player["flag_name"] = (''.join(flag_name)).replace("f-if-", "")
+
+        return player
+
+    @staticmethod
+    def get_club(soup, player):
+        """
+        Adds the club and the club id to the json player and download club's logo
+        :param soup: instance of soup
+        :param player: json player
+        :return: json player
+        """
+        p_contain_club = soup.find(id="meta").select(
+            'p:-soup-contains("Club:")')  # Search for a <p> containing "National Team" in the div of the biography
+        if len(p_contain_club) > 0:
+            player["club"] = p_contain_club[0].find("a").text
+            club_url = p_contain_club[0].find("a")["href"]
+            result = re.search(r".*\/squads\/(.*)\/", club_url)
+            player["club_id"] = result.group(1)
+            try:
+                urllib.request.urlretrieve(Constants.TEAM_LOGO_URL + result.group(1) + ".png",
+                                           Constants.TEAM_IMG_FOLDER + "/" + player[
+                                               "club_id"] + ".png")  # Download and save the image in playerimg
+            except Exception as e:
+                logging.warning("no image club found : " + str(e))
+                pass
+
+        else:
+            player["club"] = None
+
+        return player
+
+    @staticmethod
+    def get_similar_players(soup, player):
+        """
+        Adds a list of id of similar players in th player json
+        :param soup: instance of soup
+        :param player: player json
+        :return: player json
+        """
+        similar_table = soup.find(id="all_similar")  # Get the table containing the similar player
+        # only get rows with players
+        similar_table_row = similar_table.find_all("td", {"class": "left", "data-stat": "player"})
+        similar_players = []
+        for row in similar_table_row:
+            similar_players.append(Scrapper.extract_id(row.find("a")["href"]))  # Get the id from the player's url
+        player["similar_players"] = similar_players
+
+        return player
+
+    @staticmethod
+    def get_stats_roles(soup, player):
+        """
+        Adds to the json player it's stats and roles.
+        For each roles its corresponding stats.
+        Ex : roles = ["AM", "MF"] and stats = {"AM" : {...}, "MF" : {...}}
+        :param soup: instance of soup
+        :param player: player json
+        :return: player json
+        """
+        # Get the tables containing the stats (one per role)
+        all_scout = soup.find_all(id="all_scout")[1]
+        all_table = all_scout.find_all("table")
+
+        players_stats = {}
+        player_roles = []
+
+        for table in all_table:
+            stats = {}
+
+            result = re.search(r".*full_(.*)", table["id"])
+            role = result.group(1)  # Get the role concerning the table
+
+            player_roles.append(role)
+
+            # Get all the rows of the stat table
+            all_scout_table_body = table.find("tbody")
+            all_scout_rows = all_scout_table_body.find_all("tr")
+
+            for row in all_scout_rows:
+                # determine if row is a stat row or a spacer row
+                if row.has_attr("class"):
+                    if "spacer" in row["class"] or "thead" in row["class"]:
+                        continue
+
+                # Extract name of the stats from th where attribute data-stat = statistic
+                stat_name = row.find("th", {"data-stat": "statistic"}).text
+                # Extract name of the stats from th where attribute data-stat = per90
+                stats[stat_name + "_per90"] = row.find("td", {"data-stat": "per90"}).text
+                # Extract name of the stats from th where attribute data-stat = percentile
+                stats[stat_name + "_percentile"] = row.find("td", {"data-stat": "percentile"})["csk"]
+
+            players_stats[role] = stats
+
+        player["stats"] = players_stats
+        player["roles"] = player_roles
+
+        return player

@@ -6,7 +6,7 @@ from sre_parse import State
 import numpy as np
 from dash.exceptions import PreventUpdate
 import plotly.express as px
-from utils import simple_functions as sf
+from utils import shared_functions as sf
 import dash
 from dash import html, dcc, Output, Input,State, callback, ALL, callback_context
 import dash_cytoscape as cyto
@@ -39,6 +39,7 @@ sidebar = ""
 to_update_search_result = False
 to_replace = None
 team_chemistry = 0
+
 
 style = [
     {
@@ -98,10 +99,29 @@ def make_my_team_df():
     if len(team_df) != 11:
         sf.create_random_team()
         team_df = make_my_team_df()
+
+    current_atk_overall = []
+    current_def_overall = []
+    current_pass_overall = []
+    current_dribble_overall = []
+
+    for index, player in team_df.iterrows():
+        role = ast.literal_eval(player["roles"])[0]
+        current_atk_overall.append(player["stats."+role+".atk_overall"])
+        current_def_overall.append(player["stats."+role+".def_overall"])
+        current_pass_overall.append(player["stats."+role+".pass_overall"])
+        current_dribble_overall.append(player["stats."+role+".dribble_overall"])
+
+
+    team_df["current.atk_overall"] = current_atk_overall
+    team_df["current.def_overall"] = current_def_overall
+    team_df["current.pass_overall"] = current_pass_overall
+    team_df["current.dribble_overall"] = current_dribble_overall
     return team_df
 
 
 my_team_df = make_my_team_df()
+
 
 
 def build_nodes():
@@ -134,7 +154,6 @@ def build_nodes():
 
 
 def layout():
-
     team_overall, team_overall_stats = calc_team_overall()
     return html.Div(children=[
         html.Div(id="hidden-div", style={"display": "none"}),
@@ -203,8 +222,9 @@ def layout():
                             }),
                             dash.html.H2(team_overall, style={"position": "absolute", "left": "50%", "top": "50%",
                                                               "transform": "translate(-50%,-50%)"})
-                        ], style={"position": "relative"}),
-                    ], className="dash_block", style={"flex-direction": "column"}),
+                        ], style={"position": "absolute", "left": "50%", "top": "50%",
+                                                                "transform": "translate(-50%,-50%)"}),
+                    ], className="dash_block", style={"flex-direction": "column", "position":"relative"}),
 
                     html.Div([
                         html.H3("Chemistry"),
@@ -215,18 +235,28 @@ def layout():
                             }),
                             dash.html.H2(team_chemistry, style={"position": "absolute", "left": "50%", "top": "50%",
                                                                 "transform": "translate(-50%,-50%)"})
-                        ], style={"position": "relative"}),
+                        ], style={"position": "absolute","left": "50%", "top": "50%",
+                                                                "transform": "translate(-50%,-50%)"}),
+                    ], className="dash_block", style={"flex-direction": "column", "position":"relative"}),
+                    dash.html.Div([
+                        html.H3("Team stats"),
+                        dcc.Graph(figure=sf.build_overall_radar(team_overall_stats, 150), config={
+                            "displaylogo": False,
+                            'displayModeBar': False,
+                        }),
                     ], className="dash_block", style={"flex-direction": "column"}),
-                ], style={"display":"flex", "gap":"20px", "margin-bottom":"20px"}),
+                ], style={"display":"flex", "gap":"20px", "margin-bottom":"20px", "flex-wrap":"wrap"}),
+
+
 
 
                 dash.html.Div([
-                    html.H3("Team stats"),
-                    dcc.Graph(figure=sf.build_overall_radar(team_overall_stats, 150), config={
+                    html.H3("3D Representation of players stats"),
+                    dcc.Graph(figure=build_3D_scatter(), config={
                         "displaylogo": False,
                         'displayModeBar': False,
                     }),
-                ], className="dash_block", style={"flex-direction":"column"}),
+                ], className="dash_block", style={"flex-direction": "column"}),
 
 
 
@@ -238,6 +268,11 @@ def layout():
     ], id="squad_builder_content",
         style={"height": "calc(100vh - 4rem)", "display": "flex", "flex-direction": "column"})
 
+
+def build_3D_scatter():
+    fig = px.scatter_3d(my_team_df, x="current.atk_overall", y="current.def_overall", z="current.pass_overall", color="current.dribble_overall", color_continuous_scale=px.colors.sequential.Viridis)
+    fig.update_layout(margin=dict(t=0, b=0, l=0, r=0))
+    return fig
 
 def calc_team_overall():
     roles = sf.FORMATIONS[my_team["formation"]]
