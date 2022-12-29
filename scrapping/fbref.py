@@ -17,6 +17,11 @@ class Scrapper:
 
     @staticmethod
     def scrap():
+        """
+        Start the scrapping
+        WARNING : Complete scrapping takes a very long time, roughly 5 hours due to the 7 seconds of wait between each
+        of the 2000+ players, but it can be stop in it's process without any problem.
+        """
         global data
         if not Scrapper.running:
             Scrapper.running = True
@@ -126,7 +131,7 @@ class Scrapper:
                 if soup.find(id="all_scout") is not None:
 
                     player, player_id = Scrapper.get_name_id(player, soup, player_url)  # Get player name and id
-                    Scrapper.get_player_img()  # Download player img
+                    player = Scrapper.get_player_img(soup, player, player_id)  # Download player img
                     player = Scrapper.get_player_foot(soup, player)  # Get player strong foot
                     player = Scrapper.get_height_weight(soup, player)  # Get player height and weight
                     player = Scrapper.get_birthdate(soup, player)  # Get player birthdate
@@ -177,7 +182,7 @@ class Scrapper:
         return player, player_id
 
     @staticmethod
-    def get_player_img(soup, player_id):
+    def get_player_img(soup, player, player_id):
         """
         Download and save the player img if one was found
         :param soup: soup instance
@@ -187,10 +192,13 @@ class Scrapper:
             player_img_src = soup.find(class_="media-item").find("img")["src"]
             urllib.request.urlretrieve(player_img_src,
                                        Constants.PLAYER_IMG_FOLDER + "/" + player_id + ".jpg")  # Download and save the image in the playerimg folder
+            player["img"] = Constants.PLAYER_IMG_FOLDER + "/" + player["id"] + ".jpg"
         except Exception as e:
+            player["img"] = Constants.DEFAULT_PLAYER_IMG
             logging.warning("no image found : " + str(e))
             pass
 
+        return player
     @staticmethod
     def get_player_foot(soup, player):
         """

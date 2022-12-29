@@ -1,96 +1,20 @@
 import ast
 import json
-import math
-from sre_parse import State
-
 import numpy as np
-from dash.exceptions import PreventUpdate
-import plotly.express as px
-from utils import shared_functions as sf
+from utils import shared_functions as sf, Constants
 import dash
 from dash import html, dcc, Output, Input,State, callback, ALL, callback_context
 import dash_cytoscape as cyto
 import dash_bootstrap_components as dbc
-
 import app
 
-dash.register_page(__name__, path='/squad-builder', )
 
-FLAG_URL = "https://cdn.ssref.net/req/1637611918233-20211022/flags/"
-MY_TEAM_PATH = "data/my_team.json"
-FORMATION_POSITION = {
-    "442": [[40, 145], [100, 105], [100, 185], [150, 240], [150, 50], [230, 185], [230, 105], [320, 50], [320, 240],
-            [400, 105], [400, 185]],
-    "433": [[40, 145], [100, 105], [100, 185], [150, 240], [150, 50], [280, 145], [220, 205], [220, 95], [320, 50],
-            [320, 240],
-            [400, 145], ]}
-
-FORMATION_LINK = {
-    "442": [["0", "1"], ["0", "2"], ["1", "2"], ["2", "3"], ["4", "1"], ["4", "7"], ["1", "6"], ["6", "7"], ["2", "5"],
-            ["8", "3"], ["8", "5"], ["8", "10"], ["5", "6"], ["9", "7"], ["9", "6"], ["9", "10"], ["5", "10"]],
-    "433": [["0", "1"], ["0", "2"], ["1", "2"], ["2", "3"], ["4", "1"], ["4", "7"], ["6", "7"], ["8", "10"], ["5", "6"],
-            ["5", "7"], ["9", "6"], ["9", "10"], ["5", "10"], ["3", "6"], ["3", "6"], ["1", "7"], ["2", "6"],
-            ["7", "8"]]
-}
-
-show_links = True
-my_team = None
-sidebar = ""
-to_update_search_result = False
-to_replace = None
-team_chemistry = 0
-
-
-style = [
-    {
-        'selector': '.red-link',
-        'style': {
-            'line-color': 'rgb(235, 87, 87)'
-        }
-
-    },
-    {
-        'selector': '.green-link',
-        'style': {
-            'line-color': 'rgb(39, 172, 95)'
-        }
-
-    },
-    {
-        'selector': '.yellow-link',
-        'style': {
-            'line-color': 'rgb(242, 153, 71)'
-        }
-
-    },
-    {
-        'selector': 'label',
-        'style': {
-            'content': 'data(label)',
-            'color': 'white',
-        }
-    },
-    {
-        'selector': 'node',
-        'style': {
-            "font-size": "10px",
-            'text-halign': 'bottom',
-            'text-valign': 'bottom',
-            'text-margin-y': '5px',
-            'background-image': 'data(url)',
-            'background-fit': "cover",
-            "border-color": "#56657F",
-            "border-width": "3",
-            "color": "white"
-        }
-    }
-
-]
+dash.register_page(__name__, path='/squad-builder')
 
 
 def make_my_team_df():
     global my_team
-    f = open(MY_TEAM_PATH)
+    f = open(Constants.MY_TEAM_FILE)
     my_team = json.load(f)
     sorter = list(my_team["players"])
     temp = app.df_all_role[app.df_all_role.id.isin(my_team["players"])]
@@ -120,7 +44,6 @@ def make_my_team_df():
     return team_df
 
 
-my_team_df = make_my_team_df()
 
 
 
@@ -132,11 +55,11 @@ def build_nodes():
     for index, row in my_team_df.iterrows():
         elements.append({'data': {'id': str(index), 'label': row["name"],
                                   'url': row["img"], 'data': row["id"]},
-                         'position': {'x': FORMATION_POSITION[my_team["formation"]][index][0],
-                                      'y': FORMATION_POSITION[my_team["formation"]][index][1]},
+                         'position': {'x': Constants.FORMATION_POSITION[my_team["formation"]][index][0],
+                                      'y': Constants.FORMATION_POSITION[my_team["formation"]][index][1]},
                          'locked': True if index == 0 else False})
     if show_links:
-        for link in FORMATION_LINK[my_team["formation"]]:
+        for link in Constants.FORMATION_LINK[my_team["formation"]]:
             same_club = True if my_team_df.iloc[int(link[0])]["club_id"] == my_team_df.iloc[int(link[1])][
                 "club_id"] else False
             same_nation = True if my_team_df.iloc[int(link[0])]["nationality"] == my_team_df.iloc[int(link[1])][
@@ -151,6 +74,15 @@ def build_nodes():
             )
 
     return elements
+
+
+show_links = True
+my_team = None
+sidebar = ""
+to_update_search_result = False
+to_replace = None
+team_chemistry = 0
+my_team_df = make_my_team_df()
 
 
 def layout():
@@ -203,7 +135,7 @@ def layout():
                             layout={'name': 'preset', "fit": False, },
                             style={'width': '100%', 'height': '100%'},
                             elements=build_nodes(),
-                            stylesheet=style
+                            stylesheet=Constants.NODE_STYLE
                         )
                     ], style={"position": "absolute", "width": "100%", "height": "100%", "top": "0px", "left": "0px"})
                 ], className="dash_block",
@@ -252,7 +184,7 @@ def layout():
 
                 dash.html.Div([
                     html.H3("3D Representation of players stats"),
-                    dcc.Graph(figure=build_3D_scatter(), config={
+                    dcc.Graph(figure=sf.build_3D_scatter(my_team_df), config={
                         "displaylogo": False,
                         'displayModeBar': False,
                     }),
@@ -269,22 +201,20 @@ def layout():
         style={"height": "calc(100vh - 4rem)", "display": "flex", "flex-direction": "column"})
 
 
-def build_3D_scatter():
-    fig = px.scatter_3d(my_team_df, x="current.atk_overall", y="current.def_overall", z="current.pass_overall", color="current.dribble_overall", color_continuous_scale=px.colors.sequential.Viridis)
-    fig.update_layout(margin=dict(t=0, b=0, l=0, r=0))
-    return fig
-
 def calc_team_overall():
-    roles = sf.FORMATIONS[my_team["formation"]]
+    roles = Constants.FORMATIONS[my_team["formation"]]
     team_overall = 0
     team_overall_stats = []
     for index, player in my_team_df.iterrows():
         role = roles[my_team.get("players", []).index(player.get("id", ""))]
-        overall, overall_stats, stats_col = sf.get_overall(player, role)
+        overall, overall_stats = sf.get_overall(player, role)
+        stats_col = sf.get_player_stats(player.iloc[0], role)
+
         team_overall += overall
         if role not in player["roles"]:
             role = ast.literal_eval(player["roles"])[0]
-            overall, overall_stats, stats_col = sf.get_overall(player, role)
+            overall, overall_stats = sf.get_overall(player, role)
+            stats_col = sf.get_player_stats(player.iloc[0], role)
         if index != 0:
             team_overall_stats.append(overall_stats)
     team_overall /= 11
@@ -295,7 +225,7 @@ def calc_team_overall():
 
 def create_sidebar_content(player_id):
     player = app.df_all_role[app.df_all_role['id'] == player_id]
-    roles = sf.FORMATIONS[my_team["formation"]]
+    roles = Constants.FORMATIONS[my_team["formation"]]
     try:
         role = roles[my_team.get("players", []).index(player.iloc[0].get("id", ""))]
     except:
@@ -316,7 +246,7 @@ def create_sidebar_content(player_id):
             dash.html.Div([
                 dash.html.Div([
                     dash.html.Div([
-                        dash.html.Img(src=FLAG_URL + player["flag_name"].iloc[0] + ".svg", width="18px",
+                        dash.html.Img(src=Constants.FLAG_URL + player["flag_name"].iloc[0] + ".svg", width="18px",
                                       style={"border-radius": "1px"})
                     ], style={"padding": "3px", "border-radius": "3px", "background-color": "#D7DEE5",
                               "display": "flex"}),

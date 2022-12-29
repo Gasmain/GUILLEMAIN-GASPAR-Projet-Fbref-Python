@@ -20,7 +20,7 @@ def create():
     Creates a plotly dashboard on port 8050
     """
     app.layout = serve_layout
-    app.run_server(debug=False, port=8050)
+    app.run_server(debug=True, port=8050)
 
 
 def serve_layout():
@@ -47,8 +47,6 @@ def create_nav_bar():
                 href="/squad-builder", active="exact"),
             dbc.NavLink([dash.html.I(className="fa-solid fa-circle-down", style={"margin-right": "10px"}), "Scrapping"],
                         href="/scrapping", active="exact"),
-            dbc.NavLink([dash.html.I(className="fa-solid fa-gear", style={"margin-right": "10px"}), "Settings"],
-                        href="/settings", active="exact")
 
         ],
         color="dark",

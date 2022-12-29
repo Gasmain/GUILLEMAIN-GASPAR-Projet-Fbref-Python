@@ -12,7 +12,6 @@ headers = {
     "Referer": "https://fbref.com/en/players/",
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0"
 }
-
 ATK_OVERALL_STATS = {"Goals": 5, "Shots on target %": 2, "Non-Penalty Goals - npxG": 4, "xG": 3}
 DRB_OVERALL_STATS = {"Successful Dribble %": 5, "Dribbles Completed": 4, "Dispossessed": 2, "Miscontrols": 3,
                      "Touches": 2, "Goal-Creating Actions": 2}
@@ -44,19 +43,72 @@ MF_OVERALL_STATS = {"Goals": 3, "Assists": 6, "Pass Completion %": 8, "Key Passe
 GK_OVERALL_STATS = {"PSxG-GA": 9, "Save% (Penalty Kicks)": 7, "Save Percentage": 5, "Crosses Stopped %": 5,
                     "Pass Completion Percentage (Launched)": 4,
                     }
-
 error_countries = {"Congo DR": "COD", "Republic of Ireland": "IRL"}
 no_countries = ["Cape Verde"]
-
 DEFAULT_PLAYER_IMG = "/assets/default.jpg"
-
 FORMATIONS = {"442": ["GK", "CB", "CB", "FB", "FB", "MF", "MF", "AM", "AM", "FW", "FW"],
               "433": ["GK", "CB", "CB", "FB", "FB", "MF", "MF", "MF", "AM", "AM", "FW"]}
-
 MY_TEAM_FILE = "data/my_team.json"
-
 MAP_CSV = "data/map.csv"
-
 MY_LOGO = "assets/football.png"
-
 LOGS_FILE = 'logs/main.log'
+DEFAULT_TEAM_IMG = "/assets/default_team.png"
+FLAG_URL = "https://cdn.ssref.net/req/1637611918233-20211022/flags/"
+FORMATION_POSITION = {
+    "442": [[40, 145], [100, 105], [100, 185], [150, 240], [150, 50], [230, 185], [230, 105], [320, 50], [320, 240],
+            [400, 105], [400, 185]],
+    "433": [[40, 145], [100, 105], [100, 185], [150, 240], [150, 50], [280, 145], [220, 205], [220, 95], [320, 50],
+            [320, 240],
+            [400, 145], ]}
+FORMATION_LINK = {
+    "442": [["0", "1"], ["0", "2"], ["1", "2"], ["2", "3"], ["4", "1"], ["4", "7"], ["1", "6"], ["6", "7"], ["2", "5"],
+            ["8", "3"], ["8", "5"], ["8", "10"], ["5", "6"], ["9", "7"], ["9", "6"], ["9", "10"], ["5", "10"]],
+    "433": [["0", "1"], ["0", "2"], ["1", "2"], ["2", "3"], ["4", "1"], ["4", "7"], ["6", "7"], ["8", "10"], ["5", "6"],
+            ["5", "7"], ["9", "6"], ["9", "10"], ["5", "10"], ["3", "6"], ["3", "6"], ["1", "7"], ["2", "6"],
+            ["7", "8"]]
+}
+NODE_STYLE = [
+    {
+        'selector': '.red-link',
+        'style': {
+            'line-color': 'rgb(235, 87, 87)'
+        }
+
+    },
+    {
+        'selector': '.green-link',
+        'style': {
+            'line-color': 'rgb(39, 172, 95)'
+        }
+
+    },
+    {
+        'selector': '.yellow-link',
+        'style': {
+            'line-color': 'rgb(242, 153, 71)'
+        }
+
+    },
+    {
+        'selector': 'label',
+        'style': {
+            'content': 'data(label)',
+            'color': 'white',
+        }
+    },
+    {
+        'selector': 'node',
+        'style': {
+            "font-size": "10px",
+            'text-halign': 'bottom',
+            'text-valign': 'bottom',
+            'text-margin-y': '5px',
+            'background-image': 'data(url)',
+            'background-fit': "cover",
+            "border-color": "#56657F",
+            "border-width": "3",
+            "color": "white"
+        }
+    }
+
+]

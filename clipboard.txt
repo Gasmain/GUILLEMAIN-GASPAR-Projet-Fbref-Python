@@ -1,5 +1,0 @@
-                dash.html.Div([
-                    html.H3("Team stats"),
-                    dcc.Graph(figure=px.scatter_3d(my_team_df, x='', y='sepal_width', z='petal_width',
-              color='species')),
-                ], className="dash_block", style={"flex-direction": "column"}),

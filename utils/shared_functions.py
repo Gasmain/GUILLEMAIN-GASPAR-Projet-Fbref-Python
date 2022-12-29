@@ -1,7 +1,7 @@
 import ast
 import math
 import plotly.graph_objects as go
-import os
+import plotly.express as px
 import random
 import pandas as pd
 import json
@@ -10,6 +10,7 @@ from datetime import datetime
 import pycountry
 import app
 from utils import Constants
+
 
 def build_data_frame():
     """
@@ -73,15 +74,17 @@ def build_overall(player, role, stat_list):
     :return: returns the player
     """
     overall = 0
-    overall = calc_overall(player, role, stat_list)
+    overall_role = calc_stats_overall(player, role, stat_list)
+    overall = general_overall(overall_role, player["stats"][role])
     player["stats"][role].update({"overall": overall})
 
     if role != "GK":  # Goalkeepers don't have these stats so we don't build them for Goalkeepers
-        player["stats"][role].update({"atk_overall": calc_overall(player, role, Constants.ATK_OVERALL_STATS)})
-        player["stats"][role].update({"dribble_overall": calc_overall(player, role, Constants.DRB_OVERALL_STATS)})
-        player["stats"][role].update({"pass_overall": calc_overall(player, role, Constants.PASS_OVERALL_STATS)})
-        player["stats"][role].update({"mental_overall": calc_overall(player, role, Constants.MENTAL_OVERALL_STATS)})
-        player["stats"][role].update({"def_overall": calc_overall(player, role, Constants.DEF_OVERALL_STATS)})
+        player["stats"][role].update({"atk_overall": calc_stats_overall(player, role, Constants.ATK_OVERALL_STATS)})
+        player["stats"][role].update({"dribble_overall": calc_stats_overall(player, role, Constants.DRB_OVERALL_STATS)})
+        player["stats"][role].update({"pass_overall": calc_stats_overall(player, role, Constants.PASS_OVERALL_STATS)})
+        player["stats"][role].update(
+            {"mental_overall": calc_stats_overall(player, role, Constants.MENTAL_OVERALL_STATS)})
+        player["stats"][role].update({"def_overall": calc_stats_overall(player, role, Constants.DEF_OVERALL_STATS)})
     else:
         player["stats"][role].update({"atk_overall": 0})
         player["stats"][role].update({"dribble_overall": 0})
@@ -92,21 +95,26 @@ def build_overall(player, role, stat_list):
     return player
 
 
-def calc_overall(player, role, stat_list):
+def calc_stats_overall(player, role, stat_list):
+    """
+    Calculate an overall rate from a list of stats. In the list of stats we have
+    it's name and it's multiplication factor
+    :param player: the player concerned by the calcul
+    :param role: the role of the player
+    :param stat_list: the list of stats and it's multiplication factor
+    :return: the overall rate
+    """
     count = 0
     overall = 0
     for stat in stat_list.keys():
-        if stat + "_percentile" in player["stats"][role]:
+        if stat + "_percentile" in player["stats"][role]:  # If player has this stat
+            # We add it to the overall as many times as the factor says
             overall += int(player["stats"][role][stat + "_percentile"]) * stat_list[stat]
         else:
-            overall += 50 * stat_list[stat]
-        count += stat_list[stat]
+            overall += 50 * stat_list[stat]  # If player doesn't have this stat we consider it's average : so 50
+        count += stat_list[stat]  # we increment the count variable by the factor of multiplication
     overall = overall / count
-    if overall > 50:
-        overall += (100 - overall) / 4
-    elif overall < 50:
-        overall -= overall / 4
-    overall = round(overall)
+    overall = extrapolate_overall(overall)  # Extrapolate the rate (moves away from 50 and gets closer to 0 or 100)
     return overall
 
 
@@ -137,21 +145,6 @@ def create_random_team():
         json.dump(my_team, file)
 
 
-def temp():
-    f = open(Constants.PLAYER_FILE_JSON)
-    data_json = json.load(f)
-    for player in data_json:
-        if os.path.exists(Constants.PLAYER_IMG_FOLDER + "/" + player["id"] + ".jpg"):
-            player_img = Constants.PLAYER_IMG_FOLDER + "/" + player["id"] + ".jpg"
-
-        else:
-            player_img = Constants.DEFAULT_PLAYER_IMG
-        player["img"] = player_img
-
-    with open(Constants.PLAYER_FILE_JSON, "w", encoding="utf-8") as file:
-        json.dump(data_json, file)
-
-
 def calculate_age(born):
     """
     For a given birthdate it returns the age of the player
@@ -164,48 +157,89 @@ def calculate_age(born):
     return age
 
 
-def get_overall(player, role):
-    if player["stats." + role + ".overall"] is None or math.isnan(player["stats." + role + ".overall"]):
-        overall_role = 0
-    else:
-        overall_role = player["stats." + role + ".overall"]
-
-    stats_col = [col for col in player.keys() if
-                 'stats.' + role in col and "percentile" in col and not math.isnan(player[col])]
-    if len(stats_col) == 0:
-        best_role = ast.literal_eval(player["roles"])[0]
-        stats_col = [col for col in player.keys() if
-                     'stats.' + best_role in col and "percentile" in col and not math.isnan(player[col])]
-
+def general_overall(overall_role, stats):
+    """
+    Calculates the mean of all the player stats for a role. stats above 97 counts triple
+    (this favors player that excels in certain area)
+    Then does a mean between the overall_role given in arguments and the mean determined above
+    :param overall_role: the overall rate of a player for a role for a given list of stats that matter for the role
+    :param stats: list of all the stats and it's value of the player for a given role
+    :return: the general overall
+    """
     overall = 0
     count = 0
-    top_stat_count = 0
-    for s in stats_col:
-        if int(player[s]) >= 98:
-            overall += int(player[s]) * 3
-            count += 3
-            top_stat_count += 1
-        else:
-            overall += int(player[s])
-            count += 1
+
+    for s in stats:
+        if "percentile" in s:  # If stat is percentile and not per90
+            if int(stats[s]) > 97:
+                overall += int(stats[s]) * 3  # Adds three times the value if it's above 97
+                count += 3
+            else:
+                overall += int(stats[s])
+                count += 1
 
     overall = round(((overall / count) + overall_role) / 2)
+    overall = extrapolate_overall(overall)  # Extrapolate the rate (moves away from 50 and gets closer to 0 or 100)
 
+    return overall
+
+
+def extrapolate_overall(overall):
+    """
+    Extrapolate an overall rate. This makes rates above 50 even better and rates under 50 even worth
+
+    :param overall:
+    :return:
+    """
+    # if rate is above 50 we add to it 1/4 of the distance between the rate and 100
     if overall > 50:
         overall += (100 - overall) / 4
+
+    # if rate is under 50 we subtract to it 1/4 of the distance between the rate and 0
     elif overall < 50:
         overall -= overall / 4
 
     overall = round(overall)
+    # Clamps the value between 0 and 100, should normally never be under or above but it's done by precaution
     overall = max(0, min(overall, 100))
 
-    overall_stats = [player["stats." + role + ".atk_overall"],
-                     player["stats." + role + ".dribble_overall"],
-                     player["stats." + role + ".pass_overall"],
-                     player["stats." + role + ".mental_overall"],
-                     player["stats." + role + ".def_overall"]]
+    return overall
 
-    return overall, overall_stats, stats_col
+
+def get_overall(player, role):
+    """
+    Returns for a given player and role, its overall rate and its overall by categories
+    (Attack, Defense, Passing, Dribble, Mental)
+    :param player: the player we want its overall
+    :param role: the role for which we want the player's overall
+    :return: the overall rate and a list of the 5 overall by categories
+    """
+
+    if player["stats." + role + ".overall"] is None or math.isnan(player["stats." + role + ".overall"]):
+        overall = 0
+        overall_stats = [0, 0, 0, 0, 0]
+    else:
+        overall = player["stats." + role + ".overall"]
+        overall_stats = [player["stats." + role + ".atk_overall"],
+                         player["stats." + role + ".dribble_overall"],
+                         player["stats." + role + ".pass_overall"],
+                         player["stats." + role + ".mental_overall"],
+                         player["stats." + role + ".def_overall"]]
+
+    return overall, overall_stats
+
+
+def get_player_stats(player, role):
+    """
+    Returns all the stats for a given player and given role
+    :param player: the player concerned
+    :param role: the role concerned
+    :return: the list of stats
+    """
+    stats_col = [col for col in player.keys() if
+                 'stats.' + role in col and "percentile" in col and not math.isnan(player[col])]
+
+    return stats_col
 
 
 def get_physique(player):
@@ -267,11 +301,13 @@ def build_overall_pie(overall):
     return overall_pie
 
 
-
 def build_map_csv():
     """
         builds a dataframe with each country as a row and the amount of player in col
         this dataframe is used to build the choropleth map later
+
+        WARNING : this function takes time to run due to pycountry lib search, run this only
+        after scrapping but never on dash load otherwise it'll take 10 seconds to start
     """
     nations = {}
 
@@ -305,3 +341,16 @@ def build_map_csv():
     nation_df.rename(columns={0: 'player_nb'}, inplace=True)
     nation_df = nation_df.reset_index(drop=True)
     nation_df.to_csv(Constants.MAP_CSV, encoding='utf-8', index=False)
+
+
+def build_3D_scatter(my_team_df):
+    """
+    Creates a 3D Scatter plot with x : Attack, y : Defense, z : passing, color : dribble
+    :param my_team_df: the dataframe with the players of th team
+    :return: the 3D scatter plot
+    """
+    fig = px.scatter_3d(my_team_df, x="current.atk_overall", y="current.def_overall", z="current.pass_overall",
+                        color="current.dribble_overall", color_continuous_scale=px.colors.sequential.Viridis)
+    fig.update_layout(margin=dict(t=0, b=0, l=0, r=0))  # Removes the default margins
+
+    return fig
