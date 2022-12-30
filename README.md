@@ -125,6 +125,14 @@ En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être
 
       Scrapper.scrap() # <- cette ligne doit être présente si vous voulez scrapper avant de lancer le dashboard
   ```
+  
+Après un scrapping il est conseillé d'appeler `sf.build_data_frame()` et `sf.build_map_csv`. <br>
+`sf.build_data_frame()` recréer les dataframes à partir du `fichier player.json`
+`sf.build_map_csv` recréer le csv utilisé pour la map, cette fonction peut être longue car elle utilise `pycountry.countries.search_fuzzy()`
+
+
+
+  
  
 
 
