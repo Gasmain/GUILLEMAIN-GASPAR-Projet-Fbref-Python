@@ -1,251 +1,30 @@
-2022-12-28 15:19:32 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 22:49:16 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-28 15:19:32 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:8050
-2022-12-28 15:19:32 INFO     [33mPress CTRL+C to quit[0m
-2022-12-28 15:19:34 INFO     127.0.0.1 - - [28/Dec/2022 15:19:34] "GET / HTTP/1.1" 200 -
-2022-12-28 15:19:34 INFO     127.0.0.1 - - [28/Dec/2022 15:19:34] "[36mGET /assets/bootstrap.css?m=1672141503.8178983 HTTP/1.1[0m" 304 -
-2022-12-28 15:19:35 INFO     127.0.0.1 - - [28/Dec/2022 15:19:35] "GET /_dash-layout HTTP/1.1" 200 -
-2022-12-28 15:19:35 INFO     127.0.0.1 - - [28/Dec/2022 15:19:35] "GET /_dash-dependencies HTTP/1.1" 200 -
-2022-12-28 15:19:35 INFO     127.0.0.1 - - [28/Dec/2022 15:19:35] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
-2022-12-28 15:19:35 INFO     127.0.0.1 - - [28/Dec/2022 15:19:35] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-28 15:19:35 INFO     127.0.0.1 - - [28/Dec/2022 15:19:35] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
-2022-12-28 15:19:35 INFO     127.0.0.1 - - [28/Dec/2022 15:19:35] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
-2022-12-28 15:19:35 INFO     127.0.0.1 - - [28/Dec/2022 15:19:35] "[36mGET /_dash-component-suites/dash/dcc/async-plotlyjs.js HTTP/1.1[0m" 304 -
-2022-12-29 08:39:32 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 22:52:58 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 08:39:32 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:8050
-2022-12-29 08:39:32 INFO     [33mPress CTRL+C to quit[0m
-2022-12-29 08:39:34 INFO     127.0.0.1 - - [29/Dec/2022 08:39:34] "GET / HTTP/1.1" 200 -
-2022-12-29 08:39:34 INFO     127.0.0.1 - - [29/Dec/2022 08:39:34] "[36mGET /assets/bootstrap.css?m=1672141503.8178983 HTTP/1.1[0m" 304 -
-2022-12-29 08:39:34 INFO     127.0.0.1 - - [29/Dec/2022 08:39:34] "GET /_dash-layout HTTP/1.1" 200 -
-2022-12-29 08:39:34 INFO     127.0.0.1 - - [29/Dec/2022 08:39:34] "GET /_dash-dependencies HTTP/1.1" 200 -
-2022-12-29 08:39:34 INFO     127.0.0.1 - - [29/Dec/2022 08:39:34] "[36mGET /assets/football.png HTTP/1.1[0m" 304 -
-2022-12-29 08:39:34 INFO     127.0.0.1 - - [29/Dec/2022 08:39:34] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:39:34 INFO     127.0.0.1 - - [29/Dec/2022 08:39:34] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
-2022-12-29 08:39:35 INFO     127.0.0.1 - - [29/Dec/2022 08:39:35] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
-2022-12-29 08:39:35 INFO     127.0.0.1 - - [29/Dec/2022 08:39:35] "[36mGET /_dash-component-suites/dash/dcc/async-plotlyjs.js HTTP/1.1[0m" 304 -
-2022-12-29 08:39:36 INFO     127.0.0.1 - - [29/Dec/2022 08:39:36] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:39:37 INFO     127.0.0.1 - - [29/Dec/2022 08:39:37] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:39:44 ERROR    Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\dash\dash.py", line 1274, in dispatch
-    ctx.run(
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\dash\_callback.py", line 440, in add_context
-    output_value = func(*func_args, **func_kwargs)  # %% callback invoked %%
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\dash\dash.py", line 2089, in update
-    else layout(**query_parameters)
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\pages\squad_builder.py", line 157, in layout
-    team_overall, team_overall_stats = calc_team_overall()
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\pages\squad_builder.py", line 278, in calc_team_overall
-    roles = sf.FORMATIONS[my_team["formation"]]
-AttributeError: module 'utils.shared_functions' has no attribute 'FORMATIONS'
-2022-12-29 08:39:44 INFO     127.0.0.1 - - [29/Dec/2022 08:39:44] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
-2022-12-29 08:39:48 INFO     127.0.0.1 - - [29/Dec/2022 08:39:48] "GET /squad-builder HTTP/1.1" 200 -
-2022-12-29 08:39:48 INFO     127.0.0.1 - - [29/Dec/2022 08:39:48] "GET /assets/bootstrap.css?m=1672141503.8178983 HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-component-suites/dash/deps/prop-types@15.v2_7_0m1671714571.8.1.min.js HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-component-suites/dash/deps/react-dom@16.v2_7_0m1671714571.14.0.min.js HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-component-suites/dash/deps/react@16.v2_7_0m1671714571.14.0.min.js HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-component-suites/dash/deps/polyfill@7.v2_7_0m1671714571.12.1.min.js HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v2_7_0m1671714570.js HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-component-suites/dash/dash_table/bundle.v5_2_0m1671714570.js HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v1_2_1m1671714589.min.js HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-component-suites/dash/html/dash_html_components.v2_0_6m1671714571.min.js HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v2_7_0m1671714570.min.js HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-component-suites/dash/dcc/dash_core_components.v2_7_0m1671714570.js HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-component-suites/dash_cytoscape/dash_cytoscape.v0_2_0m1671787756.min.js HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-layout HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_dash-dependencies HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /_favicon.ico?v=2.7.0 HTTP/1.1" 200 -
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "GET /assets/football.png HTTP/1.1" 200 -
-2022-12-29 08:39:49 ERROR    Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\dash\dash.py", line 1274, in dispatch
-    ctx.run(
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\dash\_callback.py", line 440, in add_context
-    output_value = func(*func_args, **func_kwargs)  # %% callback invoked %%
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\dash\dash.py", line 2089, in update
-    else layout(**query_parameters)
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\pages\squad_builder.py", line 157, in layout
-    team_overall, team_overall_stats = calc_team_overall()
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\pages\squad_builder.py", line 278, in calc_team_overall
-    roles = sf.FORMATIONS[my_team["formation"]]
-AttributeError: module 'utils.shared_functions' has no attribute 'FORMATIONS'
-2022-12-29 08:39:49 INFO     127.0.0.1 - - [29/Dec/2022 08:39:49] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
-2022-12-29 08:39:51 INFO     127.0.0.1 - - [29/Dec/2022 08:39:51] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:39:51 INFO     127.0.0.1 - - [29/Dec/2022 08:39:51] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
-2022-12-29 08:39:51 INFO     127.0.0.1 - - [29/Dec/2022 08:39:51] "GET /assets/playerimg/6fdac234.jpg HTTP/1.1" 200 -
-2022-12-29 08:39:51 INFO     127.0.0.1 - - [29/Dec/2022 08:39:51] "GET /assets/playerimg/01834aa0.jpg HTTP/1.1" 200 -
-2022-12-29 08:39:51 INFO     127.0.0.1 - - [29/Dec/2022 08:39:51] "[36mGET /_dash-component-suites/dash/dcc/async-plotlyjs.js HTTP/1.1[0m" 304 -
-2022-12-29 08:39:51 INFO     127.0.0.1 - - [29/Dec/2022 08:39:51] "GET /assets/teamimg/04eea015.png HTTP/1.1" 200 -
-2022-12-29 08:39:51 INFO     127.0.0.1 - - [29/Dec/2022 08:39:51] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:39:51 INFO     127.0.0.1 - - [29/Dec/2022 08:39:51] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:39:52 INFO     127.0.0.1 - - [29/Dec/2022 08:39:52] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:39:52 INFO     127.0.0.1 - - [29/Dec/2022 08:39:52] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
-2022-12-29 08:39:54 ERROR    Exception on /_dash-update-component [POST]
-Traceback (most recent call last):
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\dash\dash.py", line 1274, in dispatch
-    ctx.run(
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\dash\_callback.py", line 440, in add_context
-    output_value = func(*func_args, **func_kwargs)  # %% callback invoked %%
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\venv\lib\site-packages\dash\dash.py", line 2089, in update
-    else layout(**query_parameters)
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\pages\squad_builder.py", line 157, in layout
-    team_overall, team_overall_stats = calc_team_overall()
-  File "C:\Users\gaspa\PycharmProjects\Projet-Open-Source-Fbref\pages\squad_builder.py", line 278, in calc_team_overall
-    roles = sf.FORMATIONS[my_team["formation"]]
-AttributeError: module 'utils.shared_functions' has no attribute 'FORMATIONS'
-2022-12-29 08:39:54 INFO     127.0.0.1 - - [29/Dec/2022 08:39:54] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
-2022-12-29 08:40:40 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 22:54:35 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 08:40:40 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:8050
-2022-12-29 08:40:40 INFO     [33mPress CTRL+C to quit[0m
-2022-12-29 08:40:47 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:01:45 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 08:40:47 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:8050
-2022-12-29 08:40:47 INFO     [33mPress CTRL+C to quit[0m
-2022-12-29 08:40:49 INFO     127.0.0.1 - - [29/Dec/2022 08:40:49] "GET / HTTP/1.1" 200 -
-2022-12-29 08:40:49 INFO     127.0.0.1 - - [29/Dec/2022 08:40:49] "GET /assets/bootstrap.css?m=1672141503.8178983 HTTP/1.1" 200 -
-2022-12-29 08:40:49 INFO     127.0.0.1 - - [29/Dec/2022 08:40:49] "GET /_dash-layout HTTP/1.1" 200 -
-2022-12-29 08:40:49 INFO     127.0.0.1 - - [29/Dec/2022 08:40:49] "GET /_dash-dependencies HTTP/1.1" 200 -
-2022-12-29 08:40:50 INFO     127.0.0.1 - - [29/Dec/2022 08:40:50] "GET /assets/football.png HTTP/1.1" 200 -
-2022-12-29 08:40:50 INFO     127.0.0.1 - - [29/Dec/2022 08:40:50] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:40:50 INFO     127.0.0.1 - - [29/Dec/2022 08:40:50] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
-2022-12-29 08:40:50 INFO     127.0.0.1 - - [29/Dec/2022 08:40:50] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
-2022-12-29 08:40:50 INFO     127.0.0.1 - - [29/Dec/2022 08:40:50] "[36mGET /_dash-component-suites/dash/dcc/async-plotlyjs.js HTTP/1.1[0m" 304 -
-2022-12-29 08:40:52 INFO     127.0.0.1 - - [29/Dec/2022 08:40:52] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:40:52 INFO     127.0.0.1 - - [29/Dec/2022 08:40:52] "[36mGET /assets/field.svg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "[36mGET /assets/playerimg/663e080e.jpg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "[36mGET /assets/playerimg/288e1e13.jpg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "[36mGET /assets/playerimg/857a5abe.jpg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "[36mGET /assets/playerimg/cd1acf9d.jpg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "[36mGET /assets/playerimg/10b9fa99.jpg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "[36mGET /assets/playerimg/9fec8860.jpg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "[36mGET /assets/playerimg/a5db0bec.jpg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "[36mGET /assets/playerimg/10549b49.jpg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "[36mGET /assets/playerimg/b2bd0f6c.jpg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "[36mGET /assets/playerimg/834d0be5.jpg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "[36mGET /assets/playerimg/437f2b00.jpg HTTP/1.1[0m" 304 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:40:54 INFO     127.0.0.1 - - [29/Dec/2022 08:40:54] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:41:05 INFO     127.0.0.1 - - [29/Dec/2022 08:41:05] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:41:05 INFO     127.0.0.1 - - [29/Dec/2022 08:41:05] "GET / HTTP/1.1" 200 -
-2022-12-29 08:41:05 INFO     127.0.0.1 - - [29/Dec/2022 08:41:05] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:41:05 INFO     127.0.0.1 - - [29/Dec/2022 08:41:05] "[36mGET /assets/bootstrap.css?m=1672141503.8178983 HTTP/1.1[0m" 304 -
-2022-12-29 08:41:05 INFO     127.0.0.1 - - [29/Dec/2022 08:41:05] "GET /_dash-layout HTTP/1.1" 200 -
-2022-12-29 08:41:05 INFO     127.0.0.1 - - [29/Dec/2022 08:41:05] "GET /_dash-dependencies HTTP/1.1" 200 -
-2022-12-29 08:41:05 INFO     127.0.0.1 - - [29/Dec/2022 08:41:05] "GET /assets/football.png HTTP/1.1" 200 -
-2022-12-29 08:41:05 INFO     127.0.0.1 - - [29/Dec/2022 08:41:05] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:41:05 INFO     127.0.0.1 - - [29/Dec/2022 08:41:05] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
-2022-12-29 08:41:05 INFO     127.0.0.1 - - [29/Dec/2022 08:41:05] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
-2022-12-29 08:41:05 INFO     127.0.0.1 - - [29/Dec/2022 08:41:05] "[36mGET /_dash-component-suites/dash/dcc/async-plotlyjs.js HTTP/1.1[0m" 304 -
-2022-12-29 08:41:06 INFO     127.0.0.1 - - [29/Dec/2022 08:41:06] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:41:07 INFO     127.0.0.1 - - [29/Dec/2022 08:41:07] "POST /_dash-update-component HTTP/1.1" 200 -
-2022-12-29 08:41:26 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:03:34 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 08:42:20 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:04:14 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 08:45:32 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:06:16 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 10:03:21 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:06:44 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 10:03:26 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:06:53 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 10:09:49 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:10:20 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 10:36:20 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:11:55 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 10:36:29 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:12:39 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 10:39:48 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:15:36 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 10:41:03 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:16:33 INFO     Dash is running on http://127.0.0.1:8050/
 
-2022-12-29 10:43:43 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 10:44:05 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 10:44:56 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 10:48:49 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 10:51:13 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 10:52:39 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:01:31 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:04:03 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:05:01 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:05:25 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:24:37 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:24:56 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:26:05 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:26:08 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:27:21 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:28:09 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:29:07 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:35:10 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:36:14 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:38:23 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 11:39:40 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 12:06:24 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 12:14:01 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 12:14:13 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 12:33:39 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 12:34:20 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 12:35:24 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 12:37:14 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 12:37:27 INFO     Dash is running on http://127.0.0.1:8050/
-
-2022-12-29 12:37:43 INFO     Dash is running on http://127.0.0.1:8050/
+2022-12-30 23:18:58 INFO     Dash is running on http://127.0.0.1:8050/
 

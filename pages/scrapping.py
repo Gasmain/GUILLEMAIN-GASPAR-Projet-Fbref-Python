@@ -6,7 +6,6 @@ from utils import shared_functions as sf
 
 dash.register_page(__name__)
 
-# TODO : ADD ANOTHER CALLBACK WITH INPUT SCRAP BUTTON TO START DCC.INTERVAL
 
 def layout():
     """

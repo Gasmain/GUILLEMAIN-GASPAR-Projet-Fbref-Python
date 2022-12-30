@@ -1,5 +1,6 @@
 import ast
 import math
+import numpy as np
 import plotly.graph_objects as go
 import plotly.express as px
 import random
@@ -19,6 +20,7 @@ def build_data_frame():
     """
     f = open(Constants.PLAYER_FILE_JSON)
     data_json = json.load(f)
+    data_json = list(data_json.values())
     for player in data_json:
         for role in player["roles"]:
             stat_list = get_stat_list(role)
@@ -134,8 +136,10 @@ def create_random_team():
     # For each roles needed in the formation we pick a random player in our database that can play this role
     for role in value:
         player_role = ""
-        while role not in player_role:  # While the randomly picked player doesn't match the role we pick again
-            value = random.choice(data_json)
+        value = {"id":""}
+        # While the randomly picked player doesn't match the role or is already in the ream we pick again
+        while role not in player_role or value["id"] in players:
+            value = random.choice(list(data_json.values()))
             player_role = value["roles"]
 
         players.append(value["id"])
@@ -226,7 +230,7 @@ def get_overall(player, role):
                          player["stats." + role + ".mental_overall"],
                          player["stats." + role + ".def_overall"]]
 
-    return overall, overall_stats
+    return round(overall), overall_stats
 
 
 def get_player_stats(player, role):
@@ -261,6 +265,32 @@ def get_physique(player):
     else:
         player_physique = ""
     return player_physique
+
+
+def calc_team_overall(my_team, my_team_df):
+    """
+    Calculate the team overall and its categorical stats by doing mean of all the players
+    in the team
+    :param my_team: the json of the team
+    :param my_team_df: the data frame of the team containing the players
+    :return: the overall value, and a list of the overall by categories
+    """
+    roles = Constants.FORMATIONS[my_team["formation"]]  # Get the list of all the roles in the formation
+
+    team_overall = 0
+    team_overall_stats = []
+
+    for index, player in my_team_df.iterrows():
+        role = roles[index]
+        overall, overall_stats = get_overall(player, role)
+        team_overall += overall
+
+        if role != "GK":  # don't add goalie stats as he doesn't have atk, def, pas, or drb stats
+            team_overall_stats.append(overall_stats)
+    team_overall /= 11  # Divide by 11 to get the mean overall as their is 11 players in a team
+    team_overall_stats = np.mean(np.array(team_overall_stats), axis=0)  # Get mean for each stats in array
+
+    return round(team_overall), team_overall_stats
 
 
 def build_overall_radar(overall_stats, size=200):
@@ -320,7 +350,6 @@ def build_map_csv():
             country = player["nationality"]
         elif player["nationality"] in Constants.no_countries:
             # For countries not in the map skip. Ex : Cape Verde
-            print("skipped : " + player["nationality"])
             continue
         else:
             # Other wise search the country in pycountry lib and get the code
@@ -354,3 +383,63 @@ def build_3D_scatter(my_team_df):
     fig.update_layout(margin=dict(t=0, b=0, l=0, r=0))  # Removes the default margins
 
     return fig
+
+
+def make_my_team_df():
+    """
+    Creates a data frame containing the team players
+    :return: the json file and the df
+    """
+    # Open json file containing team info and make a df containing the players of the team
+    f = open(Constants.MY_TEAM_FILE)
+    my_team = json.load(f)
+    temp = app.df_all_role[app.df_all_role.id.isin(my_team["players"])]
+    team_df = sort_df_by_id(temp, list(my_team["players"]))
+
+    # If for some reason the team isn't complete ( less than 11 players ) we create a random team
+    # and call make_my_team_df recursively
+    if len(team_df) != 11:
+        create_random_team()
+        team_df, my_team = make_my_team_df()
+
+    team_df = build_team_category_overall(team_df)
+
+    return team_df, my_team
+
+
+def sort_df_by_id(df, sorter):
+    """
+    Sort the data frame by id with a list of id
+    :param df: the df to sort
+    :param sorter: the list of id
+    :return: the df sorted
+    """
+    sorted_df = df.sort_values(by="id", key=lambda column: column.map(lambda e: sorter.index(e)))
+    sorted_df = sorted_df.reset_index(drop=True)
+    return sorted_df
+
+
+def build_team_category_overall(team_df):
+    """
+    Builds the overall col of the team by categories (Atk, Def, Drb, Pas, Mtl)
+    :param team_df: the team_df to append new overall columns to
+    :return team_df : the team_df modified
+    """
+    current_atk_overall = []
+    current_def_overall = []
+    current_pass_overall = []
+    current_dribble_overall = []
+
+    for index, player in team_df.iterrows():
+        role = ast.literal_eval(player["roles"])[0]  # Get stats for the best player's role
+        current_atk_overall.append(player["stats." + role + ".atk_overall"])
+        current_def_overall.append(player["stats." + role + ".def_overall"])
+        current_pass_overall.append(player["stats." + role + ".pass_overall"])
+        current_dribble_overall.append(player["stats." + role + ".dribble_overall"])
+
+    team_df["current.atk_overall"] = current_atk_overall
+    team_df["current.def_overall"] = current_def_overall
+    team_df["current.pass_overall"] = current_pass_overall
+    team_df["current.dribble_overall"] = current_dribble_overall
+
+    return team_df

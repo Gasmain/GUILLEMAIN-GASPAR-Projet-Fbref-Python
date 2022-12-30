@@ -1,14 +1,12 @@
 from bs4 import BeautifulSoup
 import requests
-import logging
-import urllib.request
 from random import randint
 from time import sleep
-from tkinter import *
 import json
 from utils import Constants
+import re
 
-data = []
+data = {}
 
 
 class Scrapper:
@@ -20,22 +18,23 @@ class Scrapper:
         """
         Start the scrapping
         WARNING : Complete scrapping takes a very long time, roughly 5 hours due to the 7 seconds of wait between each
-        of the 2000+ players, but it can be stop in it's process without any problem.
+        of the 2000+ players, but it can be stop in it's process without any problem normally. If any occur after stoping
+        process make sure data/players.json wasn't damaged
         """
         global data
-        if not Scrapper.running:
+        if not Scrapper.running:  # Avoid starting scrapping multiple time at same time
             Scrapper.running = True
             f = open(Constants.PLAYER_FILE_JSON, encoding="utf-8")
             data = json.load(f)
 
-            logging.debug('Starting fbref scrapping')
             player_url_list = Scrapper.get_player_url()
 
             if len(player_url_list) == 0:
-                logging.error('player_url_list is empty')
                 return
             else:
                 player_list = Scrapper.build_player_list(player_url_list)
+
+            Scrapper.running = False
         return
 
     @staticmethod
@@ -53,8 +52,8 @@ class Scrapper:
                 player_table_body = player_table.find("tbody")
                 player_table_rows = player_table_body.select(
                     "tr:not(.thead)")  # Get all the rows of the table that are not of class thead
-            except:
-                logging.error('Could not find the table of players correctly')
+            except Exception as e:
+                print('Could not find the table of players correctly')
                 return []  # We stop the run because if the table can't be read we can't go any further
 
             for row in player_table_rows:
@@ -70,7 +69,7 @@ class Scrapper:
             player_url_list = list(dict.fromkeys(player_url_list))  # Drop duplicate urls
 
         else:  # Si code = error
-            logging.error('Got code ' + str(r.status_code) + " for url : " + Constants.FBREF_URL +
+            print('Got code ' + str(r.status_code) + " for url : " + Constants.FBREF_URL +
                           Constants.TOP_5_LEAGUE_PLAYER_LIST)
 
         return player_url_list
@@ -88,12 +87,13 @@ class Scrapper:
         player_list = []
 
         for player_url in player_url_list:
+            print("scrapping : "+player_url)
             player = Scrapper.get_player_data(player_url)  # Build a player
             # Verify if the json is not empty and that the stats and similar player attributes are in the json obj
             if len(player) > 0 and "stats" in player and "similar_players" in player:
                 if len(player["stats"]) > 0:
                     player_list.append(player)
-                    data.append(player)
+                    data[player["id"]] = player
                     # save after every new player was scraped, avoid losing scrapped player when script stop before
                     # finishing to scrap all players
                     with open(Constants.PLAYER_FILE_JSON, "w", encoding="utf-8") as file:
@@ -131,7 +131,6 @@ class Scrapper:
                 if soup.find(id="all_scout") is not None:
 
                     player, player_id = Scrapper.get_name_id(player, soup, player_url)  # Get player name and id
-                    player = Scrapper.get_player_img(soup, player, player_id)  # Download player img
                     player = Scrapper.get_player_foot(soup, player)  # Get player strong foot
                     player = Scrapper.get_height_weight(soup, player)  # Get player height and weight
                     player = Scrapper.get_birthdate(soup, player)  # Get player birthdate
@@ -141,13 +140,13 @@ class Scrapper:
                     player = Scrapper.get_stats_roles(soup, player)
 
                 else:  # If player has no scouting report
-                    logging.warning("Player has not scouting report : " + Constants.FBREF_URL + player_url)
+                    print("Player has not scouting report : " + Constants.FBREF_URL + player_url)
 
             except Exception as e:
-                logging.error("Error with player : " + Constants.FBREF_URL + player_url + "\n" + str(e))
+                print("Error with player : " + Constants.FBREF_URL + player_url + "\n" + str(e))
 
         else:  # If code = error
-            logging.error('Got code ' + str(r.status_code) + " for url : " + Constants.FBREF_URL + player_url)
+            print('Got code ' + str(r.status_code) + " for url : " + Constants.FBREF_URL + player_url)
 
         sleep(randint(4, 7))  # Sleep a random time between 4 and 7 sec to avoid getting ban by the site
 
@@ -181,24 +180,7 @@ class Scrapper:
 
         return player, player_id
 
-    @staticmethod
-    def get_player_img(soup, player, player_id):
-        """
-        Download and save the player img if one was found
-        :param soup: soup instance
-        :param player_id: the id of the player, used as a name to save the image
-        """
-        try:
-            player_img_src = soup.find(class_="media-item").find("img")["src"]
-            urllib.request.urlretrieve(player_img_src,
-                                       Constants.PLAYER_IMG_FOLDER + "/" + player_id + ".jpg")  # Download and save the image in the playerimg folder
-            player["img"] = Constants.PLAYER_IMG_FOLDER + "/" + player["id"] + ".jpg"
-        except Exception as e:
-            player["img"] = Constants.DEFAULT_PLAYER_IMG
-            logging.warning("no image found : " + str(e))
-            pass
 
-        return player
     @staticmethod
     def get_player_foot(soup, player):
         """
@@ -298,13 +280,6 @@ class Scrapper:
             club_url = p_contain_club[0].find("a")["href"]
             result = re.search(r".*\/squads\/(.*)\/", club_url)
             player["club_id"] = result.group(1)
-            try:
-                urllib.request.urlretrieve(Constants.TEAM_LOGO_URL + result.group(1) + ".png",
-                                           Constants.TEAM_IMG_FOLDER + "/" + player[
-                                               "club_id"] + ".png")  # Download and save the image in playerimg
-            except Exception as e:
-                logging.warning("no image club found : " + str(e))
-                pass
 
         else:
             player["club"] = None

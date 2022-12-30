@@ -1,8 +1,6 @@
 PLAYER_ALL_ROLE_FILE_CSV = "data/player_all_role.csv"
 PLAYER_BEST_ROLE_FILE_CSV = "data/player_best_role.csv"
 PLAYER_FILE_JSON = "data/player.json"
-PLAYER_IMG_FOLDER = "assets/playerimg"
-TEAM_IMG_FOLDER = "assets/teamimg"
 TEAM_LOGO_URL = "https://cdn.ssref.net/req/202211181/tlogo/fb/"
 FBREF_URL = "https://fbref.com"
 TOP_5_LEAGUE_PLAYER_LIST = "/en/comps/Big5/stats/players/Big-5-European-Leagues-Stats"
@@ -43,7 +41,7 @@ MF_OVERALL_STATS = {"Goals": 3, "Assists": 6, "Pass Completion %": 8, "Key Passe
 GK_OVERALL_STATS = {"PSxG-GA": 9, "Save% (Penalty Kicks)": 7, "Save Percentage": 5, "Crosses Stopped %": 5,
                     "Pass Completion Percentage (Launched)": 4,
                     }
-error_countries = {"Congo DR": "COD", "Republic of Ireland": "IRL"}
+error_countries = {"Congo DR": "COD", "Republic of Ireland": "IRL","Korea Republic":"South Korea"}
 no_countries = ["Cape Verde"]
 DEFAULT_PLAYER_IMG = "/assets/default.jpg"
 FORMATIONS = {"442": ["GK", "CB", "CB", "FB", "FB", "MF", "MF", "AM", "AM", "FW", "FW"],
@@ -112,3 +110,5 @@ NODE_STYLE = [
     }
 
 ]
+PLAYER_IMG_URL = "https://fbref.com/req/202208180/images/headshots/player_id_2022.jpg"
+CLUB_IMG_URL = "https://cdn.ssref.net/req/202212191/tlogo/fb/club_id.png"

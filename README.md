@@ -1,6 +1,8 @@
 # Projet-Open-Source-Fbref
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/) <br>
-Python Projet Data Visualization ESIEE 2022
+Python Projet Data Visualization ESIEE 2022 <br>
+Ce projet à été importé de mon git perso : https://github.com/Gasmain/Projet-Open-Source-Fbref/
+Seuls les commits sont donc visibles mais pas les pushs
 
 [I. Présentation](#presentation)<br>
 [II. Le projet](#project)<br>
@@ -28,8 +30,12 @@ J'ai créé un dashboard avec des données publiques de joueurs de football prov
 ## IV. Guide utilisateur :
 
   > :warning: **Ce projet a été créé avec python 3.9 mais devrait fonctionner pour toutes versions de python 3, si cela n'est pas le cas, utilisez python 3.9**
+  
+- **Premièrement, clonez le repo :**
 
-- **Premièrement, installez les dependances :**
+  `$ git clone https://github.com/Gasmain/Projet-Open-Source-Fbref.git`
+
+- **Ensuite, installez les dependances :**
 
   `$ pip install -r requirements.txt`
 

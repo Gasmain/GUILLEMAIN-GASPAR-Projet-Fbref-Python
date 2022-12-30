@@ -1,3 +1,4 @@
+import math
 import os
 import ast
 import dash
@@ -18,22 +19,12 @@ def layout(player_id_url=None, role_url=None, **other_unknown_query_strings):
     global player, player_id, role
 
     player_page = ""
-
     set_player(player_id_url)  # Defines the player to be shown
     set_role(role_url)  # Defines the role of the player to be used
     overall, overall_stats = sf.get_overall(player.iloc[0], role)
     stats_col = sf.get_player_stats(player.iloc[0], role)  # All the player's stats
-    try:
-        if os.path.exists(Constants.TEAM_IMG_FOLDER + "/" + player["club_id"].iloc[0] + ".png"):
-            team_img = Constants.TEAM_IMG_FOLDER + "/" + player["club_id"].iloc[0] + ".png"
-        else:
-            team_img = Constants.DEFAULT_TEAM_IMG
-    except:
-        team_img = Constants.DEFAULT_TEAM_IMG
 
-    # TODO : DO THE SAME THAN FOR PLAYER["IMG"]
-
-    player_page = build_player_page(team_img, overall, overall_stats, stats_col)
+    player_page = build_player_page(overall, overall_stats, stats_col)
 
     content = html.Div(children=[
         html.Div([dash.html.H2(children='Players')], style={"flex": "0 1 auto"}, className="heading"),
@@ -59,6 +50,12 @@ def layout(player_id_url=None, role_url=None, **other_unknown_query_strings):
     [Input("input", "value")]
 )
 def toggle_collapse(val):
+    """
+        Close the collapse if the search input is empty by putting is open to false
+        Open the collapse if search input is not empty by putting is open to true
+        :param val: the content of the search input
+        :return: boolean determining state of collapse : true -> open , false -> close
+        """
     if val == "" or val is None:
         return False
     return True
@@ -69,6 +66,11 @@ def toggle_collapse(val):
     [Input("input", "value")]
 )
 def fill_search_result(val):
+    """
+    Feeds the list group with the result of the research. Finds players that contains the search value in their names
+    :param val: search input value
+    :return: search results as listGroupItem
+    """
     if val == "" or val is None:
         return None
 
@@ -96,7 +98,8 @@ def build_similar_player_list():
 
     result = html.Div(html.Div([
         html.A([
-            html.Img(src=row["img"], height="30px", style={"margin-right": "10px"}),
+            html.Img(src=Constants.PLAYER_IMG_URL.replace("player_id", row["id"]), height="30px",
+                     style={"margin-right": "10px"}),
             dash.html.Div([
                 dash.html.Img(src=Constants.FLAG_URL + row["flag_name"] + ".svg", width="14x",
                               style={"border-radius": "1px"})
@@ -200,12 +203,12 @@ def build_player_name_h2():
     return player_h2
 
 
-def build_player_page(team_img, overall, overall_stats, stats_col):
+def build_player_page(overall, overall_stats, stats_col):
     global player, player_id, role
     player_page = html.Div([
         html.Div([
             html.Div([
-                build_player_info_section(team_img),
+                build_player_info_section(),
                 build_overall_block(overall)
             ], style={"padding": "20px 0px", "display": "flex", "gap": "20px", "flex": "0 1 auto",
                       "width": "min-content"}),
@@ -221,7 +224,7 @@ def build_player_page(team_img, overall, overall_stats, stats_col):
     return player_page
 
 
-def build_player_info_section(team_img):
+def build_player_info_section():
     """
     Builds the block containing all the player info ( Name, age, club ... )
     :param team_img: path to the image of the player's team
@@ -229,7 +232,8 @@ def build_player_info_section(team_img):
     """
     global player, player_id, role
     section = html.Div([
-        dash.html.Img(src=player["img"].iloc[0], height="70px", style={"margin-right": "30px"}),
+        dash.html.Img(src=Constants.PLAYER_IMG_URL.replace("player_id", player["id"].iloc[0]), height="70px",
+                      style={"margin-right": "30px"}),
         dash.html.Div([
             build_nation_flag(),
             dash.html.H3(str(sf.calculate_age(str(player["birth_date"].iloc[0]))) + " ans",
@@ -244,10 +248,26 @@ def build_player_info_section(team_img):
         ]),
         build_player_name_h2(),
         dash.html.Div(className="separator"),
-        dash.html.Img(src=team_img, height="60px", style={"margin-right": "10px"})
+        build_team_logo()
 
     ], className="dash_block")
     return section
+
+
+def build_team_logo():
+    """
+    Returns the team logo and builds source of image is club_id is not none
+    :return: the image of the team logo
+    """
+    if player["club_id"].iloc[0] is None or isinstance(player["club_id"].iloc[0], float):
+        source = Constants.DEFAULT_TEAM_IMG
+    else:
+        source = Constants.CLUB_IMG_URL.replace("club_id", player["club_id"].iloc[0])
+    return dash.html.Img(
+        src= source,
+        height="60px",
+        style={"margin-right": "10px"})
+
 
 
 def build_nation_flag():
