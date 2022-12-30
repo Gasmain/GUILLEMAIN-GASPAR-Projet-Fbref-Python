@@ -56,6 +56,37 @@ Le dashboard final comprend quatre pages, chacune ayant sa propre fonctionnalit�
 
 ## III. Analyses et conclusions :
 
+Les résultats obtenus semblent être cohérents et reflètent bien les tendances actuelles du football. <br>
+
+<br>
+
+![image showing a scatter plot](./images/scatter_plot.png)
+
+<br>
+
+L'utilisation d'un scatter plot peut s'avérer très utile pour découvrir des joueurs qui se démarquent dans certains domaines. Par exemple, en utilisant les buts en tant qu'axe Y et les passes décisives en tant qu'axe X, on peut voir que des joueurs tels que Mbappé ou Neymar sont plus décisifs et importants que Coutinho, bien que tous jouent un rôle similaire. Cet exemple, bien que prévisible, montre l'efficacité de ce graphique qui permet de mettre en lumière des cas moins prévisibles, comme Choupo Moting et Alassane Pléa, qui ont tous les deux de très bonnes statistiques mais qui ne sont pas très médiatisés. <br>
+
+<br>
+
+![image showing chropleth map](./images/map.png)
+
+<br>
+
+La carte choroplète indique que la plupart des joueurs viennent d'Europe, en particulier de France et d'Espagne. Cela semble logique étant donné que les meilleurs clubs se trouvent en Europe. Cependant, il y a également un nombre significatif de joueurs provenant de pays comme le Brésil et l'Argentine, connus pour leur talentueux joueurs de football. La domination écrasante de l'Espagne et de la France pourrait indiquer que ces deux pays ont des centres de formation performants. <br>
+
+<br>
+
+![Screeshot of the haaland profile in ui](./images/haaland.png)
+
+<br>
+
+Le graphique en forme de radar semble être assez cohérent lorsqu'on le compare aux caractéristiques des joueurs. Par exemple, prenons le cas d'Erling Haaland. Haaland est un buteur extrêmement prolifique qui ne manque pas une occasion de marquer. Son classement en tant que meilleur buteur de la Premier League, avec 7 buts d'avance sur le deuxième, témoigne de sa qualité de buteur. Cependant, sa taille de 1,94 mètre ne le rend pas très efficace au dribble, comme le montre le graphique. On peut voir qu'il excelle dans le domaine de l'attaque, mais qu'il a du mal au dribble.
+En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être pas pleinement son niveau. En effet, la note est calculée en fonction d'une liste de statistiques qui avantagent les joueurs polyvalents, mais désavantagent les autres. Il pourrait être intéressant de créer une liste de statistiques pour chaque type de buteur, afin que chaque joueur ait une note en fonction de son style de jeu.
+
+
+
+
+
 <a name="user-guide"/>
 
 ## IV. Guide utilisateur :
