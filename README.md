@@ -21,6 +21,37 @@ J'ai créé un dashboard avec des données publiques de joueurs de football prov
 
 ## II. Le projet :
 
+Le but de ce projet était de créer un dashboard en utilisant Python qui permettrait d'analyser et de mettre en valeur des données publiques Open Data sur un sujet d'intérêt public. Le code devait être structuré en plusieurs fichiers et exécuté dans un navigateur. Au minimum, le dashboard devait inclure un histogramme et une représentation géolocalisée, ainsi qu'au moins un graphique dynamique. <br>
+
+J'ai choisi de travailler avec des données footballistiques provenant de bref, qui répertorient les statistiques de joueurs de cinq des plus grands championnats sur les 365 derniers jours. J'ai utilisé la bibliothèque Plotly Dash pour créer un dashboard qui permettrait de manipuler ces données et de les rendre plus accessibles. <br>
+
+Le dashboard final comprend quatre pages, chacune ayant sa propre fonctionnalité : <br>
+
+  - La page d'accueil présente un histogramme et une carte choroplèthe permettant de visualiser la répartition géographique des joueurs. Elle inclut également un scatter plot
+  dynamique qui affiche les statistiques de chaque joueur ainsi qu’un histogram dynamique. <br>
+  
+  - La page joueur permet aux utilisateurs de rechercher un joueur en particulier et d'afficher ses informations et ses statistiques. Elle inclut également un graphique en
+  forme de radar qui présente une note de défense, d'attaque, de dribble, de passe et de mental pour chaque joueur et un graphique camembert revisité pour afficher la note
+  totale du joueur. <br>
+  
+  - La page squad builder permet aux utilisateurs de créer une équipe en sélectionnant des joueurs scrappés. Un dash cytoscape est utilisé pour représenter chaque joueur sous
+  forme de nœud, et les liens entre les nœuds représentent la compatibilité entre les joueurs. La page inclut également un radar et une note générale. <br>
+
+  - La page scrapping permet de lancer le scrapping des données pour mettre à jour les informations du dashboard. <br>
+  
+
+**Graphiques utilisés:**
+
+  - Scatter Plot ( Dynamique )
+  - Historgram ( Dynamique )
+  - Carte Choroplèthe
+  - Graph Radar ( Dynamique )
+  - Camembert / Pie ( Dynamique )
+  - Dash Cytoscape ( Dynamique )
+
+
+
+
 <a name="conclusion"/>
 
 ## III. Analyses et conclusions :
