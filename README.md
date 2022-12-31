@@ -111,13 +111,13 @@ En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être
 
 <a name="user-guide"/>
 
-## IV. Guide utilisateur :
-
+## V. Guide utilisateur :
+  
   
 
 <a name="dev-guide"/>
 
-## V. Guide developpeur :
+## VI. Guide developpeur :
 
 **Scrapping :**
 
