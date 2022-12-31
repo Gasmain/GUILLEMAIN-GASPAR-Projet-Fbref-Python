@@ -144,7 +144,7 @@ En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être
   ```
   
 Après un scrapping il est conseillé d'appeler `sf.build_data_frame()` et `sf.build_map_csv`. <br>
-`sf.build_data_frame()` recréer les dataframes à partir du `fichier player.json`
+`sf.build_data_frame()` recréer les dataframes à partir du `fichier player.json` <br>
 `sf.build_map_csv` recréer le csv utilisé pour la map, cette fonction peut être longue car elle utilise `pycountry.countries.search_fuzzy()` <br>
 
 <br>
@@ -194,7 +194,19 @@ Si vous souhaitez l'ajouter dans la bar de navigation du dashboard, dans le fich
 
 
   <br>
-  
+ 
+ **Les données :**
+ 
+ <br>
+ 
+ Pour accéder au données stocker dans le dataframe, il suffit d'appeller `app.df_best_role` ou `app.df_all_role`. <br>
+ 
+ `app.df_all_role` : renvoie un dataframe avec tout les joueurs et leur stats pour chacune de leurs positions. <br>
+ 
+ `app.df_best_role` : renvoie un dataframe avec tout les joueurs et leur stats pour le meilleur position seulement. (contient moins de colonne que `app.df_all_role`)
+ 
+ <br>
+ 
 **Les callbacks :**
 
 <br>
