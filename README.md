@@ -1,4 +1,4 @@
-# Projet-Open-Source-Fbref
+# GUILLEMAIN-GASPAR-Projet-Fbref-Python
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/) <br>
 Python Projet Data Visualization ESIEE 2022 <br>
 
@@ -91,11 +91,11 @@ En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être
   
 - **Premièrement, clonez le repo :**
 
-  `$ git clone https://github.com/Gasmain/Projet-Open-Source-Fbref.git`
+  `$ git clone https://github.com/Gasmain/GUILLEMAIN-GASPAR-Projet-Fbref-Python.git`
   
 - **Rentrez dans le dossier :**
   
-  `$ cd Projet-Open-Source-Fbref`
+  `$ cd GUILLEMAIN-GASPAR-Projet-Fbref-Python`
 
 - **Ensuite, installez les dependances :**
 
