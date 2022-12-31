@@ -97,7 +97,7 @@ En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être
 
   `$ git clone https://github.com/Gasmain/Projet-Open-Source-Fbref.git`
   
-  - **Rentrez dans le dossier :**
+- **Rentrez dans le dossier :**
   
   `$ cd Projet-Open-Source-Fbref`
 
