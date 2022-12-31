@@ -117,6 +117,11 @@ En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être
   
   <br>
   
+  ![screenshot of the home page](./images/home.png)
+  ![screenshot of the player page](./images/player.png)
+  ![screenshot of the squad builder page page](./images/team.png)
+
+  
   
 
 <a name="dev-guide"/>
