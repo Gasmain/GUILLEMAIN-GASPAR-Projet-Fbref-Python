@@ -153,7 +153,7 @@ Après un scrapping il est conseillé d'appeler `sf.build_data_frame()` et `sf.b
 
 <br>
 
-Pour ajouter un page, créer un fichier python `my_new_page.py` dans le dossier `pages` se trouvant à la racine du projet. Si la page n'est pas dans se dossier, elle ne sera pas lu par dash. <br>
+Pour ajouter une page, créer un fichier python `my_new_page.py` dans le dossier `pages` se trouvant à la racine du projet. Si la page n'est pas dans ce dossier, elle ne sera pas lu par dash. <br>
 <br>
 
 Dans le fichier `my_new_page.py` importé le module dash, enregistré la page et créer une methode layout qui retournera le contenu de votre page :
