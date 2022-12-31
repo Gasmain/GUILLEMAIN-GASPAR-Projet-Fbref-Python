@@ -1,8 +1,6 @@
 # Projet-Open-Source-Fbref
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/) <br>
 Python Projet Data Visualization ESIEE 2022 <br>
-Ce projet à été importé de mon git perso : https://github.com/Gasmain/Projet-Open-Source-Fbref/
-Seuls les commits sont donc visibles mais pas les pushs
 
 [I. Présentation](#presentation)<br>
 [II. Le projet](#project)<br>
@@ -81,7 +79,7 @@ La carte choroplète indique que la plupart des joueurs viennent d'Europe, en pa
 
 <br>
 
-Le graphique en forme de radar semble être assez cohérent lorsqu'on le compare aux caractéristiques des joueurs. Par exemple, prenons le cas d'Erling Haaland. Haaland est un buteur extrêmement prolifique qui ne manque pas une occasion de marquer. Son classement en tant que meilleur buteur de la Premier League, avec 7 buts d'avance sur le deuxième, témoigne de sa qualité de buteur. Cependant, sa taille de 1,94 mètre ne le rend pas très efficace au dribble, comme le montre le graphique. On peut voir qu'il excelle dans le domaine de l'attaque, mais qu'il a du mal au dribble.
+Le graphique en forme de radar semble être assez cohérent lorsqu'on le compare aux caractéristiques des joueurs. Par exemple, prenons le cas d'Erling Haaland. Haaland est un buteur extrêmement prolifique qui ne manque pas une occasion de marquer. Son classement en tant que meilleur buteur de la Premier League, avec 7 buts d'avance sur le deuxième, témoigne de sa qualité de buteur. Cependant, sa taille de 1,91 mètre ne le rend pas très efficace au dribble, comme le montre le graphique. On peut voir qu'il excelle dans le domaine de l'attaque, mais qu'il a du mal au dribble.
 En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être pas pleinement son niveau. En effet, la note est calculée en fonction d'une liste de statistiques qui avantagent les joueurs polyvalents, mais désavantagent les autres. Il pourrait être intéressant de créer une liste de statistiques pour chaque type de buteur, afin que chaque joueur ait une note en fonction de son style de jeu.
 
 
@@ -143,6 +141,8 @@ Après un scrapping il est conseillé d'appeler `sf.build_data_frame()` et `sf.b
 <br>
 
 **Ajouter des pages :**
+
+
 
 <br>
 
