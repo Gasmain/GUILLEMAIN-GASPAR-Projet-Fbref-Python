@@ -156,7 +156,7 @@ Après un scrapping il est conseillé d'appeler `sf.build_data_frame()` et `sf.b
 Pour ajouter une page, créer un fichier python `my_new_page.py` dans le dossier `pages` se trouvant à la racine du projet. Si la page n'est pas dans ce dossier, elle ne sera pas lu par dash. <br>
 <br>
 
-Dans le fichier `my_new_page.py` importé le module dash, enregistré la page et créer une methode layout qui retournera le contenu de votre page :
+Dans le fichier `my_new_page.py` importez le module dash, enregistrez la page et créez une methode layout qui retournera le contenu de votre page :
 
   ```Python
   import dash
@@ -173,7 +173,7 @@ Dans le fichier `my_new_page.py` importé le module dash, enregistré la page et
 
 Une fois cela fait, votre page sera accessible via  http://127.0.0.1:8050/my_new_page <br>
 
-Si vous souhaitez l'ajouter dans la bar de navigation du dashboard, dans le fichier `app.py` ajouté un nouveau `NavLink()` dans la fonction `create_nav_bar()` : <br>
+Si vous souhaitez l'ajouter dans la barre de navigation du dashboard, dans le fichier `app.py` ajoutez un nouveau `NavLink()` dans la fonction `create_nav_bar()` : <br>
 
   ```Python
   dbc.NavLink([dash.html.I(className="fa-solid fa-house", style={"margin-right": "10px"}), "Dashboard"],
@@ -199,7 +199,7 @@ Si vous souhaitez l'ajouter dans la bar de navigation du dashboard, dans le fich
  
  <br>
  
- Pour accéder au données stocker dans le dataframe, il suffit d'appeller `app.df_best_role` ou `app.df_all_role`. <br>
+ Pour accéder au données stockées dans le dataframe, il suffit d'appeller `app.df_best_role` ou `app.df_all_role`. <br>
  
  `app.df_all_role` : renvoie un dataframe avec tout les joueurs et leur stats pour chacune de leurs positions. <br>
  
@@ -211,7 +211,7 @@ Si vous souhaitez l'ajouter dans la bar de navigation du dashboard, dans le fich
 
 <br>
 
-Les Callbacks sont tous relativement simple et peuvent être créer de cette manière :
+Les Callbacks sont tous relativement simple et peuvent être créé de cette manière :
 
 <br>
 
