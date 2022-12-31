@@ -7,8 +7,9 @@ Seuls les commits sont donc visibles mais pas les pushs
 [I. Présentation](#presentation)<br>
 [II. Le projet](#project)<br>
 [III. Analyses et conclusions](#conclusion)<br>
-[IV. Guide utilisateur (Install & Run)](#user-guide)<br>
-[V. Guide developpeur](#dev-guide)<br>
+[IV. Guide installation (Install & Run)](#install-guide)<br>
+[V. Guide utilisateur](#user-guide)<br>
+[VI. Guide developpeur](#dev-guide)<br>
 
 <a name="presentation"/>
 
@@ -64,7 +65,7 @@ Les résultats obtenus semblent être cohérents et reflètent bien les tendance
 
 <br>
 
-L'utilisation d'un scatter plot peut s'avérer très utile pour découvrir des joueurs qui se démarquent dans certains domaines. Par exemple, en utilisant les buts en tant qu'axe Y et les passes décisives en tant qu'axe X, on peut voir que des joueurs tels que Mbappé ou Neymar sont plus décisifs et importants que Coutinho, bien que tous jouent un rôle similaire. Cet exemple, bien que prévisible, montre l'efficacité de ce graphique qui permet de mettre en lumière des cas moins prévisibles, comme Choupo Moting et Alassane Pléa, qui ont tous les deux de très bonnes statistiques mais qui ne sont pas très médiatisés. <br>
+L'utilisation d'un scatter plot peut s'avérer très utile pour découvrir des joueurs qui se démarquent dans certains domaines. Par exemple, en utilisant les buts en tant qu'axe X et les passes décisives en tant qu'axe Y, on peut voir que des joueurs tels que Mbappé ou Neymar sont plus décisifs et importants que Coutinho, bien que tous jouent un rôle similaire. Cet exemple, bien que prévisible, montre l'efficacité de ce graphique qui permet de mettre en lumière des cas moins prévisibles, comme Choupo Moting et Alassane Pléa, qui ont tous les deux de très bonnes statistiques mais qui ne sont pas très médiatisés. <br>
 
 <br>
 
@@ -84,14 +85,11 @@ Le graphique en forme de radar semble être assez cohérent lorsqu'on le compare
 En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être pas pleinement son niveau. En effet, la note est calculée en fonction d'une liste de statistiques qui avantagent les joueurs polyvalents, mais désavantagent les autres. Il pourrait être intéressant de créer une liste de statistiques pour chaque type de buteur, afin que chaque joueur ait une note en fonction de son style de jeu.
 
 
+<a name="install-guide"/>
 
+## IV. Guide installation :
 
-
-<a name="user-guide"/>
-
-## IV. Guide utilisateur :
-
-  > :warning: **Ce projet a été créé avec python 3.9 mais devrait fonctionner pour toutes versions de python 3, si cela n'est pas le cas, utilisez python 3.9**
+> :warning: **Ce projet a été créé avec python 3.9 mais devrait fonctionner pour toutes versions de python 3, si cela n'est pas le cas, utilisez python 3.9**
   
 - **Premièrement, clonez le repo :**
 
@@ -113,6 +111,11 @@ En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être
 
   visitez http://127.0.0.1:8050/ dans votre navigateur pour visualiser le dashboard
 
+<a name="user-guide"/>
+
+## IV. Guide utilisateur :
+
+  
 
 <a name="dev-guide"/>
 
