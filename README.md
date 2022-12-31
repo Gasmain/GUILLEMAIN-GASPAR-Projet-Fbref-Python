@@ -182,7 +182,38 @@ Si vous souhaitez l'ajouter dans la bar de navigation du dashboard, dans le fich
   ```
 
 
+  <br>
   
+  
+```mermaid
+graph TB
+
+  Node5 --> Node4
+  Node7 --> Node9(collapse_2)
+  Node7 --> Node10(search_result_2)
+  subgraph " "
+  Node5(cytoscape)
+  Node6(list_group_item)
+  Node7(input_player_2)
+  Node8(sidebar)
+  Node5 --> Node8
+  Node5 --> Node7
+  Node6 --> Node8
+  Node6 --> Node7
+
+  end
+
+  subgraph " "
+  Node1[toggle_links] 
+  Node2[drop_down] 
+  Node3[rdm_team] 
+  Node4[squad_builder_content]
+  Node1--> Node4
+  Node2--> Node4
+  Node3--> Node4
+end
+
+```
  
 
 
