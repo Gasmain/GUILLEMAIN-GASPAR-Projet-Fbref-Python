@@ -114,6 +114,9 @@ En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être
 
 ## V. Guide developpeur :
 
+**Scrapping :**
+
+<br>
 
   Les data ont déja été scrappé pour un gain de temps et peuvent être trouvées ici : [data/player.json](https://github.com/Gasmain/Projet-Open-Source-Fbref/blob/master/data/player.json) mais peuvent être rescrappé via l'interface ou en rajoutant `Scrapper.scrap()` dans le main : 
   > :warning: **Le scrapping de données est très long** : il peut prendre plus de 5h
@@ -128,7 +131,13 @@ En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être
   
 Après un scrapping il est conseillé d'appeler `sf.build_data_frame()` et `sf.build_map_csv`. <br>
 `sf.build_data_frame()` recréer les dataframes à partir du `fichier player.json`
-`sf.build_map_csv` recréer le csv utilisé pour la map, cette fonction peut être longue car elle utilise `pycountry.countries.search_fuzzy()`
+`sf.build_map_csv` recréer le csv utilisé pour la map, cette fonction peut être longue car elle utilise `pycountry.countries.search_fuzzy()` <br>
+
+<br>
+
+**Ajouter des pages :**
+
+<br>
 
 
 
