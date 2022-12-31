@@ -20,7 +20,7 @@ def create():
     Creates a plotly dashboard on port 8050
     """
     app.layout = serve_layout
-    app.run_server(debug=True, port=8050)
+    app.run_server(debug=False, port=8050)
 
 
 def serve_layout():
