@@ -280,8 +280,15 @@ def name_of_callback(value):
       raise dash.exceptions.PreventUpdate
 ```
 
+<br> 
 
+Copyright : 
  
+Je déclare sur l’honneur que le code fourni a été produit par moi/nous même, à l’exception des lignes ci dessous et de style.css ( La majeure partie du fichier style.css provient de bootstrap, seule une dixaine de classe y ont été ajouté par mes soins ).
+
+Pour chaque ligne (ou groupe de lignes) empruntée, donner la référence de la source et une explication de la syntaxe utilisée.
+
+Toute ligne non déclarée est réputée être produite par l’auteur (ou les auteurs) du projet. L’absence ou l’omission de déclaration sera considéré comme du plagiat.
 
 
 
