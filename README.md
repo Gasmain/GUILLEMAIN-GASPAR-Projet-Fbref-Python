@@ -113,6 +113,10 @@ En ce qui concerne sa note générale de joueur, 78, elle ne reflète peut-être
 
 ## V. Guide utilisateur :
   
+  Voici des screenshots avec des explications pour utiliser l'interface du dashboard et ne pas rater de fonctionalités :
+  
+  <br>
+  
   
 
 <a name="dev-guide"/>
