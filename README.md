@@ -142,6 +142,8 @@ Après un scrapping il est conseillé d'appeler `sf.build_data_frame()` et `sf.b
 
 **Ajouter des pages :**
 
+<br>
+
 Pour ajouter un page, créer un fichier python `my_new_page.py` dans le dossier `pages` se trouvant à la racine du projet. Si la page n'est pas dans se dossier, elle ne sera pas lu par dash. <br>
 <br>
 
@@ -184,6 +186,29 @@ Si vous souhaitez l'ajouter dans la bar de navigation du dashboard, dans le fich
 
   <br>
   
+**Les callbacks :**
+
+<br>
+
+Les Callbacks sont tous relativement simple et peuvent être créer de cette manière :
+
+<br>
+
+```Python
+@dash.callback(
+    Output("id_of_output_element", "attribute_to_output"),
+    Input("id_of_input_element", "attribute_to_input"),
+)
+def name_of_callback(value):
+    # Ici le corps de votre fonction manipulant la valeur envoyé par l'input
+    return "" # Ici la valeur a output dans l'attribut spécifié dans attribute_to_output
+```
+
+<br>
+
+Seul les callbacks de la page `squad_builder.py` sont complexes, voici un graphique représentant leur fonctionement :
+
+<br>
   
 ```mermaid
 graph TB
@@ -214,6 +239,27 @@ graph TB
 end
 
 ```
+
+<br>
+
+Si dans un callback vous ne souhaitez pas retourner de valeurs si une condition n'est pas remplie utilisez `raise dash.exceptions.PreventUpdate`
+Cela ne produira pas d'output sans produire d'erreur de callback :
+
+<br>
+
+```Python
+@dash.callback(
+    Output("id_of_output_element", "attribute_to_output"),
+    Input("id_of_input_element", "attribute_to_input"),
+)
+def name_of_callback(value):
+    if value > 3 :
+      return "Hello"
+    else :
+      raise dash.exceptions.PreventUpdate
+```
+
+
  
 
 
