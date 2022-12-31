@@ -142,10 +142,44 @@ Après un scrapping il est conseillé d'appeler `sf.build_data_frame()` et `sf.b
 
 **Ajouter des pages :**
 
+Pour ajouter un page, créer un fichier python `my_new_page.py` dans le dossier `pages` se trouvant à la racine du projet. Si la page n'est pas dans se dossier, elle ne sera pas lu par dash. <br>
+<br>
 
+Dans le fichier `my_new_page.py` importé le module dash, enregistré la page et créer une methode layout qui retournera le contenu de votre page :
+
+  ```Python
+  import dash
+  from dash import html, dcc, callback, Input, Output
+  
+  dash.register_page(__name__)  # Enregistre la page dans le server
+  
+  def layout():
+    return "le contenu de ma page"  # Ici retourner le contenu de votre page
+
+  ```
 
 <br>
 
+Une fois cela fait, votre page sera accessible via  http://127.0.0.1:8050/my_new_page <br>
+
+Si vous souhaitez l'ajouter dans la bar de navigation du dashboard, dans le fichier `app.py` ajouté un nouveau `NavLink()` dans la fonction `create_nav_bar()` : <br>
+
+  ```Python
+  dbc.NavLink([dash.html.I(className="fa-solid fa-house", style={"margin-right": "10px"}), "Dashboard"],
+                        href="/", active="exact"),
+  dbc.NavLink([dash.html.I(className="fa-solid fa-user", style={"margin-right": "10px"}), "Players"],
+              href="/players", active="exact"),
+  dbc.NavLink(
+      [dash.html.I(className="fa-solid fa-people-group", style={"margin-right": "10px"}), "Squad Builder"],
+      href="/squad-builder", active="exact"),
+  dbc.NavLink([dash.html.I(className="fa-solid fa-circle-down", style={"margin-right": "10px"}), "Scrapping"],
+              href="/scrapping", active="exact"),
+  
+  # Votre nouvelle page ici : 
+  dbc.NavLink([dash.html.I(style={"margin-right": "10px"}), "Ma nouvelle page"],
+              href="/my_new_page", active="exact"),
+              
+  ```
 
 
   
